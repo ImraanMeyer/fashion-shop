@@ -8,6 +8,11 @@
 ```
     - mkdir css scss js images 
     - touch index.html
+    - cd scss
+    - touch main.scss
+    - mkdir partials
+    - cd partials
+    - touch _base.scss _variables.scss _components.scss _layout.scss
 
 ```
 ## Live Link
