@@ -6,7 +6,7 @@
 - Folder structure and index.html created:
 
 ```
-    - mkdir css scss images
+    - mkdir css scss js images 
     - touch index.html
 
 ```
