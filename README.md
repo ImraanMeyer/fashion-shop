@@ -2,22 +2,17 @@
 - Project 3: Building a functional, minimal, eCommerce website!
 
 ## Setting up your workspace
+- Created repository and cloned to desktop
+- Folder structure and index.html created:
 
 ```
-- Created repository and cloned to desktop
-- Folder Structure Created:
-
     - mkdir css scss images
     - touch index.html
 
 ```
 ## Live Link
 
-```
-
-https://imraanmeyer.github.io/online_cv_v2/index.html
-
-```
+https://imraanmeyer.github.io/fashion-shop/
 
 ### Technologies Used
 
