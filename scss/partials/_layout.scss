@@ -12,42 +12,61 @@
 
     .top {
         grid-area: top;
-        background: yellow;
+        background: $banners;
         height: 3.3125rem;
+
+        .top-content {
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas: 
+                "menus text icons";
+
+            .widgets-left {
+                grid-area: menus;
+            }
+            .text-centered {
+                grid-area: text;
+            }
+            .social-links-right {
+                grid-area: icons;
+            }
+        }
+        
     }
     .header {
         grid-area: header;
-        background: tomato;
+        background: #666666; //insert bg image
         height: 59.0625rem;
     }
     .featured {
         height: 44rem;
         grid-area: feat;
-        background: teal;
+        background: $white1;
     }
     .collection {
         height: 44.0625rem;
         grid-area: collection;
-        background: paleturquoise;
+        background: $white2;
     }
     .banner {
         height: 34.5rem;
         grid-area: banner;
-        background: darkgoldenrod;
+        background: #666; //insert bg image
     }
     .blog {
         height: 41.9375rem;
         grid-area: blog;
-        background: yellowgreen;
+        background: $white3;
     }
     .footer {
         grid-area:  footer;
         height: 26.5625rem;
-        background: indianred;
+        background: $banners;
     }
     .bottom {
         height: 5.3125rem;
         grid-area : bottom;
-        background: thistle;
+        background: $grey;
     }
 }

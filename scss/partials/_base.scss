@@ -1,9 +1,77 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans Pro';
 }
 
 .top-content {
     width: 60%;
     margin: 0 auto;
+    padding: 1em 0;
+    color: $text;
+}
+
+.widgets-left {
+    display: grid;
+    place-content: start;
+    grid-gap: .4em;
+    grid-template-areas: 
+        "lan cur";
+
+    #lang {
+        grid-area: lan;
+    }
+    #currency {
+        grid-area: cur;
+    }
+    .top-select {
+        position: relative;
+        outline: none;
+        background: transparent;
+        color: $text;
+        // -webkit-appearance: none;
+        border: none;
+
+        option {
+            box-shadow: 0px;
+            border: 0px;
+            outline: 0px;
+            background: $banners;
+        }
+        option:hover {
+            background: $text;
+            color: $black;
+        }
+    }
+    
+}
+
+#bigger {
+    font-size: 12px;
+    text-align: center;
+    
+}
+
+.top-social-links-ul {
+    display: grid;
+    place-content: end;
+    grid-gap: 1em;
+    grid-template-areas: 
+        "icon1 icon2 icon3 icon4";
+        .social {
+            color: inherit;
+            font-size: 1em;
+        }
+        .link1 {
+            grid-area: icon1;
+        }
+        .link2 {
+            grid-area: icon2;
+        }
+        .link3 {
+            grid-area: icon3;
+        }
+        .link4 {
+            grid-area: icon4;
+        }
 }
