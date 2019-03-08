@@ -1,0 +1,53 @@
+// Global layouts
+
+.main-grid {
+    grid-template-areas: 
+        "top"
+        "header"
+        "feat"
+        "collection"
+        "banner"
+        "blog"
+        "footer";
+
+    .top {
+        grid-area: top;
+        background: yellow;
+        height: 3.3125rem;
+    }
+    .header {
+        grid-area: header;
+        background: tomato;
+        height: 59.0625rem;
+    }
+    .featured {
+        height: 44rem;
+        grid-area: feat;
+        background: teal;
+    }
+    .collection {
+        height: 44.0625rem;
+        grid-area: collection;
+        background: paleturquoise;
+    }
+    .banner {
+        height: 34.5rem;
+        grid-area: banner;
+        background: darkgoldenrod;
+    }
+    .blog {
+        height: 41.9375rem;
+        grid-area: blog;
+        background: yellowgreen;
+    }
+    .footer {
+        grid-area:  footer;
+        height: 26.5625rem;
+        background: indianred;
+    }
+    .bottom {
+        height: 5.3125rem;
+        grid-area : bottom;
+        background: thistle;
+    }
+}

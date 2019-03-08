@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.top-content {
+  width: 60%;
+  margin: 0 auto; }
+
+.main-grid {
+  grid-template-areas: "top" "header" "feat" "collection" "banner" "blog" "footer"; }
+  .main-grid .top {
+    grid-area: top;
+    background: yellow;
+    height: 3.3125rem; }
+  .main-grid .header {
+    grid-area: header;
+    background: tomato;
+    height: 59.0625rem; }
+  .main-grid .featured {
+    height: 44rem;
+    grid-area: feat;
+    background: teal; }
+  .main-grid .collection {
+    height: 44.0625rem;
+    grid-area: collection;
+    background: paleturquoise; }
+  .main-grid .banner {
+    height: 34.5rem;
+    grid-area: banner;
+    background: darkgoldenrod; }
+  .main-grid .blog {
+    height: 41.9375rem;
+    grid-area: blog;
+    background: yellowgreen; }
+  .main-grid .footer {
+    grid-area: footer;
+    height: 26.5625rem;
+    background: indianred; }
+  .main-grid .bottom {
+    height: 5.3125rem;
+    grid-area: bottom;
+    background: thistle; }
+
+/*# sourceMappingURL=main.css.map */
