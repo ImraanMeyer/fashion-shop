@@ -6,15 +6,26 @@
 - Folder structure and index.html created:
 
 ```
-    - mkdir css scss js images 
+    - mkdir 'name of subfolders creating'
+```
+```
     - touch index.html
-    - cd scss
+```
+- Using cd to change directory into scss folder
+```
+```
     - touch main.scss
     - mkdir partials
     - cd partials
-    - touch _base.scss _variables.scss _components.scss _layout.scss
-
+    - touch 'name of partials.scss'
 ```
+- Used terminal to watch/write scss:css by writing command:
+```
+    - sass --watch scss:css
+```
+- Linked main stylesheet into the head of index.html
+
+
 ## Live Link
 
 https://imraanmeyer.github.io/fashion-shop/
@@ -39,18 +50,32 @@ Tools:
 - VS Code
 - GitBash
 - Github
+- Google Chrome
+- Mozila Firefox (Dev Edition)
 - Adobe PhotoShop
 
 ```
 
 ### Changelog
 
+```
 07-03-2019
-
+- README created
+- Grids implemented for main layout (home page)
 - Folder structure and index.html file created
 - Images/Resources gathered
+```
 
+```
+08-03-2019
+ - Colors used in respectful sections
+ - Top sexcction created
+```
 
+```
+09-03-2019
+ -  
+```
 ## Contributors
 
 - Imraan Meyer - 2018
