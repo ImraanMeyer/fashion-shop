@@ -140,6 +140,7 @@
         }
     }
     .shop-basket-right {
-
+        display: grid;
+        place-content: center;
     }
 }

@@ -183,6 +183,12 @@
   font-size: 15px;
 }
 
+.navbar .shop-basket-right {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
 .main-grid {
       grid-template-areas: "top" "header" "feat" "collection" "banner" "blog" "footer";
 }
@@ -250,7 +256,7 @@
   grid-area: search;
   display: -ms-grid;
   display: grid;
-  place-content: start;
+  place-content: center start;
 }
 
 .main-grid .header .navbar .main-navbar-center {
@@ -265,7 +271,7 @@
   grid-area: basket;
   display: -ms-grid;
   display: grid;
-  place-content: end;
+  place-content: center end;
 }
 
 .main-grid .header .navbar .shop-basket-right a {

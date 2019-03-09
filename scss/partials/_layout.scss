@@ -56,7 +56,7 @@
             .search-icon-left {
                 grid-area: search;
                 display: grid;
-                place-content: start;
+                place-content: center start;
             }
             .main-navbar-center {
                 grid-area: ul;
@@ -64,7 +64,7 @@
             .shop-basket-right {
                 grid-area: basket;
                 display: grid;
-                place-content: end;
+                place-content: center end;
                 
                 a {
                     place-self: center;
