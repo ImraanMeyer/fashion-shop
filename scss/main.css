@@ -108,6 +108,15 @@
   color: #f5f5f5;
 }
 
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(#666666be), to(#f5f5f5be)), url(../../images/2.jpg) !important;
+  background: linear-gradient(#666666be, #f5f5f5be), url(../../images/2.jpg) !important;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top !important;
+  background-repeat: repeat;
+}
+
 .navbar .fas {
   color: #ffffff;
 }
@@ -217,7 +226,6 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: header;
-  background: #666666;
   height: 59.0625rem;
   display: -ms-grid;
   display: grid;

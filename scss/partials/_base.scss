@@ -87,7 +87,13 @@
             color: $white1;
         }
 }
-
+.header {
+    background: linear-gradient($blackOP , $whiteOP ) ,  url(../../images/2.jpg)  !important;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top !important;
+    background-repeat: repeat;
+}
 .navbar {
     .fas {
         color: $white2;
