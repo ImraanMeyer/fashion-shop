@@ -36,13 +36,12 @@
     }
     .header {
         grid-area: header;
-        // background: #666666; //insert bg image
         height: 59.0625rem;
 
         display: grid;
         grid-template-areas:
             "nav"
-            "hero";
+            "text";
 
         .navbar {
             grid-area: nav;
@@ -67,10 +66,14 @@
                 place-content: center end;
                 
                 a {
-                    place-self: center;
+                    align-self: center;
                 }
             }
 
+        }
+        .header-text {
+            grid-area: text;
+            margin: 35.2% auto;
         }
     }
     .featured {

@@ -89,7 +89,7 @@
 }
 .header {
     background: linear-gradient($blackOP , $whiteOP ) ,  url(../images/2.jpg)  !important;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
     background-size: cover;
     background-position: top !important;
     background-repeat: repeat;
@@ -98,6 +98,12 @@
     .fas {
         color: $white2;
     }
+    .fas:hover {
+        color: $banners;
+    }
+    .fas:active {
+        color: $buttons;
+    }
     .main-navbar-center {
         display: grid;
         place-content: center;
@@ -105,7 +111,7 @@
             "link1 link2 link3 img link4 link5 link6";
         
         .navbar-links {
-            place-self: center;
+            align-self: center;
         }
         .link1 {
             grid-area: link1;
@@ -137,10 +143,52 @@
             text-decoration: none;
             color: $white2;
             font-size: 15px;
+            transition: all .4s;
+        }
+        a:hover::after {
+            content: '';
+            transition: all .4s;
+            display: block;
+            height: 4px;
+            margin: 0 auto;
+            background: $buttons;
+            width: 80%;
         }
     }
     .shop-basket-right {
         display: grid;
         place-content: center;
+    }
+}
+
+.header-text {
+    .header-text-title {
+        font-family: Dosis;
+        font-size: 50px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.96;
+        letter-spacing: normal;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        
+        margin-bottom: 40px;
+    }
+    .header-text-content { 
+        width: 924px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Source Sans Pro';
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: center;
+        color: #e6e6e6;
+        margin-bottom: 112px;
     }
 }
