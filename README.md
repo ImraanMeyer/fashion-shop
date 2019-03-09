@@ -24,7 +24,7 @@
     - sass --watch scss:css
 ```
 - Linked main stylesheet into the head of index.html
-
+```
 
 ## Live Link
 
