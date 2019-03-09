@@ -38,6 +38,36 @@
         grid-area: header;
         background: #666666; //insert bg image
         height: 59.0625rem;
+
+        display: grid;
+        grid-template-areas:
+            "nav"
+            "hero";
+
+        .navbar {
+            grid-area: nav;
+            color: $white2;
+
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            grid-template-areas: 
+                "search ul basket";
+
+            .search-icon-left {
+                grid-area: search;
+                display: grid;
+                place-content: start;
+            }
+            .main-navbar-center {
+                grid-area: ul;
+            }
+            .shop-basket-right {
+                grid-area: basket;
+                display: grid;
+                place-content: end;
+            }
+
+        }
     }
     .featured {
         height: 44rem;

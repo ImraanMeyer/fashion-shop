@@ -4,11 +4,19 @@
     font-family: 'Source Sans Pro';
 }
 
-.top-content {
-    width: 60%;
+.top-content,
+.header-content {
+    width: 70%;
     margin: 0 auto;
+}
+
+.top-content {
     padding: 1em 0;
     color: $text;
+}
+.header-content {
+    padding: 2em 0;
+    color: $white2;
 }
 
 .widgets-left {
@@ -49,6 +57,7 @@
 #bigger {
     font-size: 12px;
     text-align: center;
+    letter-spacing: 2.4px;
     
 }
 
@@ -74,4 +83,26 @@
         .link4 {
             grid-area: icon4;
         }
+        .social:hover {
+            color: $white1;
+        }
+}
+
+.navbar {
+    .fas {
+        color: $white2;
+    }
+    .main-navbar-center {
+        display: grid;
+        place-items: center;
+        a {
+            padding: 0 1em;
+            text-decoration: none;
+            color: $white2;
+            font-size: 15px;
+        }
+    }
+    .shop-basket-right {
+
+    }
 }
