@@ -65,6 +65,10 @@
                 grid-area: basket;
                 display: grid;
                 place-content: end;
+                
+                a {
+                    place-self: center;
+                }
             }
 
         }

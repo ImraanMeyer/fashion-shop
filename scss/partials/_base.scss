@@ -94,8 +94,39 @@
     }
     .main-navbar-center {
         display: grid;
-        place-items: center;
+        place-content: center;
+        grid-template-areas:
+            "link1 link2 link3 img link4 link5 link6";
+        
+        .navbar-links {
+            place-self: center;
+        }
+        .link1 {
+            grid-area: link1;
+        }
+        .link2 {
+            grid-area: link2;
+        }
+        .link3 {
+            grid-area: link3;
+        }
+        .nav-logo {
+            grid-area: img;
+        }
+        .link4 {
+            grid-area: link4;
+        }
+        .link5 {
+            grid-area: link5;
+        }
+        .link6 {
+            grid-area: link6;
+        }
+
+        
         a {
+            font-family: 'Dosis';
+            text-transform: uppercase;
             padding: 0 1em;
             text-decoration: none;
             color: $white2;

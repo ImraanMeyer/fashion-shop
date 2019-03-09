@@ -68,8 +68,27 @@
   color: #ffffff; }
 .navbar .main-navbar-center {
   display: grid;
-  place-items: center; }
+  place-content: center;
+  grid-template-areas: "link1 link2 link3 img link4 link5 link6"; }
+  .navbar .main-navbar-center .navbar-links {
+    place-self: center; }
+  .navbar .main-navbar-center .link1 {
+    grid-area: link1; }
+  .navbar .main-navbar-center .link2 {
+    grid-area: link2; }
+  .navbar .main-navbar-center .link3 {
+    grid-area: link3; }
+  .navbar .main-navbar-center .nav-logo {
+    grid-area: img; }
+  .navbar .main-navbar-center .link4 {
+    grid-area: link4; }
+  .navbar .main-navbar-center .link5 {
+    grid-area: link5; }
+  .navbar .main-navbar-center .link6 {
+    grid-area: link6; }
   .navbar .main-navbar-center a {
+    font-family: 'Dosis';
+    text-transform: uppercase;
     padding: 0 1em;
     text-decoration: none;
     color: #ffffff;
@@ -114,6 +133,8 @@
         grid-area: basket;
         display: grid;
         place-content: end; }
+        .main-grid .header .navbar .shop-basket-right a {
+          place-self: center; }
   .main-grid .featured {
     height: 44rem;
     grid-area: feat;
