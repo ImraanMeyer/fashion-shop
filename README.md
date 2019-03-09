@@ -69,13 +69,21 @@ Tools:
 ```
 08-03-2019
  - Colors used in respectful sections
- - Top sexcction created
+ - Top section created
 ```
 
 ```
 09-03-2019
- -  
+ - Navbar created (styled complete)
+ - Hero created
+    * bg image inserted
+    * placeholder text inserted
 ```
+```
+10-03-2019
+ - Hero section completed
+```
+
 ## Contributors
 
 - Imraan Meyer - 2018
