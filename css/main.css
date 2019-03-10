@@ -163,15 +163,54 @@
   color: #ffffff;
   display: grid;
   place-content: center;
-  transition: all .4s; }
+  transition: all .4s;
+  margin-bottom: 10%; }
 
 .header-text-button:hover {
   transform: scale(1.2);
-  transition: all .4s; }
+  transition: all .4s;
+  box-shadow: 0 2px 0 #e6e6e6; }
 
 a {
   text-decoration: none; }
 
+.down-arrow {
+  position: relative;
+  margin: 0 auto;
+  transform: translate(-10%, -10%); }
+  .down-arrow span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite; }
+  .down-arrow span:nth-child(2) {
+    animation-delay: -0.2s; }
+  .down-arrow span:nth-child(3) {
+    animation-delay: -0.4s; }
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px); } }
 .main-grid {
   grid-template-areas: "top" "header" "feat" "collection" "banner" "blog" "footer"; }
   .main-grid .top {
@@ -214,7 +253,17 @@ a {
           align-self: center; }
     .main-grid .header .header-text {
       grid-area: text;
-      margin: 35.2% auto; }
+      margin: 35.2% auto;
+      display: grid;
+      grid-template-areas: "title" "content" "btn" "arrow"; }
+      .main-grid .header .header-text .header-text-title {
+        grid-area: title; }
+      .main-grid .header .header-text .header-text-content {
+        grid-area: content; }
+      .main-grid .header .header-text .header-text-button {
+        grid-area: btn; }
+      .main-grid .header .header-text .down-arrow {
+        grid-area: arrow; }
   .main-grid .featured {
     height: 44rem;
     grid-area: feat;

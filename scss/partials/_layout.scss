@@ -74,6 +74,26 @@
         .header-text {
             grid-area: text;
             margin: 35.2% auto;
+
+            display: grid;
+            grid-template-areas: 
+                "title"
+                "content"
+                "btn"
+                "arrow";
+
+            .header-text-title {
+                grid-area: title;
+            }
+            .header-text-content {
+                grid-area: content;
+            }
+            .header-text-button {
+                grid-area: btn;
+            }
+            .down-arrow {
+                grid-area: arrow;
+            }
         }
     }
     .featured {
