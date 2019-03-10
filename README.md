@@ -87,6 +87,7 @@ Tools:
 ```
 10-03-2019
  - Hero section completed
+ - Featured section created
 ```
 
 ## Contributors
