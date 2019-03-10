@@ -8,23 +8,28 @@
 ```
     - mkdir 'name of subfolders creating'
 ```
+
 ```
     - touch index.html
 ```
+
 - Using cd to change directory into scss folder
-```
+
 ```
     - touch main.scss
     - mkdir partials
     - cd partials
     - touch 'name of partials.scss'
 ```
+
 - Used terminal to watch/write scss:css by writing command:
+
 ```
     - sass --watch scss:css
+
 ```
 - Linked main stylesheet into the head of index.html
-```
+
 
 ## Live Link
 
