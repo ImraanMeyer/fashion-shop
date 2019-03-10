@@ -101,6 +101,8 @@
         grid-area: feat;
         background: $white1;
         .featured-grid {
+            place-content: center;
+            grid-gap: 2em;
             display: grid;
             grid-template-areas: 
                 "fig1 fig2 fig3";
@@ -113,6 +115,20 @@
             }
             .figure-right {
                 grid-area: fig3;
+            }
+
+            .featured-figure {
+                
+                display: grid;
+                grid-template-areas:
+                    "img"
+                    "text";
+                .figure-img {
+                    grid-area: img;
+                }
+                .figure-text {
+                    grid-area: text;
+                }
             }
         }
     }

@@ -4,9 +4,13 @@
     font-family: 'Source Sans Pro';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .top-content,
 .header-content,
-.feautured-content {
+.feautured-content { 
     width: 70%;
     margin: 0 auto;
 }
@@ -210,13 +214,18 @@
 .featured-grid {
 
     .featured-figure {
-
-        background: red;
+        width: fit-content;
         height: fit-content;
         .figure-img {
             width: 370px;
             height: 360px;
             background-color: #666666;
+        }
+        .figure-text {
+            text-align: center;
+            margin: 23px auto;
+            width: 310px;
+            height: 360px;
         }
     }
 

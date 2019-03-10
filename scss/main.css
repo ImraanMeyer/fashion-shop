@@ -4,6 +4,10 @@
   font-family: 'Source Sans Pro';
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .top-content,
 .header-content,
 .feautured-content {
@@ -185,7 +189,7 @@
 
 .navbar .main-navbar-center .nav-logo {
   -ms-grid-row: 1;
-  -ms-grid-column: 4;
+  -ms-grid-column: 1;
   grid-area: img;
 }
 
@@ -266,7 +270,9 @@
 }
 
 .featured-grid .featured-figure {
-  background: red;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -278,39 +284,40 @@
   background-color: #666666;
 }
 
+.featured-grid .featured-figure .figure-text {
+  text-align: center;
+  margin: 23px auto;
+  width: 310px;
+  height: 360px;
+}
+
 .header-text-button {
   margin: 0 auto;
   width: 150px;
   height: 40px;
-  background: #a88d7b;
+  background: #ffffff;
   border-radius: 20px;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  outline: none;
   font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  text-align: center;
-  color: #ffffff;
+  color: #a88d7b;
   display: -ms-grid;
   display: grid;
   place-content: center;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
   margin-bottom: 10%;
 }
 
 .header-text-button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  -webkit-box-shadow: 0 2px 0 #e6e6e6;
-          box-shadow: 0 2px 0 #e6e6e6;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #a88d7b;
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 0 10px #a88d7b48;
+          box-shadow: 0 0 0 10px #a88d7b48;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 a {
@@ -543,6 +550,8 @@ a {
 }
 
 .main-grid .featured .featured-grid {
+  place-content: center;
+  grid-gap: 2em;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "fig1 fig2 fig3";
@@ -564,6 +573,24 @@ a {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: fig3;
+}
+
+.main-grid .featured .featured-grid .featured-figure {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img" "text";
+}
+
+.main-grid .featured .featured-grid .featured-figure .figure-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+}
+
+.main-grid .featured .featured-grid .featured-figure .figure-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
 }
 
 .main-grid .collection {
