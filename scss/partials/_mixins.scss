@@ -1,0 +1,11 @@
+@mixin normal {
+    font-weight: normal; 
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: $headers;
+    text-transform: uppercase;
+    padding-top: 60px;
+}

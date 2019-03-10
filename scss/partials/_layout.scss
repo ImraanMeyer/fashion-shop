@@ -100,6 +100,21 @@
         height: 44rem;
         grid-area: feat;
         background: $white1;
+        .featured-grid {
+            display: grid;
+            grid-template-areas: 
+                "fig1 fig2 fig3";
+        
+            .figure-left  {
+                grid-area: fig1;
+            }
+            .figure-center {
+                grid-area: fig2;
+            }
+            .figure-right {
+                grid-area: fig3;
+            }
+        }
     }
     .collection {
         height: 44.0625rem;

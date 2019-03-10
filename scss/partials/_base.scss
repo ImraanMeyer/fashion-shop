@@ -5,7 +5,8 @@
 }
 
 .top-content,
-.header-content {
+.header-content,
+.feautured-content {
     width: 70%;
     margin: 0 auto;
 }
@@ -17,6 +18,19 @@
 .header-content {
     padding: 2em 0;
     color: $white2;
+}
+
+#container-title {
+    font-size: $h1;
+    @include normal;
+}
+#container-title::after {
+    content: '';
+    height: 2px;
+    width: 50px;
+    margin: 20px auto;
+    background: $brown;
+    display: block;
 }
 
 .widgets-left {
@@ -191,5 +205,25 @@
         color: #e6e6e6;
         margin-bottom: 112px;
     }
-    
+}
+
+.featured-grid {
+
+    .featured-figure {
+
+        background: red;
+        height: fit-content;
+        .figure-img {
+            width: 370px;
+            height: 360px;
+            background-color: #666666;
+        }
+    }
+
+    .figure-left  {
+    }
+    .figure-center {
+    }
+    .figure-right {
+    }
 }
