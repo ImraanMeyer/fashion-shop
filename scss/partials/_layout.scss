@@ -36,7 +36,7 @@
     }
     .header {
         grid-area: header;
-        height: 59.0625rem;
+        height: 100vh;
 
         display: grid;
         grid-template-areas:
@@ -73,7 +73,7 @@
         }
         .header-text {
             grid-area: text;
-            margin: 35.2% auto;
+            margin: 10% auto;
 
             display: grid;
             grid-template-areas: 
@@ -155,9 +155,8 @@
     .banner {
         height: 34.5rem;
         grid-area: banner;
-        // background: #666; //insert bg image
-        background: url(../images/men.jpg);
-        background-attachment: fixed;
+        background: linear-gradient($blackOP , $whiteOP ) ,  url(../images/group.jpeg)  !important;        
+        
 
         .banner-content {
             display: grid;
@@ -170,7 +169,7 @@
                 "text"
                 "btn";
             .banner-title {
-                margin-top: 36.1%;
+                margin-top: 25%;
                 grid-area: title;
             }
             .banner-text {
@@ -185,15 +184,94 @@
         height: 41.9375rem;
         grid-area: blog;
         background: $white3;
+        .blog-grid {
+            display: grid;
+            margin-top: 60px;
+            grid-template-columns: repeat(2, 50%);
+            grid-gap: 50px;
+            grid-template-areas: 
+                "img text";
+            
+            .blog-img {
+                grid-area: img;
+            }
+            .blog-text {
+                grid-area: text;
+
+                display: grid;
+                grid-template-areas:
+                    "title"
+                    "date"
+                    "text"
+                    "link";
+                .blog-text-title {
+                    grid-area: title;
+                }
+                #greyed {
+                    grid-area: date;
+                }
+                .blog-text-content {
+                    grid-area: text;
+                }
+                .read-more-btn {
+                    grid-area: link;
+                }
+
+            }
+        }
     }
     .footer {
         grid-area:  footer;
         height: 26.5625rem;
         background: $banners;
+
+        .footer-grid {
+            padding-top: 60px;
+            display: grid;
+            grid-gap: 6%;
+            grid-template-areas:
+                "sec1 sec2";
+            
+            .footer-left-section {
+                grid-area: sec1;
+                place-items: start;
+            }
+            .footer-right-section {
+                grid-area: sec2;
+                place-content: top end;
+
+                display: grid;
+                grid-gap: 2em;
+                grid-template-areas: 
+                    "links shop ig";
+
+                .footer-links {
+                    grid-area: links;
+                }
+                .footer-shop {
+                    grid-area: shop;
+                }
+                .footer-instagram {
+                    grid-area: ig;
+
+                    .instagram-widget-grid {
+                        place-content: start;
+                        display: grid;
+                        grid-gap: 10px;
+                        grid-template-columns: repeat(4, auto);
+                        grid-template-rows: repeat(2, 1fr);
+                    }
+                }
+
+            }
+        
+        }
     }
     .bottom {
         height: 5.3125rem;
         grid-area : bottom;
         background: $grey;
+        display: grid;
+        place-content: center;
     }
 }

@@ -33,6 +33,7 @@
 
 ## Live Link
 
+https://imraanmeyer.github.io/fashion-shop/
 
 ### Technologies Used
 
@@ -93,6 +94,8 @@ Tools:
  - Featured section styled complete
  - Collection section created and styled
  - Banner created and styled
+ - index.html complete
+ -  
 ```
 
 ## Contributors

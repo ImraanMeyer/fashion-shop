@@ -1,9 +1,9 @@
 .header-text-button {
     margin: 0 auto;
     width: 150px;
-    height: 40px;
     background: $white2;
-    border: $buttons solid 2px;
+    border: solid $brown 2px;
+    height: 40px;
     border-radius: 20px;
     font-size: 15px;
     text-transform: uppercase;
@@ -12,14 +12,28 @@
     display: grid;
     place-content: center;
     transition: all .2s;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
 }
 .header-text-button:hover {
     transform: scale(1.1);
     background: $buttons;
     color: $white2;
+    border: solid $white2 2px;
     box-shadow: 0 0 0 10px $brownOP;
     transition: all .2s ;
+}
+
+.banner-button {
+    margin-top: 15.8% !important;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    background-color: $buttons;
+    color: $white2;
+    text-transform: uppercase;
+    font-size: 15px;
 }
 
 a {
@@ -100,5 +114,22 @@ a {
         img:hover {
             transform: scale(1.08);
         }
+    }
+}
+
+.blog-img {
+    overflow: hidden;
+    position: relative;
+    
+    img {
+        max-height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        transform: scale(1);
+        transition: all .2s;
+    }
+    img:hover {
+        transform: scale(1.08);
     }
 }
