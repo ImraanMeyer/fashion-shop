@@ -33,7 +33,6 @@
 
 ## Live Link
 
-https://imraanmeyer.github.io/fashion-shop/
 
 ### Technologies Used
 
