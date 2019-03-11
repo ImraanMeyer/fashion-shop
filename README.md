@@ -89,6 +89,12 @@ Tools:
  - Hero section completed
  - Featured section created
 ```
+```
+11-03-2019
+ - Featured section styled complete
+ - Collection section created and styled
+ - Banner created and styled
+```
 
 ## Contributors
 

@@ -10,7 +10,8 @@ html {
 
 .top-content,
 .header-content,
-.feautured-content { 
+.feautured-content,
+.collection-content { 
     width: 70%;
     margin: 0 auto;
 }
@@ -27,6 +28,7 @@ html {
 #container-title {
     font-size: $h1;
     @include normal;
+    padding-top: 60px;
 }
 #container-title::after {
     content: '';
@@ -212,7 +214,6 @@ html {
 }
 
 .featured-grid {
-
     .featured-figure {
         width: fit-content;
         height: fit-content;
@@ -224,15 +225,50 @@ html {
         .figure-text {
             text-align: center;
             margin: 23px auto;
-            width: 310px;
-            height: 360px;
         }
     }
+}
 
-    .figure-left  {
+.collection-grid {
+    .collection-item {
+        .collection-text {
+            @include normal;
+            color: $brown;
+            padding-top: 42px;
+            letter-spacing: 2.5px;
+        }
     }
-    .figure-center {
+}
+
+.banner-content {
+    .banner-title {
+        font-family: Dosis;
+        font-size: 48px;
+        color: $white2 !important;
+        @include normal;
+        line-height: 0.5;
+        text-align: center;
     }
-    .figure-right {
+    .banner-text {
+        margin-top: 7.1%;
+        text-align: center;
+        // font-family: 'Source Sans Pro';
+        font-size: 15px;
+        @include normal;
+        text-transform: capitalize;
+        color: $white2;
+        line-height: 1.6;
+    }
+    .banner-button {
+        margin-top: 15.8% !important;
+        margin: 0 auto;
+        width: 150px;
+        height: 40px;
+        display: grid;
+        place-content: center;
+        background-color: $buttons;
+        color: $white2;
+        text-transform: uppercase;
+        font-size: 15px;
     }
 }

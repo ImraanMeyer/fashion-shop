@@ -3,6 +3,7 @@
     width: 150px;
     height: 40px;
     background: $white2;
+    border: $buttons solid 2px;
     border-radius: 20px;
     font-size: 15px;
     text-transform: uppercase;
@@ -44,5 +45,60 @@ a {
     }
     span:nth-child(3){
         animation-delay: -0.4s;
+    }
+}
+
+.figure-img {
+    position: relative;
+    overflow: hidden;
+    img {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        transition: all .2s;
+        transform: scale(1);
+        display: block;
+    }
+    img:hover {
+        transform: scale(1.08);
+    }
+    .new-item {
+        width: 60px;
+        height: 25px;
+        border-radius: 7.5px;
+        background-color: #a88d7b;
+        font-size: 15px;
+        color: $white2;
+        text-transform: uppercase;
+        display: grid;
+        place-content: center;
+        position: absolute;
+        right: 10px;
+        letter-spacing: 2.5px;
+        top: 10px;
+    }
+}
+
+.collection-item {
+    .collection-img-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 570px;
+        height: 373px;
+        background-color: #666666;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover; 
+            object-position: top;
+            transition: all .2s;
+            transform: scale(1);
+            display: block;
+        }
+        img:hover {
+            transform: scale(1.08);
+        }
     }
 }

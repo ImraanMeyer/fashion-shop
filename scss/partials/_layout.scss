@@ -101,6 +101,7 @@
         grid-area: feat;
         background: $white1;
         .featured-grid {
+            margin-top: 70px; 
             place-content: center;
             grid-gap: 2em;
             display: grid;
@@ -136,11 +137,49 @@
         height: 44.0625rem;
         grid-area: collection;
         background: $white2;
+        .collection-grid {
+            margin-top: 70px;
+            display: grid;
+            place-content: center;
+            grid-gap: 30px;
+            grid-template-areas: 
+                "male female";
+            .male {
+                grid-area: male;
+            }
+            .female {
+                grid-area: female;
+            }
+        }
     }
     .banner {
         height: 34.5rem;
         grid-area: banner;
-        background: #666; //insert bg image
+        // background: #666; //insert bg image
+        background: url(../images/men.jpg);
+        background-attachment: fixed;
+
+        .banner-content {
+            display: grid;
+            width: 656px;
+            margin-left: 19.4%;
+            margin-right:  46.1%;
+
+            grid-template-areas: 
+                "title"
+                "text"
+                "btn";
+            .banner-title {
+                margin-top: 36.1%;
+                grid-area: title;
+            }
+            .banner-text {
+                grid-area: text;
+            }
+            .banner-button {
+                grid-area: btn;
+            }
+        }
     }
     .blog {
         height: 41.9375rem;
