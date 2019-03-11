@@ -95,8 +95,15 @@ Tools:
  - Collection section created and styled
  - Banner created and styled
  - index.html complete
- -  
+ - about.html complete
 ```
+
+```
+12-03-2019
+-
+
+```
+
 
 ## Contributors
 

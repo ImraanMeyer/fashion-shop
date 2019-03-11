@@ -13,7 +13,10 @@ html {
 .feautured-content,
 .collection-content,
 .blog-content,
-.footer-content { 
+.footer-content,
+.navbar-content,
+.primary-grid,
+.what-we-do-grid { 
     width: 80%;
     margin: 0 auto;
 }
@@ -31,6 +34,10 @@ html {
     font-size: $h1;
     @include normal;
     padding-top: 60px;
+}
+
+.no-padding {
+    padding: 0 !important;
 }
 #container-title::after {
     content: '';
@@ -54,26 +61,6 @@ html {
     #currency {
         grid-area: cur;
     }
-    .top-select {
-        position: relative;
-        outline: none;
-        background: transparent;
-        color: $text;
-        // -webkit-appearance: none;
-        border: none;
-
-        option {
-            box-shadow: 0px;
-            border: 0px;
-            outline: 0px;
-            background: $banners;
-        }
-        option:hover {
-            background: $text;
-            color: $black;
-        }
-    }
-    
 }
 
 #bigger {
@@ -106,7 +93,7 @@ html {
             grid-area: icon4;
         }
         .social:hover {
-            color: $white1;
+            color: $brown;
         }
 }
 .header {
@@ -158,24 +145,7 @@ html {
         }
 
         
-        a {
-            font-family: 'Dosis';
-            text-transform: uppercase;
-            padding: 0 1em;
-            text-decoration: none;
-            color: $white2;
-            font-size: 15px;
-            transition: all .4s;
-        }
-        a:hover::after {
-            content: '';
-            transition: all .4s;
-            display: block;
-            height: 4px;
-            margin: 0 auto;
-            background: $buttons;
-            width: 80%;
-        }
+        
     }
     .shop-basket-right {
         display: grid;
@@ -348,4 +318,85 @@ html {
             }
         }
     }
+}
+
+.about-us {
+    height: 445px;
+    background: #666666;
+    display: grid;
+    place-content: center;
+    .about-us-title {
+        font-size: 50px;
+        letter-spacing: 5px !important;
+        @include normal;
+        color: $white2;
+    }
+    p {
+        margin-top: 36px;
+        text-align: center;
+        color: $white2;
+        span {
+            color: #a8a8a8;
+        }
+        #text {
+            color: #cccccc;
+        }
+    }
+
+}
+
+
+
+.primary-left {
+    grid-area: left;
+    p {
+        margin-bottom: 36px;
+        width: 524px;
+        color: #666666;
+    }
+}
+.primary-right {
+    grid-area: right;
+    height: 490px;
+    width: 600px;
+    background: #666666;
+}
+
+.team-figure {
+    
+    width: 270px;
+    .team-img {
+        
+        height: 305px;
+        background-color: #666666;
+        margin-bottom: 20px;
+    }
+    .team-text {
+
+        text-align: center;
+        display: grid;
+        grid-template-areas: 
+            "name"
+            "des"
+            "links";
+        h4 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            letter-spacing: 1px;
+        }
+        p {
+            margin-bottom: 30px;
+            color: #999999
+        }
+        i {
+            padding: 0 15px;
+            color: #555555;
+        }
+    }
+}
+
+.mission-left {
+    height: 490px;
+    width: 600px;
+    background: #666666;
 }

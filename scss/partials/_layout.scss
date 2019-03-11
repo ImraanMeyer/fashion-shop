@@ -9,12 +9,11 @@
         "banner"
         "blog"
         "footer";
-
+}
     .top {
         grid-area: top;
         background: $banners;
         height: 3.3125rem;
-
         .top-content {
             display: grid;
             margin: 0 auto;
@@ -63,11 +62,7 @@
             .shop-basket-right {
                 grid-area: basket;
                 display: grid;
-                place-content: center end;
-                
-                a {
-                    align-self: center;
-                }
+                place-content: center end;    
             }
 
         }
@@ -273,5 +268,131 @@
         background: $grey;
         display: grid;
         place-content: center;
+    }
+
+// About page
+
+.about {
+        background: $greyed3 !important;
+}
+#inner {
+    width: 70%;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-areas:
+        "top"
+        "nav"
+        "about"
+        "primary"
+        "team"
+        "secondary"
+        "footer"
+        "bottom"
+}
+
+
+#navbar-light{
+    background: $white2;
+    
+    .navbar-content { 
+        display: grid;            
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-areas: 
+            "left ul right";
+        
+        .logo-left {
+            grid-area: left;
+
+        }
+        .main-navbar {
+            grid-area: ul;
+            display: grid;
+            place-content: center end;
+            grid-template-areas:
+                "link1 link2 link3 link4 link5 link6";
+
+            .navbar-links {
+                
+            color: $black2 !important;
+            }
+        }
+        .widgets-right {
+            display: grid;
+            grid-area: right;
+            place-content: center end;
+            grid-gap: 1em;
+            grid-template-areas:
+                "icon1 icon2";
+            .fas {
+                color: #666666 !important;
+            }
+            .fa-shopping {
+                grid-area: icon1;
+            }
+            .fa-search {
+                grid-area: icon2;
+            }
+        }
+    }
+}
+
+.primary-grid {
+    display: grid;
+    margin-top: 60px;
+    margin-bottom: 100px; 
+    grid-gap: 54px;
+    grid-template-rows: 490px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "left right";
+}
+
+
+.team-grid {
+    place-content: center !important;
+    padding-top: 82px;
+    grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-areas: 
+        "fig1 fig2 fig3 fig4";
+    
+    .figure1 {
+        grid-area: fig1;
+    }
+    .figure2 {
+        grid-area: fig2;
+    }
+    .figure3 {
+        grid-area: fig3;
+    }
+    .figure4 {
+        grid-area: fig4;
+    }
+
+}
+
+.what-we-do-grid {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-gap: 36px;
+    display: grid;
+    grid-template-areas: 
+        "left right";
+    .mission-left {
+        grid-area: left;
+    }
+    .mission-right {
+        grid-area: right;
+
+        #first {
+            margin-top: 22px;
+        }
+        p {
+            margin-bottom: 36px;
+            width: 530px;
+        }
     }
 }

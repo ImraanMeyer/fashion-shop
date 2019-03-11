@@ -1,3 +1,49 @@
+.top-select {
+    position: relative;
+    outline: none;
+    background: transparent;
+    color: $text;
+    width: fit-content;
+    // -webkit-appearance: none;
+    border: none;
+
+    option {
+        box-shadow: 0px;
+        border: 0px;
+        outline: 0px;
+        background: $banners;
+    }
+    option:hover {
+        background: $text;
+        color: $black;
+    }
+}
+
+#about-only {
+    display: grid;
+    place-content: end;
+}
+
+.navbar-links {
+    font-family: 'Dosis';
+    text-transform: uppercase;
+    padding: 0 1em;
+    text-decoration: none;
+    color: $white2;
+    font-size: 15px;
+    transition: all .4s;
+    align-self: center;
+}
+.navbar-links:hover::after {
+    content: '';
+    transition: all .4s;
+    display: block;
+    height: 4px;
+    margin: 0 auto;
+    background: $buttons;
+    width: 80%;
+}
+
 .header-text-button {
     margin: 0 auto;
     width: 150px;
@@ -127,6 +173,24 @@ a {
         object-fit: cover;
         object-position: top;
         transform: scale(1);
+        transition: all .2s;
+    }
+    img:hover {
+        transform: scale(1.08);
+    }
+}
+
+
+// About page 
+
+.primary-right {
+    position: relative;
+    overflow: hidden;
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        width: 100%;
         transition: all .2s;
     }
     img:hover {
