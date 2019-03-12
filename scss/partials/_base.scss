@@ -517,3 +517,30 @@ html {
     }
 }
 
+
+.blog-item {
+    margin-bottom: 60px;
+    .blog-item-img {
+        height: 225px;
+        width: 370px;
+        background: #666666;
+    }
+
+    .blog-item-text {
+        h4 {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        #greyed  {
+            margin-top: 19px;
+        }
+        p {
+            margin-top: 43px;
+            width: 340px;
+            margin-bottom: 36px;
+        }
+        a {
+            // margin-bottom: 
+        }
+    }
+}

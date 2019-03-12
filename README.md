@@ -100,8 +100,8 @@ Tools:
 
 ```
 12-03-2019
--
-
+- contact.html complete
+- blog.html created
 ```
 
 

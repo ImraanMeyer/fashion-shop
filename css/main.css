@@ -402,6 +402,22 @@ html {
     place-content: center;
     margin-bottom: 100px; }
 
+.blog-item {
+  margin-bottom: 60px; }
+  .blog-item .blog-item-img {
+    height: 225px;
+    width: 370px;
+    background: #666666; }
+  .blog-item .blog-item-text h4 {
+    margin-top: 30px;
+    font-size: 20px; }
+  .blog-item .blog-item-text #greyed {
+    margin-top: 19px; }
+  .blog-item .blog-item-text p {
+    margin-top: 43px;
+    width: 340px;
+    margin-bottom: 36px; }
+
 .top-select {
   position: relative;
   outline: none;
@@ -856,5 +872,51 @@ a {
       grid-area: bottom; }
   .contact-box-grid .box-right {
     grid-area: right; }
+
+.blog-share-pane {
+  color: #666666;
+  width: 70%;
+  margin: 29px auto 23px;
+  display: grid;
+  grid-template-areas: "left right"; }
+  .blog-share-pane .left-pane {
+    grid-area: left; }
+  .blog-share-pane .right-pane {
+    grid-area: right;
+    display: grid;
+    place-content: end;
+    grid-gap: 12px;
+    grid-template-areas: "txt icons"; }
+    .blog-share-pane .right-pane p {
+      grid-area: txt; }
+    .blog-share-pane .right-pane .blog-share {
+      grid-area: icons; }
+
+.blog-underline {
+  margin: 24px auto 0;
+  background: #e6e6e6;
+  height: 1px;
+  outline: none;
+  border: none;
+  width: 70%; }
+
+.blog-grid {
+  margin: 60px auto 0;
+  grid-gap: 29px;
+  width: 80%;
+  display: grid;
+  grid-template-areas: "fig1 fig2 fig3" "fig4 fig5 fig6"; }
+  .blog-grid .item1 {
+    grid-area: fig1; }
+  .blog-grid .item2 {
+    grid-area: fig2; }
+  .blog-grid .item3 {
+    grid-area: fig3; }
+  .blog-grid .item4 {
+    grid-area: fig4; }
+  .blog-grid .item5 {
+    grid-area: fig5; }
+  .blog-grid .item6 {
+    grid-area: fig6; }
 
 /*# sourceMappingURL=main.css.map */

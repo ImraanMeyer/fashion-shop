@@ -430,9 +430,69 @@
 
 // blog page 
 
-// .blog-share-pane {
-//     display: grid;
-//     .left-pane {
-//         grid-area: 
-//     }
-// }
+.blog-share-pane {
+    color: #666666;
+    width: 70%;
+    margin: 29px auto 23px;
+    display: grid;
+    grid-template-areas:
+        "left right";
+    .left-pane {
+        grid-area: left;
+    }
+    .right-pane {
+        grid-area: right;
+        display: grid;
+        place-content: end;
+        grid-gap: 12px;
+
+        grid-template-areas:
+            "txt icons";
+        
+        p {
+            grid-area: txt;
+        }
+        .blog-share {
+            grid-area: icons;
+        }
+    }
+}
+
+.blog-underline {
+    margin: 24px auto 0;
+    background: #e6e6e6;
+    height: 1px;
+    outline: none;
+    border: none;
+    width: 70%;
+}
+
+.blog-grid {
+    margin: 60px auto 100px;
+    grid-gap: 29px;
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+        "fig1 fig2 fig3"
+        "fig4 fig5 fig6";
+    
+    .item1 {
+        grid-area: fig1;
+    }
+    .item2 {
+        grid-area: fig2;
+    }
+    .item3 {
+        grid-area: fig3;
+    }
+    .item4 {
+        grid-area: fig4;
+    }
+    .item5 {
+        grid-area: fig5;
+    }
+    .item6 {
+        grid-area: fig6;
+    }
+    
+}
