@@ -406,7 +406,6 @@ html {
   margin-bottom: 60px; }
   .blog-item .blog-item-img {
     height: 225px;
-    width: 370px;
     background: #666666; }
   .blog-item .blog-item-text h4 {
     margin-top: 30px;
@@ -417,6 +416,9 @@ html {
     margin-top: 43px;
     width: 340px;
     margin-bottom: 36px; }
+  .blog-item .blog-item-text a {
+    color: #a88d7b;
+    text-transform: capitalize; }
 
 .top-select {
   position: relative;
@@ -891,17 +893,21 @@ a {
       grid-area: txt; }
     .blog-share-pane .right-pane .blog-share {
       grid-area: icons; }
+      .blog-share-pane .right-pane .blog-share i {
+        padding: 0 .4em; }
 
-.blog-underline {
+.underline {
   margin: 24px auto 0;
   background: #e6e6e6;
   height: 1px;
   outline: none;
-  border: none;
+  border: none; }
+
+.underline .blog {
   width: 70%; }
 
 .blog-grid {
-  margin: 60px auto 0;
+  margin: 60px auto 100px;
   grid-gap: 29px;
   width: 80%;
   display: grid;

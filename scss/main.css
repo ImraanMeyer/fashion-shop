@@ -621,7 +621,6 @@ html {
 
 .blog-item .blog-item-img {
   height: 225px;
-  width: 370px;
   background: #666666;
 }
 
@@ -638,6 +637,11 @@ html {
   margin-top: 43px;
   width: 340px;
   margin-bottom: 36px;
+}
+
+.blog-item .blog-item-text a {
+  color: #a88d7b;
+  text-transform: capitalize;
 }
 
 .top-select {
@@ -1545,12 +1549,19 @@ a {
   grid-area: icons;
 }
 
-.blog-underline {
+.blog-share-pane .right-pane .blog-share i {
+  padding: 0 .4em;
+}
+
+.underline {
   margin: 24px auto 0;
   background: #e6e6e6;
   height: 1px;
   outline: none;
   border: none;
+}
+
+.underline .blog {
   width: 70%;
 }
 

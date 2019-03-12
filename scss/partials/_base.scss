@@ -522,7 +522,6 @@ html {
     margin-bottom: 60px;
     .blog-item-img {
         height: 225px;
-        width: 370px;
         background: #666666;
     }
 
@@ -540,7 +539,8 @@ html {
             margin-bottom: 36px;
         }
         a {
-            // margin-bottom: 
+            color: $brown;
+            text-transform: capitalize;
         }
     }
 }

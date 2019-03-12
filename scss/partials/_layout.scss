@@ -454,16 +454,22 @@
         }
         .blog-share {
             grid-area: icons;
+            i {
+                padding: 0 .4em;
+            }
         }
     }
 }
 
-.blog-underline {
+.underline {
     margin: 24px auto 0;
     background: #e6e6e6;
     height: 1px;
     outline: none;
     border: none;
+}
+
+.underline .blog {
     width: 70%;
 }
 
