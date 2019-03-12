@@ -258,6 +258,15 @@ html {
     }
 }
 
+.fa-phone {
+    transform: rotate(90deg);
+}
+
+#extra-pad {
+    padding-left: 2em;
+    display: inline;
+}
+
 .footer-grid {
     .footer-left-section {
         .footer-logo {
@@ -282,9 +291,7 @@ html {
                     padding-left: 2em;
                     display: inline;
                 }
-                .fa-phone {
-                    transform: rotate(90deg);
-                }
+                
             }
         }   
     }
@@ -413,25 +420,100 @@ html {
 // Contact page
 
 .contact-box-grid {
-    margin: 100px auto 0;
-    .box,
-    .center-top,
-    .center-bottom {
+    margin: 100px auto 74px;
+    width: fit-content;
+    .box {
         background: #f0f0f0;
         height: 200px;
+        width: 390px;
         border: solid 1px #e6e6e6;
     }
     
-    .box-left {
+    .center-top,
+    .center-bottom {
+        background: #f0f0f0;
+        border: solid 1px #e6e6e6;
+    }
+    
+    .box-left,
+    .box-right {
+        display: grid;
+        text-align: center;
+        place-content: center;
         
+        h4 {
+            margin-top: 19px;
+            margin-bottom: 30px;
+            font-size: $h4;
+        }
     }
     
     .box-center {
 
-    
-    }
-    
-    .box-right {
-    
+        .center-top,
+        .center-bottom {
+            display: grid;
+            place-content: center;
+        }   
     }
 }
+
+.contact-form {
+
+    .form-grid {
+        max-width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas:
+            "name email"
+            "phone subject"
+            "text text"
+            "btn ." ;
+        
+        input {
+            padding: 22px;
+            height: 50px;
+            color: #888888;
+            border: solid 1px #e6e6e6;
+            background: $white2;
+            outline: none;
+        }
+        #form-name {
+            grid-area: name;
+        }
+        #form-email {
+            grid-area: email;
+        }
+        #form-number {
+            grid-area: phone;
+        }
+        #form-subject {
+            grid-area: subject;
+        }
+        #form-text {
+            grid-area: text;
+            height: 150px;
+            color: #888888;
+            padding: 22px;
+            border: solid 1px #e6e6e6;
+            background: $white2;
+            outline: none;
+        }
+
+        #form-button {
+            grid-area: btn;
+            width: 155px;
+            height: 40px;
+            background: $buttons;
+            color: #ffffff;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            display: grid;
+            place-content: center;
+            margin-bottom: 100px;
+        }
+    }
+}
+

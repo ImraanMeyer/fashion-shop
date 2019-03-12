@@ -68,7 +68,7 @@
         }
         .header-text {
             grid-area: text;
-            margin: 10% auto;
+            margin: 6% auto;
 
             display: grid;
             grid-template-areas: 
@@ -424,5 +424,16 @@
     }
     .box-right {
         grid-area: right;
+    }
+}
+
+
+// blog page 
+
+.blog-share-pane {
+    display: grid;
+    g
+    .left-pane {
+        grid-area: 
     }
 }
