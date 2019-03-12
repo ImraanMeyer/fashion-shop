@@ -1,85 +1,860 @@
-/*
-Error: Invalid CSS after "        grid-area:": expected expression (e.g. 1px, bold), was "}"
-        on line 438 of scss/partials/_layout.scss
-        from line 8 of scss/main.scss
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro'; }
 
-433: .blog-share-pane {
-434:     display: grid;
-435:     g
-436:     .left-pane {
-437:         grid-area: 
-438:     }
-439: }
+html {
+  scroll-behavior: smooth; }
 
-Backtrace:
-scss/partials/_layout.scss:438
-scss/main.scss:8
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/script/lexer.rb:240:in `expected!'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/script/parser.rb:855:in `assert_expr'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/script/parser.rb:68:in `parse'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1164:in `sass_script'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1002:in `value!'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:807:in `block in try_declaration'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1284:in `rethrow'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:820:in `try_declaration'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:697:in `block_contents'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:681:in `ruleset'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:321:in `to_tree'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby25/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"        grid-area:\": expected expression (e.g. 1px, bold), was \"}\"\A         on line 438 of scss/partials/_layout.scss\A         from line 8 of scss/main.scss\A \A 433: .blog-share-pane {\A 434:     display: grid;\A 435:     g\A 436:     .left-pane {\A 437:         grid-area: \A 438:     }\A 439: }"; }
+.top-content,
+.header-content,
+.feautured-content,
+.collection-content,
+.blog-content,
+.footer-content,
+.navbar-content,
+.primary-grid,
+.what-we-do-grid,
+.contact-box-grid {
+  width: 80%;
+  margin: 0 auto; }
+
+.top-content {
+  padding: 1em 0;
+  color: #999999; }
+
+.header-content {
+  padding: 2em 0;
+  color: #ffffff; }
+
+#container-title {
+  font-size: 36px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+  padding-top: 60px; }
+
+.no-padding {
+  padding: 0 !important; }
+
+#container-title::after {
+  content: '';
+  height: 2px;
+  width: 50px;
+  margin: 20px auto;
+  background: #a88d7b;
+  display: block; }
+
+.widgets-left {
+  display: grid;
+  place-content: start;
+  grid-gap: .4em;
+  grid-template-areas: "lan cur"; }
+  .widgets-left #lang {
+    grid-area: lan; }
+  .widgets-left #currency {
+    grid-area: cur; }
+
+#bigger {
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2.4px; }
+
+.top-social-links-ul {
+  display: grid;
+  place-content: end;
+  grid-gap: 1em;
+  grid-template-areas: "icon1 icon2 icon3 icon4"; }
+  .top-social-links-ul .social {
+    color: inherit;
+    font-size: 1em; }
+  .top-social-links-ul .link1 {
+    grid-area: icon1; }
+  .top-social-links-ul .link2 {
+    grid-area: icon2; }
+  .top-social-links-ul .link3 {
+    grid-area: icon3; }
+  .top-social-links-ul .link4 {
+    grid-area: icon4; }
+  .top-social-links-ul .social:hover {
+    color: #a88d7b; }
+
+.header {
+  background: linear-gradient(#666666be, #f5f5f5be), url(../images/2.jpg) !important;
+  background-attachment: fixed !important;
+  background-size: cover;
+  background-position: top !important;
+  background-repeat: repeat; }
+
+.navbar .fas {
+  color: #ffffff; }
+.navbar .fas:hover {
+  color: #2d2827; }
+.navbar .fas:active {
+  color: #a88d7b; }
+.navbar .main-navbar-center {
+  display: grid;
+  place-content: center;
+  grid-template-areas: "link1 link2 link3 img link4 link5 link6"; }
+  .navbar .main-navbar-center .navbar-links {
+    align-self: center; }
+  .navbar .main-navbar-center .link1 {
+    grid-area: link1; }
+  .navbar .main-navbar-center .link2 {
+    grid-area: link2; }
+  .navbar .main-navbar-center .link3 {
+    grid-area: link3; }
+  .navbar .main-navbar-center .nav-logo {
+    grid-area: img; }
+  .navbar .main-navbar-center .link4 {
+    grid-area: link4; }
+  .navbar .main-navbar-center .link5 {
+    grid-area: link5; }
+  .navbar .main-navbar-center .link6 {
+    grid-area: link6; }
+.navbar .shop-basket-right {
+  display: grid;
+  place-content: center; }
+
+.header-text .header-text-title {
+  font-family: Dosis;
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.96;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 40px; }
+.header-text .header-text-content {
+  width: 924px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Source Sans Pro';
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #e6e6e6;
+  margin-bottom: 112px; }
+
+.featured-grid .featured-figure {
+  width: fit-content;
+  height: fit-content; }
+  .featured-grid .featured-figure .figure-img {
+    width: 370px;
+    height: 360px;
+    background-color: #666666; }
+  .featured-grid .featured-figure .figure-text {
+    text-align: center;
+    margin: 23px auto; }
+
+.collection-grid .collection-item .collection-text {
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+  color: #a88d7b;
+  padding-top: 42px;
+  letter-spacing: 2.5px; }
+
+.banner-content .banner-title {
+  font-family: Dosis;
+  font-size: 48px;
+  color: #ffffff !important;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 0.5;
+  text-align: center; }
+.banner-content .banner-text {
+  margin-top: 7.1%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+  text-transform: capitalize;
+  color: #ffffff;
+  line-height: 1.6; }
+
+.blog-content .blog-text .blog-text-title {
+  margin-bottom: 19px; }
+.blog-content .blog-text #greyed {
+  margin-bottom: 36px;
+  color: #999999;
+  font-size: 15px; }
+.blog-content .blog-text .blog-text-content {
+  margin-bottom: 42px;
+  height: 239px;
+  width: 529px; }
+.blog-content .blog-text .read-more-btn {
+  color: #a88d7b;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; }
+
+.fa-phone {
+  transform: rotate(90deg); }
+
+#extra-pad {
+  padding-left: 2em;
+  display: inline; }
+
+.footer-grid .footer-left-section .footer-logo {
+  font-family: Dosis;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: .4em;
+  text-align: left;
+  color: #e5e5e5; }
+.footer-grid .footer-left-section .footer-contact-details {
+  padding: 0; }
+  .footer-grid .footer-left-section .footer-contact-details li {
+    margin-top: 40px;
+    list-style: none;
+    color: #999999;
+    font-size: 15px; }
+    .footer-grid .footer-left-section .footer-contact-details li p {
+      padding-left: 2em;
+      display: inline; }
+.footer-grid .footer-right-section .right-title {
+  margin-bottom: 51px;
+  color: #e5e5e5;
+  text-align: left; }
+.footer-grid .footer-right-section ul {
+  padding: 0; }
+  .footer-grid .footer-right-section ul li {
+    list-style: none;
+    color: #999999;
+    padding-bottom: 30px; }
+.footer-grid .footer-right-section .footer-instagram div {
+  width: 80px;
+  height: 80px;
+  background: #ffffff; }
+  .footer-grid .footer-right-section .footer-instagram div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.about-us {
+  height: 445px;
+  background: #666666;
+  display: grid;
+  place-content: center; }
+  .about-us .about-us-title {
+    font-size: 50px;
+    letter-spacing: 5px !important;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+    text-transform: uppercase;
+    color: #ffffff; }
+  .about-us p {
+    margin-top: 36px;
+    text-align: center;
+    color: #ffffff; }
+    .about-us p span {
+      color: #a8a8a8; }
+    .about-us p #text {
+      color: #cccccc; }
+
+.primary-left {
+  grid-area: left; }
+  .primary-left p {
+    margin-bottom: 36px;
+    width: 524px;
+    color: #666666; }
+
+.primary-right {
+  grid-area: right;
+  height: 490px;
+  width: fit-content;
+  background: #666666; }
+
+.team-figure {
+  width: 270px; }
+  .team-figure .team-img {
+    height: 305px;
+    background-color: #666666;
+    margin-bottom: 20px; }
+  .team-figure .team-text {
+    text-align: center;
+    display: grid;
+    grid-template-areas: "name" "des" "links"; }
+    .team-figure .team-text h4 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      letter-spacing: 1px; }
+    .team-figure .team-text p {
+      margin-bottom: 30px;
+      color: #999999; }
+    .team-figure .team-text i {
+      padding: 0 15px;
+      color: #555555; }
+
+.mission-left {
+  height: 490px;
+  width: 600px;
+  background: #666666;
+  width: fit-content; }
+  .mission-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.contact-box-grid {
+  margin: 100px auto 74px;
+  width: fit-content; }
+  .contact-box-grid .box {
+    background: #f0f0f0;
+    height: 200px;
+    width: 390px;
+    border: solid 1px #e6e6e6; }
+  .contact-box-grid .center-top,
+  .contact-box-grid .center-bottom {
+    background: #f0f0f0;
+    border: solid 1px #e6e6e6; }
+  .contact-box-grid .box-left,
+  .contact-box-grid .box-right {
+    display: grid;
+    text-align: center;
+    place-content: center; }
+    .contact-box-grid .box-left h4,
+    .contact-box-grid .box-right h4 {
+      margin-top: 19px;
+      margin-bottom: 30px;
+      font-size: 18px; }
+  .contact-box-grid .box-center .center-top,
+  .contact-box-grid .box-center .center-bottom {
+    display: grid;
+    place-content: center; }
+
+.contact-form .form-grid {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: "name email" "phone subject" "text text" "btn ."; }
+  .contact-form .form-grid input {
+    padding: 22px;
+    height: 50px;
+    color: #888888;
+    border: solid 1px #e6e6e6;
+    background: #ffffff;
+    outline: none; }
+  .contact-form .form-grid #form-name {
+    grid-area: name; }
+  .contact-form .form-grid #form-email {
+    grid-area: email; }
+  .contact-form .form-grid #form-number {
+    grid-area: phone; }
+  .contact-form .form-grid #form-subject {
+    grid-area: subject; }
+  .contact-form .form-grid #form-text {
+    grid-area: text;
+    height: 150px;
+    color: #888888;
+    padding: 22px;
+    border: solid 1px #e6e6e6;
+    background: #ffffff;
+    outline: none; }
+  .contact-form .form-grid #form-button {
+    grid-area: btn;
+    width: 155px;
+    height: 40px;
+    background: #a88d7b;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: grid;
+    place-content: center;
+    margin-bottom: 100px; }
+
+.top-select {
+  position: relative;
+  outline: none;
+  background: transparent;
+  color: #999999;
+  width: fit-content;
+  border: none; }
+  .top-select option {
+    box-shadow: 0px;
+    border: 0px;
+    outline: 0px;
+    background: #2d2827; }
+  .top-select option:hover {
+    background: #999999;
+    color: #2d2827; }
+
+#about-only {
+  display: grid;
+  place-content: end; }
+
+.navbar-links {
+  font-family: 'Dosis';
+  text-transform: uppercase;
+  padding: 0 1em;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  transition: all .4s;
+  align-self: center; }
+
+.navbar-links:hover::after {
+  content: '';
+  transition: all .4s;
+  display: block;
+  height: 4px;
+  margin: 0 auto;
+  background: #a88d7b;
+  width: 80%; }
+
+.header-text-button {
+  margin: 0 auto;
+  width: 150px;
+  background: #ffffff;
+  border: solid #a88d7b 2px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #a88d7b;
+  display: grid;
+  place-content: center;
+  transition: all .2s;
+  margin-bottom: 6%; }
+
+.header-text-button:hover {
+  transform: scale(1.1);
+  background: #a88d7b;
+  color: #ffffff;
+  border: solid #ffffff 2px;
+  box-shadow: 0 0 0 10px #a88d7b80;
+  transition: all 0.2s; }
+
+.banner-button {
+  margin-top: 15.8% !important;
+  margin: 0 auto;
+  width: 150px;
+  height: 40px;
+  display: grid;
+  place-content: center;
+  background-color: #a88d7b;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px; }
+
+a {
+  text-decoration: none; }
+
+.down-arrow {
+  position: relative;
+  margin: 0 auto;
+  transform: translate(-10%, -10%); }
+  .down-arrow span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite; }
+  .down-arrow span:nth-child(2) {
+    animation-delay: -0.2s; }
+  .down-arrow span:nth-child(3) {
+    animation-delay: -0.4s; }
+
+.figure-img {
+  position: relative;
+  overflow: hidden; }
+  .figure-img img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: all .2s;
+    transform: scale(1);
+    display: block; }
+  .figure-img img:hover {
+    transform: scale(1.08); }
+  .figure-img .new-item {
+    width: 60px;
+    height: 25px;
+    border-radius: 7.5px;
+    background-color: #a88d7b;
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    right: 10px;
+    letter-spacing: 2.5px;
+    top: 10px; }
+
+.collection-item .collection-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 570px;
+  height: 373px;
+  background-color: #666666; }
+  .collection-item .collection-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: all .2s;
+    transform: scale(1);
+    display: block; }
+  .collection-item .collection-img-wrapper img:hover {
+    transform: scale(1.08); }
+
+.blog-img {
+  overflow: hidden;
+  position: relative; }
+  .blog-img img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transform: scale(1);
+    transition: all .2s; }
+  .blog-img img:hover {
+    transform: scale(1.08); }
+
+.primary-right {
+  position: relative;
+  overflow: hidden; }
+  .primary-right img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    transition: all .2s; }
+  .primary-right img:hover {
+    transform: scale(1.08); }
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px); } }
+.main-grid {
+  grid-template-areas: "top" "header" "feat" "collection" "banner" "blog" "footer"; }
+
+.top {
+  grid-area: top;
+  background: #2d2827;
+  height: 3.3125rem; }
+  .top .top-content {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "menus text icons"; }
+    .top .top-content .widgets-left {
+      grid-area: menus; }
+    .top .top-content .text-centered {
+      grid-area: text; }
+    .top .top-content .social-links-right {
+      grid-area: icons; }
+
+.header {
+  grid-area: header;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "nav" "text"; }
+  .header .navbar {
+    grid-area: nav;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: "search ul basket"; }
+    .header .navbar .search-icon-left {
+      grid-area: search;
+      display: grid;
+      place-content: center start; }
+    .header .navbar .main-navbar-center {
+      grid-area: ul; }
+    .header .navbar .shop-basket-right {
+      grid-area: basket;
+      display: grid;
+      place-content: center end; }
+  .header .header-text {
+    grid-area: text;
+    margin: 6% auto;
+    display: grid;
+    grid-template-areas: "title" "content" "btn" "arrow"; }
+    .header .header-text .header-text-title {
+      grid-area: title; }
+    .header .header-text .header-text-content {
+      grid-area: content; }
+    .header .header-text .header-text-button {
+      grid-area: btn; }
+    .header .header-text .down-arrow {
+      grid-area: arrow; }
+
+.featured {
+  height: 44rem;
+  grid-area: feat;
+  background: #f5f5f5; }
+  .featured .featured-grid {
+    margin-top: 70px;
+    place-content: center;
+    grid-gap: 2em;
+    display: grid;
+    grid-template-areas: "fig1 fig2 fig3"; }
+    .featured .featured-grid .figure-left {
+      grid-area: fig1; }
+    .featured .featured-grid .figure-center {
+      grid-area: fig2; }
+    .featured .featured-grid .figure-right {
+      grid-area: fig3; }
+    .featured .featured-grid .featured-figure {
+      display: grid;
+      grid-template-areas: "img" "text"; }
+      .featured .featured-grid .featured-figure .figure-img {
+        grid-area: img; }
+      .featured .featured-grid .featured-figure .figure-text {
+        grid-area: text; }
+
+.collection {
+  height: 44.0625rem;
+  grid-area: collection;
+  background: #ffffff; }
+  .collection .collection-grid {
+    margin-top: 70px;
+    display: grid;
+    place-content: center;
+    grid-gap: 30px;
+    grid-template-areas: "male female"; }
+    .collection .collection-grid .male {
+      grid-area: male; }
+    .collection .collection-grid .female {
+      grid-area: female; }
+
+.banner {
+  height: 34.5rem;
+  grid-area: banner;
+  background: linear-gradient(#666666be, #f5f5f5be), url(../images/group.jpeg) !important; }
+  .banner .banner-content {
+    display: grid;
+    width: 656px;
+    margin-left: 19.4%;
+    margin-right: 46.1%;
+    grid-template-areas: "title" "text" "btn"; }
+    .banner .banner-content .banner-title {
+      margin-top: 25%;
+      grid-area: title; }
+    .banner .banner-content .banner-text {
+      grid-area: text; }
+    .banner .banner-content .banner-button {
+      grid-area: btn; }
+
+.blog {
+  height: 41.9375rem;
+  grid-area: blog;
+  background: #f9f9f9; }
+  .blog .blog-grid {
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 50px;
+    grid-template-areas: "img text"; }
+    .blog .blog-grid .blog-img {
+      grid-area: img; }
+    .blog .blog-grid .blog-text {
+      grid-area: text;
+      display: grid;
+      grid-template-areas: "title" "date" "text" "link"; }
+      .blog .blog-grid .blog-text .blog-text-title {
+        grid-area: title; }
+      .blog .blog-grid .blog-text #greyed {
+        grid-area: date; }
+      .blog .blog-grid .blog-text .blog-text-content {
+        grid-area: text; }
+      .blog .blog-grid .blog-text .read-more-btn {
+        grid-area: link; }
+
+.footer {
+  grid-area: footer;
+  height: 26.5625rem;
+  background: #2d2827; }
+  .footer .footer-grid {
+    padding-top: 60px;
+    display: grid;
+    grid-gap: 6%;
+    grid-template-areas: "sec1 sec2"; }
+    .footer .footer-grid .footer-left-section {
+      grid-area: sec1;
+      place-items: start; }
+    .footer .footer-grid .footer-right-section {
+      grid-area: sec2;
+      place-content: top end;
+      display: grid;
+      grid-gap: 2em;
+      grid-template-areas: "links shop ig"; }
+      .footer .footer-grid .footer-right-section .footer-links {
+        grid-area: links; }
+      .footer .footer-grid .footer-right-section .footer-shop {
+        grid-area: shop; }
+      .footer .footer-grid .footer-right-section .footer-instagram {
+        grid-area: ig; }
+        .footer .footer-grid .footer-right-section .footer-instagram .instagram-widget-grid {
+          place-content: start;
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: repeat(4, auto);
+          grid-template-rows: repeat(2, 1fr); }
+
+.bottom {
+  height: 5.3125rem;
+  grid-area: bottom;
+  background: #d7d7d7;
+  display: grid;
+  place-content: center; }
+
+.about {
+  background: #eeeeee !important; }
+
+#inner {
+  width: 70%; }
+
+.about-grid {
+  display: grid;
+  grid-template-areas: "top" "nav" "about" "primary" "team" "secondary" "footer" "bottom"; }
+
+#navbar-light {
+  background: #ffffff; }
+  #navbar-light .navbar-content {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: "left ul right"; }
+    #navbar-light .navbar-content .logo-left {
+      grid-area: left; }
+    #navbar-light .navbar-content .main-navbar {
+      grid-area: ul;
+      display: grid;
+      place-content: center end;
+      grid-template-areas: "link1 link2 link3 link4 link5 link6"; }
+      #navbar-light .navbar-content .main-navbar .navbar-links {
+        color: #666666 !important; }
+    #navbar-light .navbar-content .widgets-right {
+      display: grid;
+      grid-area: right;
+      place-content: center end;
+      grid-gap: 1em;
+      grid-template-areas: "icon1 icon2"; }
+      #navbar-light .navbar-content .widgets-right .fas {
+        color: #666666 !important; }
+      #navbar-light .navbar-content .widgets-right .fa-shopping {
+        grid-area: icon1; }
+      #navbar-light .navbar-content .widgets-right .fa-search {
+        grid-area: icon2; }
+
+.primary-grid {
+  display: grid;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  grid-gap: 54px;
+  grid-template-rows: 490px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "left right"; }
+
+.team-grid {
+  place-content: center !important;
+  padding-top: 82px;
+  grid-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-template-areas: "fig1 fig2 fig3 fig4"; }
+  .team-grid .figure1 {
+    grid-area: fig1; }
+  .team-grid .figure2 {
+    grid-area: fig2; }
+  .team-grid .figure3 {
+    grid-area: fig3; }
+  .team-grid .figure4 {
+    grid-area: fig4; }
+
+.what-we-do-grid {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  grid-gap: 36px;
+  display: grid;
+  grid-template-areas: "left right"; }
+  .what-we-do-grid .mission-left {
+    grid-area: left; }
+  .what-we-do-grid .mission-right {
+    grid-area: right; }
+    .what-we-do-grid .mission-right #first {
+      margin-top: 22px; }
+    .what-we-do-grid .mission-right p {
+      margin-bottom: 36px;
+      width: 530px; }
+
+.contact-box-grid {
+  display: grid;
+  grid-template-areas: "left center right"; }
+  .contact-box-grid .box-left {
+    grid-area: left; }
+  .contact-box-grid .box-center {
+    grid-area: center;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: "top" "bottom"; }
+    .contact-box-grid .box-center .center-top {
+      grid-area: top; }
+    .contact-box-grid .box-center .center-bottom {
+      grid-area: bottom; }
+  .contact-box-grid .box-right {
+    grid-area: right; }
+
+/*# sourceMappingURL=main.css.map */
