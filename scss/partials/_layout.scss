@@ -150,7 +150,10 @@
     .banner {
         height: 34.5rem;
         grid-area: banner;
-        background: linear-gradient($blackOP , $whiteOP ) ,  url(../images/group.jpeg)  !important;        
+        background: linear-gradient($blackOP , $blackOP ) ,  url(../images/leather-jacket.jpg)  !important; 
+        background-repeat: no-repeat !important;       
+        background-size: cover !important;
+        background-position: bottom left !important;
         
 
         .banner-content {
