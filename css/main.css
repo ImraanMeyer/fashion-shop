@@ -14,7 +14,8 @@ html {
 .footer-content,
 .navbar-content,
 .primary-grid,
-.what-we-do-grid {
+.what-we-do-grid,
+.contact-box-grid {
   width: 80%;
   margin: 0 auto; }
 
@@ -293,7 +294,7 @@ html {
 .primary-right {
   grid-area: right;
   height: 490px;
-  width: 600px;
+  width: fit-content;
   background: #666666; }
 
 .team-figure {
@@ -320,7 +321,19 @@ html {
 .mission-left {
   height: 490px;
   width: 600px;
-  background: #666666; }
+  background: #666666;
+  width: fit-content; }
+  .mission-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.contact-box-grid {
+  margin: 100px auto 0; }
+  .contact-box-grid .box {
+    background: #f0f0f0;
+    height: 200px;
+    border: solid 1px #e6e6e6; }
 
 .top-select {
   position: relative;
@@ -759,5 +772,22 @@ a {
     .what-we-do-grid .mission-right p {
       margin-bottom: 36px;
       width: 530px; }
+
+.contact-box-grid {
+  display: grid;
+  grid-template-areas: "left center right"; }
+  .contact-box-grid .box-left {
+    grid-area: left; }
+  .contact-box-grid .box-center {
+    grid-area: center;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: "top" "bottom"; }
+    .contact-box-grid .box-center .center-top {
+      grid-area: top; }
+    .contact-box-grid .box-center .center-bottom {
+      grid-area: bottom; }
+  .contact-box-grid .box-right {
+    grid-area: right; }
 
 /*# sourceMappingURL=main.css.map */

@@ -396,3 +396,33 @@
         }
     }
 }
+
+// contact page 
+
+
+.contact-box-grid {
+    display: grid;
+    grid-template-areas:
+        "left center right";
+    
+    .box-left {
+        grid-area: left;
+    }
+    .box-center {
+        grid-area: center;
+        display: grid;
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas:
+            "top"
+            "bottom";
+        .center-top {
+            grid-area: top;
+        }
+        .center-bottom {
+            grid-area: bottom;
+        }
+    }
+    .box-right {
+        grid-area: right;
+    }
+}

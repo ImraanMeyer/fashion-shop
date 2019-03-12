@@ -16,7 +16,8 @@ html {
 .footer-content,
 .navbar-content,
 .primary-grid,
-.what-we-do-grid { 
+.what-we-do-grid,
+.contact-box-grid { 
     width: 80%;
     margin: 0 auto;
 }
@@ -358,8 +359,9 @@ html {
 .primary-right {
     grid-area: right;
     height: 490px;
-    width: 600px;
+    width: fit-content;
     background: #666666;
+
 }
 
 .team-figure {
@@ -399,4 +401,37 @@ html {
     height: 490px;
     width: 600px;
     background: #666666;
+    width: fit-content;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+// Contact page
+
+.contact-box-grid {
+    margin: 100px auto 0;
+    .box,
+    .center-top,
+    .center-bottom {
+        background: #f0f0f0;
+        height: 200px;
+        border: solid 1px #e6e6e6;
+    }
+    
+    .box-left {
+        
+    }
+    
+    .box-center {
+
+    
+    }
+    
+    .box-right {
+    
+    }
 }
