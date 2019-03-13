@@ -344,12 +344,12 @@ html {
     }
 }
 
-.about-us {
+.bread-crumb-container {
     height: 445px;
     background: #666666;
     display: grid;
     place-content: center;
-    .about-us-title {
+    .crumb-title {
         font-size: 50px;
         letter-spacing: 5px !important;
         @include normal;
@@ -358,7 +358,11 @@ html {
     p {
         margin-top: 36px;
         text-align: center;
-        color: $white2;
+        
+        a {
+            color: $white2;
+            
+        }
         span {
             color: #a8a8a8;
         }

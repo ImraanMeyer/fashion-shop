@@ -184,9 +184,8 @@
         background: $white3;
         .blog-grid {
             display: grid;
-            margin-top: 60px;
-            grid-template-columns: repeat(2, 50%);
-            grid-gap: 50px;
+            margin: 3.75rem auto 0 !important;
+            grid-gap: 3.125rem;
             grid-template-areas: 
                 "img text";
             
@@ -472,8 +471,8 @@
     border: none;
 }
 
-.underline .blog {
-    width: 70%;
+.blog-line{
+    width: 70% !important;
 }
 
 .blog-grid {
@@ -505,4 +504,27 @@
         grid-area: fig6;
     }
     
+}
+
+// Lookbook 
+
+.masonry-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: 60px auto 0;
+    grid-gap: 20px;
+
+
+
+    .img-container {
+        height: 200px;
+        width: 1fr;
+        background: #666666;
+    }
+
+    
+    .img-container:nth-of-type(2) {
+        grid-column:  1 / 3;
+    }
 }

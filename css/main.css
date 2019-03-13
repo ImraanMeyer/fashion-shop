@@ -277,12 +277,12 @@ html {
     width: 100%;
     object-fit: cover; }
 
-.about-us {
+.bread-crumb-container {
   height: 445px;
   background: #666666;
   display: grid;
   place-content: center; }
-  .about-us .about-us-title {
+  .bread-crumb-container .crumb-title {
     font-size: 50px;
     letter-spacing: 5px !important;
     font-weight: normal;
@@ -294,13 +294,14 @@ html {
     color: #333333;
     text-transform: uppercase;
     color: #ffffff; }
-  .about-us p {
+  .bread-crumb-container p {
     margin-top: 36px;
-    text-align: center;
-    color: #ffffff; }
-    .about-us p span {
+    text-align: center; }
+    .bread-crumb-container p a {
+      color: #ffffff; }
+    .bread-crumb-container p span {
       color: #a8a8a8; }
-    .about-us p #text {
+    .bread-crumb-container p #text {
       color: #cccccc; }
 
 .primary-left {
@@ -457,6 +458,17 @@ html {
   display: grid;
   place-content: end; }
 
+#container-img {
+  position: relative;
+  overflow: hidden; }
+  #container-img img {
+    width: 100%;
+    height: 100%;
+    transition: all .3s; }
+  #container-img img:hover {
+    transform: scale(1.09);
+    transition: all .1s; }
+
 .navbar-links {
   font-family: 'Dosis';
   text-transform: uppercase;
@@ -544,9 +556,6 @@ a {
   position: relative;
   overflow: hidden; }
   .figure-img img {
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
     object-fit: cover;
     object-position: top;
     transition: all .2s;
@@ -555,8 +564,6 @@ a {
     .figure-img img #third {
       object-fit: none;
       object-position: none; }
-  .figure-img img:hover {
-    transform: scale(1.08); }
   .figure-img .new-item {
     width: 60px;
     height: 25px;
@@ -579,54 +586,31 @@ a {
   height: 373px;
   background-color: #666666; }
   .collection-item .collection-img-wrapper img {
-    height: 100%;
-    width: 100%;
     object-fit: cover;
-    object-position: top;
-    transition: all .2s;
-    transform: scale(1);
-    display: block; }
-  .collection-item .collection-img-wrapper img:hover {
-    transform: scale(1.08); }
+    object-position: top; }
 
 .blog-img {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  width: 585px;
+  height: 405px; }
   .blog-img img {
-    max-height: 100%;
-    width: 100%;
     object-fit: cover;
-    object-position: center;
-    transform: scale(1);
-    transition: all .2s; }
-  .blog-img img:hover {
-    transform: scale(1.08); }
+    object-position: center; }
 
 .blog-item-img {
   width: 370px;
-  height: 225px;
-  position: relative;
-  overflow: hidden; }
+  height: 225px; }
   .blog-item-img img {
     object-fit: cover;
-    height: 100%;
-    width: 100%;
-    transition: all .2s;
     object-position: top; }
-  .blog-item-img img:hover {
-    transform: scale(1.08); }
 
 .primary-right {
   position: relative;
   overflow: hidden; }
   .primary-right img {
-    height: 100%;
     object-fit: cover;
-    object-position: top;
-    width: 100%;
-    transition: all .2s; }
-  .primary-right img:hover {
-    transform: scale(1.08); }
+    object-position: top; }
 
 @keyframes pulse {
   from {
@@ -767,9 +751,8 @@ a {
   background: #f9f9f9; }
   .blog .blog-grid {
     display: grid;
-    margin-top: 60px;
-    grid-template-columns: repeat(2, 50%);
-    grid-gap: 50px;
+    margin: 3.75rem auto 0 !important;
+    grid-gap: 3.125rem;
     grid-template-areas: "img text"; }
     .blog .blog-grid .blog-img {
       grid-area: img; }
@@ -948,8 +931,8 @@ a {
   outline: none;
   border: none; }
 
-.underline .blog {
-  width: 70%; }
+.blog-line {
+  width: 70% !important; }
 
 .blog-grid {
   margin: 60px auto 100px;
@@ -970,5 +953,18 @@ a {
     grid-area: fig5; }
   .blog-grid .item6 {
     grid-area: fig6; }
+
+.masonry-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin: 60px auto 0;
+  grid-gap: 20px; }
+  .masonry-gallery .img-container {
+    height: 200px;
+    width: 1fr;
+    background: #666666; }
+  .masonry-gallery .img-container:nth-of-type(2) {
+    grid-column: 1 / 3; }
 
 /*# sourceMappingURL=main.css.map */

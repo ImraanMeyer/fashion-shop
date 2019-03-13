@@ -409,7 +409,7 @@ html {
      object-fit: cover;
 }
 
-.about-us {
+.bread-crumb-container {
   height: 445px;
   background: #666666;
   display: -ms-grid;
@@ -417,7 +417,7 @@ html {
   place-content: center;
 }
 
-.about-us .about-us-title {
+.bread-crumb-container .crumb-title {
   font-size: 50px;
   letter-spacing: 5px !important;
   font-weight: normal;
@@ -431,17 +431,20 @@ html {
   color: #ffffff;
 }
 
-.about-us p {
+.bread-crumb-container p {
   margin-top: 36px;
   text-align: center;
+}
+
+.bread-crumb-container p a {
   color: #ffffff;
 }
 
-.about-us p span {
+.bread-crumb-container p span {
   color: #a8a8a8;
 }
 
-.about-us p #text {
+.bread-crumb-container p #text {
   color: #cccccc;
 }
 
@@ -695,6 +698,25 @@ html {
   place-content: end;
 }
 
+#container-img {
+  position: relative;
+  overflow: hidden;
+}
+
+#container-img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#container-img img:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
 .navbar-links {
   font-family: 'Dosis';
   text-transform: uppercase;
@@ -815,9 +837,6 @@ a {
 }
 
 .figure-img img {
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
@@ -834,11 +853,6 @@ a {
      object-fit: none;
   -o-object-position: none;
      object-position: none;
-}
-
-.figure-img img:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
 }
 
 .figure-img .new-item {
@@ -867,68 +881,36 @@ a {
 }
 
 .collection-item .collection-img-wrapper img {
-  height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  display: block;
-}
-
-.collection-item .collection-img-wrapper img:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
 }
 
 .blog-img {
   overflow: hidden;
   position: relative;
+  width: 585px;
+  height: 405px;
 }
 
 .blog-img img {
-  max-height: 100%;
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.blog-img img:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
 }
 
 .blog-item-img {
   width: 370px;
   height: 225px;
-  position: relative;
-  overflow: hidden;
 }
 
 .blog-item-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
-  width: 100%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
   -o-object-position: top;
      object-position: top;
-}
-
-.blog-item-img img:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
 }
 
 .primary-right {
@@ -937,19 +919,10 @@ a {
 }
 
 .primary-right img {
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  width: 100%;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.primary-right img:hover {
-  -webkit-transform: scale(1.08);
-          transform: scale(1.08);
 }
 
 @-webkit-keyframes pulse {
@@ -1265,10 +1238,8 @@ a {
 .blog .blog-grid {
   display: -ms-grid;
   display: grid;
-  margin-top: 60px;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
-  grid-gap: 50px;
+  margin: 3.75rem auto 0 !important;
+  grid-gap: 3.125rem;
       grid-template-areas: "img text";
 }
 
@@ -1627,8 +1598,8 @@ a {
   border: none;
 }
 
-.underline .blog {
-  width: 70%;
+.blog-line {
+  width: 70% !important;
 }
 
 .blog-grid {
@@ -1675,5 +1646,28 @@ a {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: fig6;
+}
+
+.masonry-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  margin: 60px auto 0;
+  grid-gap: 20px;
+}
+
+.masonry-gallery .img-container {
+  height: 200px;
+  width: 1fr;
+  background: #666666;
+}
+
+.masonry-gallery .img-container:nth-of-type(2) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
 }
 /*# sourceMappingURL=main.css.map */

@@ -107,6 +107,13 @@ Tools:
 
 ```
 
+```
+13-03-2019
+- lookbook created
+- imgs replaced
+- replaced repetitve code
+
+```
 
 ## Contributors
 

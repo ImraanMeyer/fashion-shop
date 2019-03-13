@@ -24,6 +24,21 @@
     place-content: end;
 }
 
+#container-img {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%; 
+        transition: all .3s;
+        
+    }
+    img:hover {
+        transform: scale(1.09);
+        transition: all .1s;
+    }
+}
+
 .navbar-links {
     font-family: 'Dosis';
     text-transform: uppercase;
@@ -119,9 +134,6 @@ a {
     position: relative;
     overflow: hidden;
     img {
-        height: 100%;
-        width: 100%;
-        max-width: 100%;
         object-fit: cover;
         object-position: top;
         transition: all .2s;
@@ -131,9 +143,6 @@ a {
             object-fit: none;
             object-position: none;
         }
-    }
-    img:hover {
-        transform: scale(1.08);
     }
     .new-item {
         width: 60px;
@@ -161,16 +170,8 @@ a {
         background-color: #666666;
 
         img {
-            height: 100%;
-            width: 100%;
             object-fit: cover; 
             object-position: top;
-            transition: all .2s;
-            transform: scale(1);
-            display: block;
-        }
-        img:hover {
-            transform: scale(1.08);
         }
     }
 }
@@ -178,34 +179,21 @@ a {
 .blog-img {
     overflow: hidden;
     position: relative;
+    width: 585px;
+    height: 405px;
     
     img {
-        max-height: 100%;
-        width: 100%;
         object-fit: cover;
         object-position: center;
-        transform: scale(1);
-        transition: all .2s;
-    }
-    img:hover {
-        transform: scale(1.08);
     }
 }
 
 .blog-item-img {
     width: 370px;
     height: 225px;
-    position: relative;
-    overflow: hidden;
     img {
         object-fit: cover;
-        height: 100%;
-        width: 100%;
-        transition: all .2s;
         object-position: top;
-    }
-    img:hover {
-        transform: scale(1.08);
     }
 }
 
@@ -216,13 +204,7 @@ a {
     position: relative;
     overflow: hidden;
     img {
-        height: 100%;
         object-fit: cover;
         object-position: top;
-        width: 100%;
-        transition: all .2s;
-    }
-    img:hover {
-        transform: scale(1.08);
     }
 }
