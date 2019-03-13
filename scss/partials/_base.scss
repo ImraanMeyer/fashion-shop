@@ -38,6 +38,7 @@ html {
     padding-top: 60px;
 }
 
+
 .no-padding {
     padding: 0 !important;
 }
@@ -99,6 +100,7 @@ html {
         }
 }
 .header {
+    height: 945px !important;
     background: linear-gradient($blackOP , $blackOP ) ,  url(../images/casual.jpg)  !important;
     background-attachment: fixed !important;
     background-size: cover !important;
@@ -256,7 +258,7 @@ html {
         }
         #greyed {
             margin-bottom: 36px;
-            color: $darkgrey;
+            color: #999999 !important;
             font-size: $h5;
         }
         .blog-text-content {
@@ -379,9 +381,15 @@ html {
 }
 .primary-right {
     grid-area: right;
-    height: 490px;
-    width: fit-content;
-    background: #666666;
+
+    .primary-img {
+        height: 490px;
+        width: 600px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
 
 }
 

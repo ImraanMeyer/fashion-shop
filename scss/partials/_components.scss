@@ -123,9 +123,14 @@ a {
         width: 100%;
         max-width: 100%;
         object-fit: cover;
+        object-position: top;
         transition: all .2s;
         transform: scale(1);
         display: block;
+        #third {
+            object-fit: none;
+            object-position: none;
+        }
     }
     img:hover {
         transform: scale(1.08);
@@ -159,7 +164,7 @@ a {
             height: 100%;
             width: 100%;
             object-fit: cover; 
-            object-position: center;
+            object-position: top;
             transition: all .2s;
             transform: scale(1);
             display: block;
@@ -178,9 +183,26 @@ a {
         max-height: 100%;
         width: 100%;
         object-fit: cover;
-        object-position: top;
+        object-position: center;
         transform: scale(1);
         transition: all .2s;
+    }
+    img:hover {
+        transform: scale(1.08);
+    }
+}
+
+.blog-item-img {
+    width: 370px;
+    height: 225px;
+    position: relative;
+    overflow: hidden;
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        transition: all .2s;
+        object-position: top;
     }
     img:hover {
         transform: scale(1.08);

@@ -86,6 +86,7 @@ html {
     color: #a88d7b; }
 
 .header {
+  height: 945px !important;
   background: linear-gradient(#666666be, #666666be), url(../images/casual.jpg) !important;
   background-attachment: fixed !important;
   background-size: cover !important;
@@ -219,7 +220,7 @@ html {
   margin-bottom: 19px; }
 .blog-content .blog-text #greyed {
   margin-bottom: 36px;
-  color: #999999;
+  color: #999999 !important;
   font-size: 15px; }
 .blog-content .blog-text .blog-text-content {
   margin-bottom: 42px;
@@ -310,10 +311,13 @@ html {
     color: #666666; }
 
 .primary-right {
-  grid-area: right;
-  height: 490px;
-  width: fit-content;
-  background: #666666; }
+  grid-area: right; }
+  .primary-right .primary-img {
+    height: 490px;
+    width: 600px; }
+    .primary-right .primary-img img {
+      height: 100%;
+      width: 100%; }
 
 .team-figure {
   width: 270px; }
@@ -544,9 +548,13 @@ a {
     width: 100%;
     max-width: 100%;
     object-fit: cover;
+    object-position: top;
     transition: all .2s;
     transform: scale(1);
     display: block; }
+    .figure-img img #third {
+      object-fit: none;
+      object-position: none; }
   .figure-img img:hover {
     transform: scale(1.08); }
   .figure-img .new-item {
@@ -574,7 +582,7 @@ a {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
     transition: all .2s;
     transform: scale(1);
     display: block; }
@@ -588,10 +596,24 @@ a {
     max-height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: top;
+    object-position: center;
     transform: scale(1);
     transition: all .2s; }
   .blog-img img:hover {
+    transform: scale(1.08); }
+
+.blog-item-img {
+  width: 370px;
+  height: 225px;
+  position: relative;
+  overflow: hidden; }
+  .blog-item-img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+    object-position: top; }
+  .blog-item-img img:hover {
     transform: scale(1.08); }
 
 .primary-right {
@@ -934,6 +956,7 @@ a {
   grid-gap: 29px;
   width: 80%;
   display: grid;
+  place-content: center;
   grid-template-areas: "fig1 fig2 fig3" "fig4 fig5 fig6"; }
   .blog-grid .item1 {
     grid-area: fig1; }

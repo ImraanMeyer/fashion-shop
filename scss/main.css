@@ -127,6 +127,7 @@ html {
 }
 
 .header {
+  height: 945px !important;
   background: -webkit-gradient(linear, left top, left bottom, from(#666666be), to(#666666be)), url(../images/casual.jpg) !important;
   background: linear-gradient(#666666be, #666666be), url(../images/casual.jpg) !important;
   background-attachment: fixed !important;
@@ -325,7 +326,7 @@ html {
 
 .blog-content .blog-text #greyed {
   margin-bottom: 36px;
-  color: #999999;
+  color: #999999 !important;
   font-size: 15px;
 }
 
@@ -460,11 +461,16 @@ html {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: right;
+}
+
+.primary-right .primary-img {
   height: 490px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background: #666666;
+  width: 600px;
+}
+
+.primary-right .primary-img img {
+  height: 100%;
+  width: 100%;
 }
 
 .team-figure {
@@ -814,11 +820,20 @@ a {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   -webkit-transition: all .2s;
   transition: all .2s;
   -webkit-transform: scale(1);
           transform: scale(1);
   display: block;
+}
+
+.figure-img img #third {
+  -o-object-fit: none;
+     object-fit: none;
+  -o-object-position: none;
+     object-position: none;
 }
 
 .figure-img img:hover {
@@ -856,8 +871,8 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  -o-object-position: top;
+     object-position: top;
   -webkit-transition: all .2s;
   transition: all .2s;
   -webkit-transform: scale(1);
@@ -880,8 +895,8 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: center;
+     object-position: center;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all .2s;
@@ -889,6 +904,29 @@ a {
 }
 
 .blog-img img:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.blog-item-img {
+  width: 370px;
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-item-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.blog-item-img img:hover {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
@@ -1599,6 +1637,7 @@ a {
   width: 80%;
   display: -ms-grid;
   display: grid;
+  place-content: center;
       grid-template-areas: "fig1 fig2 fig3" "fig4 fig5 fig6";
 }
 
