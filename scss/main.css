@@ -1677,6 +1677,8 @@ a {
   transition: all .2s;
   -webkit-transform: scale(1);
           transform: scale(1);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
 }
 
 .masonry-gallery .img-container .overlay {
@@ -1685,13 +1687,14 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 0;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .masonry-gallery .img-container .overlay a {
   opacity: 0;
+  color: #666666;
 }
 
 .masonry-gallery .span_1 {
@@ -1708,9 +1711,10 @@ a {
 }
 
 .masonry-gallery .img-container:hover .overlay {
-  background: #ffffff10;
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
+  background: #a88d7b34;
+  -webkit-transition: height  all .4s;
+  transition: height  all .4s;
+  height: 100%;
 }
 
 .masonry-gallery .img-container:hover a {
@@ -1720,5 +1724,7 @@ a {
 .masonry-gallery .img-container:hover img {
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
 }
 /*# sourceMappingURL=main.css.map */
