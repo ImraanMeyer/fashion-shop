@@ -535,12 +535,12 @@
         .overlay {
             position: absolute;  
             // clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);      
-            background: $brownOP;
+            // background: $brownOP;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 0;
-            transition: all .2s;
+            width: 0;
+            height: 100%;
+            transition: all .4s;
             
             a {
             opacity: 0;
@@ -561,9 +561,8 @@
 
     .img-container:hover .overlay {
         background: $overlay;
-        transition: height  all .4s;
-        // width: 100%;
-        height: 100%;
+        transition: width  all .4s;
+        width: 100%;
         // clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
         
     }

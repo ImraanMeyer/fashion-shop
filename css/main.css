@@ -976,12 +976,11 @@ a {
       filter: blur(1px); }
     .masonry-gallery .img-container .overlay {
       position: absolute;
-      background: #a88d7b80;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 0;
-      transition: all .2s; }
+      width: 0;
+      height: 100%;
+      transition: all .4s; }
       .masonry-gallery .img-container .overlay a {
         opacity: 0;
         color: #666666; }
@@ -993,9 +992,9 @@ a {
   .masonry-gallery .span_3 {
     grid-row: span 2; }
   .masonry-gallery .img-container:hover .overlay {
-    background: #a88d7b34;
-    transition: height  all .4s;
-    height: 100%; }
+    background: linear-gradient(to right, #a88d7b34, #666666be);
+    transition: width  all .4s;
+    width: 100%; }
   .masonry-gallery .img-container:hover a {
     opacity: 1; }
   .masonry-gallery .img-container:hover img {
