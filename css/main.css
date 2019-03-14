@@ -992,8 +992,8 @@ a {
   .masonry-gallery .span_3 {
     grid-row: span 2; }
   .masonry-gallery .img-container:hover .overlay {
-    background: linear-gradient(to right, #a88d7b34, #666666be);
-    transition: width  all .4s;
+    background: #a88d7b34;
+    transition: width  all .2s;
     width: 100%; }
   .masonry-gallery .img-container:hover a {
     opacity: 1; }

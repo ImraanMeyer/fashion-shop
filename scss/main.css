@@ -1687,8 +1687,8 @@ a {
   left: 0;
   width: 0;
   height: 100%;
-  -webkit-transition: all .4s;
-  transition: all .4s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .masonry-gallery .img-container .overlay a {
@@ -1711,8 +1711,8 @@ a {
 
 .masonry-gallery .img-container:hover .overlay {
   background: #a88d7b34;
-  -webkit-transition: width  all .4s;
-  transition: width  all .4s;
+  -webkit-transition: width  all .2s;
+  transition: width  all .2s;
   width: 100%;
 }
 
