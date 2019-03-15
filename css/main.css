@@ -987,6 +987,15 @@ a {
     filter: blur(0px); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .top,
+  .header,
+  .feautured,
+  .collection,
+  .blog,
+  .footer {
+    height: fit-content;
+    width: 100%; }
+
   .featured-grid {
     grid-template-areas: "fig1" "fig2" "fig3" !important; }
 
