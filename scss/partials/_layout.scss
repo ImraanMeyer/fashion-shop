@@ -379,6 +379,7 @@
     margin-bottom: 100px;
     grid-gap: 36px;
     display: grid;
+    place-content: center;
     grid-template-areas: 
         "left right";
     .mission-left {
@@ -402,6 +403,7 @@
 
 .contact-box-grid {
     display: grid;
+    place-content: center;
     grid-template-areas:
         "left center right";
     

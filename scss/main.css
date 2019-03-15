@@ -1465,6 +1465,7 @@ a {
   grid-gap: 36px;
   display: -ms-grid;
   display: grid;
+  place-content: center;
       grid-template-areas: "left right";
 }
 
@@ -1492,6 +1493,7 @@ a {
 .contact-box-grid {
   display: -ms-grid;
   display: grid;
+  place-content: center;
       grid-template-areas: "left center right";
 }
 
@@ -1707,4 +1709,18 @@ a {
   -webkit-filter: blur(0px);
           filter: blur(0px);
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .featured-grid {
+        grid-template-areas: "fig1" "fig2" "fig3" !important;
+  }
+  .collection-grid {
+        grid-template-areas: "male" "female" !important;
+  }
+  .blog-grid {
+        grid-template-areas: "img" "text" !important;
+  }
+}
+
+/* Portrait and Landscape */
 /*# sourceMappingURL=main.css.map */
