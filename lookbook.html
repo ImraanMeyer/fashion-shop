@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis" rel="stylesheet">
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
     <section class="top about">
@@ -84,16 +87,18 @@
         <div class="img-container">
             <img src="images/collection-men.jpg" alt="" >
             <section class="overlay">
-
             </section>
         </div>
         
         <div class="img-container" >
-            <img src="images/shirt-blue.jpg" alt="">
+                    <img src="images/shirt-blue.jpg" alt="">
             <section class="overlay">
-                <a href="#">
-                        <i class="fas fa-external-link-alt"></i>
-                        <i class="fas fa-expand"></i>
+                <a href="images/shirt-blue.jpg" rel="prettyPhoto[pp_gal]" title="Open Fullscreen">
+                    <i class="fas fa-expand"></i>
+                </a>
+
+                <a href="lookbook.html" title="Close">
+                        <i class="fas fa-compress"></i>
                 </a>
             </section>
         </div>
@@ -201,6 +206,16 @@
                 
             </section>
         </div>
+
+        <a href="images/shirt-blue.jpg" rel="prettyPhoto[pp_gal]" title="You can add caption to pictures."><img src="images/shirt-blue.jpg" width="60" height="60" alt="Red round shape" /></a>
+
+        <a href="images/shoes.jpg" rel="prettyPhoto[pp_gal]"><img src="images/shoes.jpg" width="60" height="60" alt="Nice building" /></a>
+
+        <a href="images/fullscreen/3.jpg" rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_3.jpg" width="60" height="60" alt="Fire!" /></a>
+
+        <a href="images/fullscreen/4.jpg" rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_4.jpg" width="60" height="60" alt="Rock climbing" /></a>
+
+        <a href="images/fullscreen/5.jpg" rel="prettyPhoto[pp_gal]"><img src="images/thumbnails/t_5.jpg" width="60" height="60" alt="Fly kite, fly!" /></a>
 
 
     </section>
@@ -324,5 +339,6 @@
         </p>
     </section>
     
+    <script src="js/main.js"></script>
 </body>
 </html>
