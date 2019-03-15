@@ -127,7 +127,7 @@ html {
 }
 
 .header {
-  height: 945px !important;
+  height: 945px;
   background: -webkit-gradient(linear, left top, left bottom, from(#666666be), to(#666666be)), url(../images/casual.jpg) !important;
   background: linear-gradient(#666666be, #666666be), url(../images/casual.jpg) !important;
   background-attachment: fixed !important;
@@ -209,20 +209,6 @@ html {
   place-content: center;
 }
 
-.header-text::before {
-  content: '';
-  display: block;
-  height: 2px;
-  background: #a88d7b;
-  width: 50%;
-  margin: 2em auto;
-  position: absolute;
-  top: 24%;
-  -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
-  left: 50%;
-}
-
 .header-text .header-text-title {
   font-family: Dosis;
   font-size: 50px;
@@ -234,7 +220,7 @@ html {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin: 258px auto 40px;
 }
 
 .header-text .header-text-content {
@@ -250,7 +236,6 @@ html {
   letter-spacing: normal;
   text-align: center;
   color: #e6e6e6;
-  margin-bottom: 112px;
 }
 
 .featured-grid .featured-figure {
@@ -744,7 +729,7 @@ html {
 }
 
 .header-text-button {
-  margin: 0 auto;
+  margin: 97px auto 29px;
   width: 150px;
   background: #ffffff;
   border: solid #a88d7b 2px;
@@ -759,7 +744,6 @@ html {
   place-content: center;
   -webkit-transition: all .2s;
   transition: all .2s;
-  margin-bottom: 6%;
 }
 
 .header-text-button:hover {
@@ -804,7 +788,7 @@ a {
 
 .down-arrow {
   position: relative;
-  margin: 0 auto;
+  margin: 282px auto 50px;
   -webkit-transform: translate(-10%, -10%);
           transform: translate(-10%, -10%);
 }
@@ -1031,7 +1015,6 @@ a {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: header;
-  height: 100vh;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "nav" "text";
@@ -1076,7 +1059,6 @@ a {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: text;
-  margin: 6% auto;
   display: -ms-grid;
   display: grid;
       grid-template-areas: "title" "content" "btn" "arrow";

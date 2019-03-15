@@ -35,7 +35,6 @@
     }
     .header {
         grid-area: header;
-        height: 100vh;
 
         display: grid;
         grid-template-areas:
@@ -68,7 +67,6 @@
         }
         .header-text {
             grid-area: text;
-            margin: 6% auto;
 
             display: grid;
             grid-template-areas: 

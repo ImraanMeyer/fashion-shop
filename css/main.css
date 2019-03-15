@@ -86,7 +86,7 @@ html {
     color: #a88d7b; }
 
 .header {
-  height: 945px !important;
+  height: 945px;
   background: linear-gradient(#666666be, #666666be), url(../images/casual.jpg) !important;
   background-attachment: fixed !important;
   background-size: cover !important;
@@ -123,18 +123,6 @@ html {
   display: grid;
   place-content: center; }
 
-.header-text::before {
-  content: '';
-  display: block;
-  height: 2px;
-  background: #a88d7b;
-  width: 50%;
-  margin: 2em auto;
-  position: absolute;
-  top: 24%;
-  transform: translate(-50%, 50%);
-  left: 50%; }
-
 .header-text .header-text-title {
   font-family: Dosis;
   font-size: 50px;
@@ -146,7 +134,7 @@ html {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  margin-bottom: 40px; }
+  margin: 258px auto 40px; }
 .header-text .header-text-content {
   width: 924px;
   margin: 0 auto;
@@ -159,8 +147,7 @@ html {
   line-height: 1.67;
   letter-spacing: normal;
   text-align: center;
-  color: #e6e6e6;
-  margin-bottom: 112px; }
+  color: #e6e6e6; }
 
 .featured-grid .featured-figure {
   width: fit-content;
@@ -490,7 +477,7 @@ html {
   width: 80%; }
 
 .header-text-button {
-  margin: 0 auto;
+  margin: 97px auto 29px;
   width: 150px;
   background: #ffffff;
   border: solid #a88d7b 2px;
@@ -502,8 +489,7 @@ html {
   color: #a88d7b;
   display: grid;
   place-content: center;
-  transition: all .2s;
-  margin-bottom: 6%; }
+  transition: all .2s; }
 
 .header-text-button:hover {
   transform: scale(1.1);
@@ -537,7 +523,7 @@ a {
 
 .down-arrow {
   position: relative;
-  margin: 0 auto;
+  margin: 282px auto 50px;
   transform: translate(-10%, -10%); }
   .down-arrow span {
     display: block;
@@ -653,7 +639,6 @@ a {
 
 .header {
   grid-area: header;
-  height: 100vh;
   display: grid;
   grid-template-areas: "nav" "text"; }
   .header .navbar {
@@ -674,7 +659,6 @@ a {
       place-content: center end; }
   .header .header-text {
     grid-area: text;
-    margin: 6% auto;
     display: grid;
     grid-template-areas: "title" "content" "btn" "arrow"; }
     .header .header-text .header-text-title {

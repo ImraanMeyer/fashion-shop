@@ -61,7 +61,7 @@
 }
 
 .header-text-button {
-    margin: 0 auto;
+    margin: 97px auto 29px;
     width: 150px;
     background: $white2;
     border: solid $brown 2px;
@@ -74,7 +74,6 @@
     display: grid;
     place-content: center;
     transition: all .2s;
-    margin-bottom: 6%;
 }
 .header-text-button:hover {
     transform: scale(1.1);
@@ -111,7 +110,7 @@ a {
 
 .down-arrow{
     position: relative;
-    margin: 0 auto;
+    margin: 282px auto 50px;
     transform: translate(-10%,-10%);
     span {
         display: block;

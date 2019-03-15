@@ -100,7 +100,7 @@ html {
         }
 }
 .header {
-    height: 945px !important;
+    height: 945px;
     background: linear-gradient($blackOP , $blackOP ) ,  url(../images/casual.jpg)  !important;
     background-attachment: fixed !important;
     background-size: cover !important;
@@ -157,18 +157,18 @@ html {
     }
 }
 
-.header-text::before {
-    content: '';
-    display: block;
-    height: 2px;
-    background: #a88d7b;
-    width: 50%;
-    margin: 2em auto;
-    position: absolute;
-    top: 24%;
-    transform: translate(-50%, 50%);
-    left: 50%;
-}
+// .header-text::before {
+//     content: '';
+//     display: block;
+//     height: 2px;
+//     background: #a88d7b;
+//     width: 50%;
+//     margin: 2em auto;
+//     position: absolute;
+//     top: 24%;
+//     transform: translate(-50%, 50%);
+//     left: 50%;
+// }
 
 .header-text {
     .header-text-title {
@@ -182,8 +182,7 @@ html {
         text-align: center;
         color: #ffffff;
         text-transform: uppercase;
-        
-        margin-bottom: 40px;
+        margin: 258px auto 40px;    
     }
     .header-text-content { 
         width: 924px;
@@ -198,7 +197,6 @@ html {
         letter-spacing: normal;
         text-align: center;
         color: #e6e6e6;
-        margin-bottom: 112px;
     }
 }
 
