@@ -180,13 +180,13 @@ html {
         line-height: 0.96;
         letter-spacing: normal;
         text-align: center;
-        color: #ffffff;
+        color: $white2;
         text-transform: uppercase;
-        margin: 258px auto 40px;    
+        margin: 258px auto 0;    
     }
     .header-text-content { 
         width: 924px;
-        margin: 0 auto;
+        margin: 40px auto 0;
         text-align: center;
         font-family: 'Source Sans Pro';
         font-size: 15px;
@@ -429,7 +429,7 @@ html {
 }
 
 .mission-left {
-    height: 490px;
+    height: 490px !important;
     width: 600px;
     background: #666666;
     width: fit-content;
