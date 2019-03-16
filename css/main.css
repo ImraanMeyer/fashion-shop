@@ -123,31 +123,33 @@ html {
   display: grid;
   place-content: center; }
 
-.header-text .header-text-title {
-  font-family: Dosis;
-  font-size: 50px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.96;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  margin: 258px auto 0; }
-.header-text .header-text-content {
-  width: 924px;
-  margin: 40px auto 0;
-  text-align: center;
-  font-family: 'Source Sans Pro';
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: #e6e6e6; }
+.header-text {
+  place-content: center; }
+  .header-text .header-text-title {
+    font-family: Dosis;
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.96;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 258px auto 0; }
+  .header-text .header-text-content {
+    width: 924px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #e6e6e6; }
 
 .featured-grid .featured-figure {
   width: fit-content;
@@ -365,47 +367,49 @@ html {
     display: grid;
     place-content: center; }
 
-.contact-form .form-grid {
-  max-width: 80%;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-areas: "name email" "phone subject" "text text" "btn ."; }
-  .contact-form .form-grid input {
-    padding: 22px;
-    height: 50px;
-    color: #888888;
-    border: solid 1px #e6e6e6;
-    background: #ffffff;
-    outline: none; }
-  .contact-form .form-grid #form-name {
-    grid-area: name; }
-  .contact-form .form-grid #form-email {
-    grid-area: email; }
-  .contact-form .form-grid #form-number {
-    grid-area: phone; }
-  .contact-form .form-grid #form-subject {
-    grid-area: subject; }
-  .contact-form .form-grid #form-text {
-    grid-area: text;
-    height: 150px;
-    color: #888888;
-    padding: 22px;
-    border: solid 1px #e6e6e6;
-    background: #ffffff;
-    outline: none; }
-  .contact-form .form-grid #form-button {
-    grid-area: btn;
-    width: 155px;
-    height: 40px;
-    background: #a88d7b;
-    color: #ffffff;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+.contact-form {
+  margin-top: 60px; }
+  .contact-form .form-grid {
+    max-width: 80%;
+    margin: 0 auto;
     display: grid;
-    place-content: center;
-    margin-bottom: 100px; }
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "name email" "phone subject" "text text" "btn ."; }
+    .contact-form .form-grid input {
+      padding: 22px;
+      height: 50px;
+      color: #888888;
+      border: solid 1px #e6e6e6;
+      background: #ffffff;
+      outline: none; }
+    .contact-form .form-grid #form-name {
+      grid-area: name; }
+    .contact-form .form-grid #form-email {
+      grid-area: email; }
+    .contact-form .form-grid #form-number {
+      grid-area: phone; }
+    .contact-form .form-grid #form-subject {
+      grid-area: subject; }
+    .contact-form .form-grid #form-text {
+      grid-area: text;
+      height: 150px;
+      color: #888888;
+      padding: 22px;
+      border: solid 1px #e6e6e6;
+      background: #ffffff;
+      outline: none; }
+    .contact-form .form-grid #form-button {
+      grid-area: btn;
+      width: 155px;
+      height: 40px;
+      background: #a88d7b;
+      color: #ffffff;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      display: grid;
+      place-content: center;
+      margin-bottom: 100px; }
 
 .blog-item {
   margin-bottom: 60px; }
@@ -735,7 +739,8 @@ a {
   background: #f9f9f9; }
   .blog .blog-grid {
     display: grid;
-    margin: 3.75rem auto 0 !important;
+    margin: 3.75rem auto 0;
+    place-content: center;
     grid-gap: 3.125rem;
     grid-template-areas: "img text"; }
     .blog .blog-grid .blog-img {
@@ -920,24 +925,24 @@ a {
 .blog-line {
   width: 70% !important; }
 
-.blog-grid {
+.blog-page-grid {
   margin: 60px auto 100px;
   grid-gap: 29px;
   width: 80%;
   display: grid;
   place-content: center;
   grid-template-areas: "fig1 fig2 fig3" "fig4 fig5 fig6"; }
-  .blog-grid .item1 {
+  .blog-page-grid .item1 {
     grid-area: fig1; }
-  .blog-grid .item2 {
+  .blog-page-grid .item2 {
     grid-area: fig2; }
-  .blog-grid .item3 {
+  .blog-page-grid .item3 {
     grid-area: fig3; }
-  .blog-grid .item4 {
+  .blog-page-grid .item4 {
     grid-area: fig4; }
-  .blog-grid .item5 {
+  .blog-page-grid .item5 {
     grid-area: fig5; }
-  .blog-grid .item6 {
+  .blog-page-grid .item6 {
     grid-area: fig6; }
 
 .masonry-gallery {
@@ -987,23 +992,42 @@ a {
     filter: blur(0px); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .main-grid {
+    width: min-content; }
+
   .top,
   .header,
-  .feautured,
+  .featured,
   .collection,
   .blog,
   .footer {
-    height: fit-content;
+    height: fit-content !important;
     width: 100%; }
 
-  .featured-grid {
-    grid-template-areas: "fig1" "fig2" "fig3" !important; }
+  .featured {
+    height: fit-content; }
+    .featured .featured-grid {
+      margin: 70px auto 60px;
+      grid-template-areas: "fig1" "fig2" "fig3" !important; }
 
   .collection-grid {
+    margin: 70px auto 60px;
     grid-template-areas: "male" "female" !important; }
 
+  .banner-content {
+    margin: 0 auto !important; }
+
   .blog-grid {
-    grid-template-areas: "img" "text" !important; } }
+    margin: 70px auto 60px !important;
+    grid-template-areas: "img" "text" !important; }
+
+  .footer-grid {
+    padding-top: 60px;
+    margin: 0 auto 60px;
+    display: grid;
+    place-content: center;
+    grid-gap: 10%;
+    grid-template-areas: "sec1" "sec2"; } }
 /* Portrait and Landscape */
 
 /*# sourceMappingURL=main.css.map */

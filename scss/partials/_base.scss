@@ -171,6 +171,7 @@ html {
 // }
 
 .header-text {
+    place-content: center;
     .header-text-title {
         font-family: Dosis;
         font-size: 50px;
@@ -483,7 +484,7 @@ html {
 }
 
 .contact-form {
-
+    margin-top: 60px;
     .form-grid {
         max-width: 80%;
         margin: 0 auto;

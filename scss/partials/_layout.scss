@@ -182,7 +182,8 @@
         background: $white3;
         .blog-grid {
             display: grid;
-            margin: 3.75rem auto 0 !important;
+            margin: 3.75rem auto 0 ;
+            place-content: center;
             grid-gap: 3.125rem;
             grid-template-areas: 
                 "img text";
@@ -475,7 +476,7 @@
     width: 70% !important;
 }
 
-.blog-grid {
+.blog-page-grid {
     margin: 60px auto 100px;
     grid-gap: 29px;
     width: 80%;

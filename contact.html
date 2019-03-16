@@ -125,6 +125,8 @@
         </article>
     </section>
 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.752589497529!2d18.495921634730852!3d-33.97289519406097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc4335e321a60d%3A0x3bbb63d91267b4bc!2s5th+Ave%2C+Cape+Town%2C+7700!5e0!3m2!1sen!2sza!4v1552720402219" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+
     <section class="contact-form">
         <form action="post" class="form-grid">
             <input type="text" name="name" placeholder="Your Name" id="form-name"> 
@@ -260,5 +262,19 @@
             </p>
         </section>
     
+
+    <script>
+    function myMap() {
+    var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
 </body>
 </html>
