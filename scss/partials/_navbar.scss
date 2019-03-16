@@ -1,0 +1,171 @@
+a {
+    color: #fff;
+  }
+  
+
+  /* navbar-mobile */
+  .dark {
+      color: $black2 !important;
+  }
+
+  .navbar-mobile {
+    position: relative;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .navbar-mobile ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    // background-color: #fff;
+  }
+  
+  .navbar-mobile li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar-mobile li a:hover,
+  .navbar-mobile .menu-btn:hover {
+    // background-color: #f4f4f4;
+  }
+  
+  .navbar-mobile .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .navbar-mobile .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .navbar-mobile .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .navbar-mobile .menu-icon .navicon {
+    background: $white2;
+    display: block;
+    outline: none;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+
+  .menu-icon:hover {
+      background: #fff0;
+  }
+  
+  .navbar-mobile .menu-icon .navicon:before,
+  .navbar-mobile .menu-icon .navicon:after {
+    background: $white2;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .navbar-mobile .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .navbar-mobile .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .navbar-mobile .menu-btn {
+    display: none;
+  }
+  
+  .navbar-mobile .menu-btn:checked ~ .menu {
+    max-height: 340px;
+  }
+  
+  .navbar-mobile .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .navbar-mobile .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .navbar-mobile .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .navbar-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .navbar-mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  .front-container {
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: 1fr 2em 2em auto;
+      grid-template-areas:
+        "logo icon1 icon2 btn" ;
+    img {
+        grid-area: logo;
+    }
+    .icon1 {
+        grid-area: icon1;
+        display: grid;
+        place-content: center end;
+    }
+    .icon2 {
+        grid-area: icon2;
+        display: grid;
+        place-content: center end;
+    }
+    .icons {
+        padding: 10px 3em;
+    }
+    .menu-icon {
+        grid-area: btn;
+        margin: 0 0 0 4em;
+        display: grid;
+        place-content: center end;
+    }
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .navbar-mobile li {
+      float: left;
+    }
+    .navbar-mobile li a {
+      padding: 20px 30px;
+    }
+    .navbar-mobile .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .navbar-mobile .menu-icon {
+      display: none;
+    }
+  }
+  
