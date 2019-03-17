@@ -8,6 +8,12 @@
       width: auto;
     }
 
+    .top-content {
+      grid-template-columns: none !important;
+      grid-gap: 1em !important;
+      grid-template-areas: "text text" "menus icons" !important;
+    }
+
     .navbar {
       display: none !important;
     }

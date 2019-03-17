@@ -1843,8 +1843,8 @@ a {
   display: -ms-grid;
   display: grid;
   grid-gap: 1em;
-  -ms-grid-columns: 1fr 2em 2em auto;
-      grid-template-columns: 1fr 2em 2em auto;
+  -ms-grid-columns: 56vw 1em 1em 4em;
+      grid-template-columns: 56vw 1em 1em 4em;
       grid-template-areas: "logo icon1 icon2 btn";
 }
 
@@ -1906,6 +1906,12 @@ a {
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
   .main-grid {
     width: auto;
+  }
+  .top-content {
+    -ms-grid-columns: none !important;
+        grid-template-columns: none !important;
+    grid-gap: 1em !important;
+        grid-template-areas: "text text" "menus icons" !important;
   }
   .navbar {
     display: none !important;
