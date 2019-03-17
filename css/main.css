@@ -627,7 +627,7 @@ a {
 .top {
   grid-area: top;
   background: #2d2827;
-  height: 3.3125rem; }
+  height: 1.1%; }
   .top .top-content {
     display: grid;
     margin: 0 auto;
@@ -674,11 +674,11 @@ a {
       grid-area: arrow; }
 
 .featured {
-  height: 44rem;
+  height: 15.6%;
   grid-area: feat;
   background: #f5f5f5; }
   .featured .featured-grid {
-    margin-top: 70px;
+    margin-top: 9.9%;
     place-content: center;
     grid-gap: 2em;
     display: grid;
@@ -1011,14 +1011,14 @@ a {
 
 .navbar-mobile li a {
   display: block;
-  padding: 20px 20px;
+  padding: 1em;
+  text-transform: uppercase;
   text-decoration: none; }
 
 .navbar-mobile .logo {
   display: block;
   float: left;
   font-size: 2em;
-  padding: 10px 20px;
   text-decoration: none; }
 
 /* menu */
@@ -1103,7 +1103,6 @@ a {
     padding: 10px 3em; }
   .front-container .menu-icon {
     grid-area: btn;
-    margin: 0 0 0 4em;
     display: grid;
     place-content: center end; }
 
@@ -1124,7 +1123,7 @@ a {
     display: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
   .main-grid {
-    width: min-content; }
+    width: auto; }
 
   .navbar {
     display: none !important; }
@@ -1147,21 +1146,39 @@ a {
   .collection-grid {
     margin: 70px auto 60px;
     grid-template-areas: "male" "female" !important; }
+    .collection-grid .collection-img-wrapper {
+      width: auto; }
 
   .banner-content {
-    margin: 0 auto !important; }
+    margin: 0 auto !important;
+    width: auto !important; }
+    .banner-content .banner-title {
+      line-height: normal !important; }
 
   .blog-grid {
     margin: 70px auto 60px !important;
     grid-template-areas: "img" "text" !important; }
+    .blog-grid .blog-img {
+      width: auto !important; }
+    .blog-grid .blog-text-content {
+      width: auto !important;
+      height: auto !important; }
 
   .footer-grid {
-    padding-top: 60px;
-    margin: 0 auto 60px;
+    padding: 60px 0;
     display: grid;
     place-content: center;
     grid-gap: 2 0%;
     grid-template-areas: "sec1" "sec2" !important; }
+    .footer-grid .footer-left-section {
+      grid-area: sec1;
+      display: grid;
+      place-items: center !important; }
+    .footer-grid .footer-right-section {
+      grid-template-areas: "links shop" "ig ig" !important; }
+
+  .bottom {
+    text-align: center !important; }
 
   .header-text-title {
     margin: 110px auto 0 !important;

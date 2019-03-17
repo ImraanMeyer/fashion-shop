@@ -5,7 +5,7 @@
 
     // H O M E  P A G E
     .main-grid {
-      width: min-content;
+      width: auto;
     }
 
     .navbar {
@@ -36,24 +36,56 @@
     .collection-grid {
         margin: 70px auto 60px;
         grid-template-areas: "male" "female" !important;
+
+        .collection-img-wrapper {
+          width: auto;
+        }
     }
 
     .banner-content {
       margin: 0 auto !important;
+      width: auto !important;
+      .banner-title {
+        line-height: normal !important;
+      }
     }
 
     .blog-grid {
         margin: 70px auto 60px !important;
         grid-template-areas: "img" "text" !important;
+
+        
+        .blog-img {
+          width: auto !important;
+        }
+        .blog-text-content {
+          width: auto !important;
+          height: auto !important;
+        }
+        
     }
 
     .footer-grid {
-      padding-top: 60px;
-      margin: 0 auto 60px;
+      padding: 60px 0;
+      // margin: 0 auto 60px;
       display: grid;
       place-content: center;
       grid-gap: 2 0%;
       grid-template-areas: "sec1" "sec2" !important;
+
+      .footer-left-section {
+        grid-area: sec1;
+        display: grid;
+        place-items: center !important;
+    }
+      .footer-right-section {
+        grid-template-areas: "links shop" "ig ig" !important;
+      }
+  
+  }
+
+  .bottom {
+    text-align: center !important;
   }
 
   .header-text-title {
@@ -66,7 +98,7 @@
 
   // A B O U T  P A G E
 
-  
+
     
 
 }

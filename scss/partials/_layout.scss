@@ -13,7 +13,7 @@
     .top {
         grid-area: top;
         background: $banners;
-        height: 3.3125rem;
+        height: 1.1%;
         .top-content {
             display: grid;
             margin: 0 auto;
@@ -90,11 +90,11 @@
         }
     }
     .featured {
-        height: 44rem;
+        height: 15.6%;
         grid-area: feat;
         background: $white1;
         .featured-grid {
-            margin-top: 70px; 
+            margin-top: 9.9%; 
             place-content: center;
             grid-gap: 2em;
             display: grid;
