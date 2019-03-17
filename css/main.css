@@ -995,8 +995,14 @@ a {
   color: #fff; }
 
 /* navbar-mobile */
-.dark {
+.dark a,
+.dark .menu-icon,
+.dark li {
   color: #666666 !important; }
+.dark .navicon,
+.dark .navicon:after,
+.dark .navicon:before {
+  background: #666666 !important; }
 
 .navbar-mobile {
   position: relative;
@@ -1072,7 +1078,7 @@ a {
   max-height: 340px; }
 
 .navbar-mobile .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent; }
+  background: transparent !important; }
 
 .navbar-mobile .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg); }
@@ -1172,7 +1178,8 @@ a {
       height: auto !important; }
 
   .footer-grid {
-    padding: 60px 0;
+    padding-top: 60px;
+    margin: 0 auto 60px;
     display: grid;
     place-content: center;
     grid-gap: 2 0%;
@@ -1192,13 +1199,35 @@ a {
     background: none; }
 
   .header-text-content {
-    width: auto !important; } }
+    width: auto !important; }
+
+  .about {
+    display: none !important; }
+
+  .primary-grid {
+    grid-template-rows: none;
+    grid-template-columns: none;
+    grid-template-areas: "left" "right"; }
+    .primary-grid .primary-left p {
+      width: auto !important; }
+    .primary-grid .primary-right .primary-img {
+      width: auto !important; }
+
+  .team-grid {
+    grid-template-columns: none !important;
+    grid-template-areas: "fig1" "fig2" "fig3" "fig4 " !important; }
+
+  .what-we-do-grid {
+    grid-template-areas: "left" "right" !important; }
+    .what-we-do-grid .mission-right p {
+      width: auto !important; } }
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .navbar-mobile {
     display: none !important; } }
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1440px) {
-  .navbar-mobile {
+  .navbar-mobile,
+  .mobile-top {
     display: none !important; } }
 
 /*# sourceMappingURL=main.css.map */

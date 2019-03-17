@@ -5,9 +5,19 @@ a {
 
   /* navbar-mobile */
   .dark {
+    a,
+    .menu-icon,
+    li {
       color: $black2 !important;
-  }
+    }
 
+    
+    .navicon,
+    .navicon:after,
+    .navicon:before {
+      background: $black2 !important;
+    }
+  }
   .navbar-mobile {
     position: relative;
     width: 100%;
@@ -104,7 +114,7 @@ a {
   }
   
   .navbar-mobile .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
+    background: transparent !important;
   }
   
   .navbar-mobile .menu-btn:checked ~ .menu-icon .navicon:before {
