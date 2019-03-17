@@ -76,8 +76,7 @@
     }
 
     .footer-grid {
-      padding-top: 60px ;
-      margin: 0 auto 60px;
+      padding: 60px 1em;
       display: grid;
       place-content: center;
       grid-gap: 2 0%;
@@ -142,8 +141,13 @@
     }
   }
 
-    
+  // B L O G  P A G E
 
+  .blog-page-grid {
+    grid-template-areas:
+        "fig1" "fig2" "fig3"
+        "fig4" "fig5" "fig6" !important;
+  }
 }
 
 

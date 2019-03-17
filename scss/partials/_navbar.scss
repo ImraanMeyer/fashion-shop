@@ -1,7 +1,6 @@
 a {
     color: #fff;
   }
-  
 
   /* navbar-mobile */
   .dark {
@@ -79,10 +78,6 @@ a {
     transition: background .2s ease-out;
     width: 18px;
   }
-
-  .menu-icon:hover {
-      background: #fff0;
-  }
   
   .navbar-mobile .menu-icon .navicon:before,
   .navbar-mobile .menu-icon .navicon:after {
@@ -113,6 +108,8 @@ a {
     max-height: 340px;
   }
   
+  
+
   .navbar-mobile .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent !important;
   }
@@ -133,7 +130,7 @@ a {
   .front-container {
       display: grid;
       grid-gap: 1em;
-      grid-template-columns: 56vw 1em 1em 4em;
+      grid-template-columns: 56vw 1em 1em 1fr;
       grid-template-areas:
         "logo icon1 icon2 btn" ;
     img {
@@ -149,9 +146,7 @@ a {
         display: grid;
         place-content: center end;
     }
-    .icons {
-        padding: 10px 3em;
-    }
+    
     .menu-icon {
         grid-area: btn;
         display: grid;
