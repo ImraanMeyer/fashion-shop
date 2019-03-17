@@ -1930,6 +1930,9 @@ a {
     margin: 70px auto 60px;
         grid-template-areas: "fig1" "fig2" "fig3" !important;
   }
+  .featured .featured-grid .figure-img {
+    width: auto !important;
+  }
   .collection-grid {
     margin: 70px auto 60px;
         grid-template-areas: "male" "female" !important;

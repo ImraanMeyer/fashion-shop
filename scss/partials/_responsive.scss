@@ -29,6 +29,10 @@
         margin: 70px auto 60px;
         grid-template-areas: 
         "fig1" "fig2" "fig3" !important;
+
+        .figure-img {
+          width: auto !important;
+        }
       }
     }
     
