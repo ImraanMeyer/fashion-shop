@@ -1131,6 +1131,9 @@ a {
     grid-gap: 1em !important;
     grid-template-areas: "text text" "menus icons" !important; }
 
+  #light {
+    background: #eeeeee !important; }
+
   .navbar {
     display: none !important; }
 
@@ -1217,7 +1220,19 @@ a {
       width: auto !important; }
 
   .blog-page-grid {
-    grid-template-areas: "fig1" "fig2" "fig3" "fig4" "fig5" "fig6" !important; } }
+    grid-template-areas: "fig1" "fig2" "fig3" "fig4" "fig5" "fig6" !important; }
+
+  .contact-box-grid {
+    grid-template-areas: "left" "center" "right" !important; }
+
+  .form-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "name" "email" "phone" "subject" "text" "btn" !important; }
+
+  .masonry-gallery {
+    grid-template-columns: 1fr !important;
+    margin: 60px auto !important;
+    grid-gap: .2em !important; } }
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .navbar-mobile {
