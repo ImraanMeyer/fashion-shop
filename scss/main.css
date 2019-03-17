@@ -1882,7 +1882,8 @@ a {
   grid-area: btn;
   display: -ms-grid;
   display: grid;
-  place-content: center end;
+  margin: 0 1em;
+  place-content: center;
 }
 
 /* 48em = 768px */

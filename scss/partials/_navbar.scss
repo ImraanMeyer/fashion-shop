@@ -38,11 +38,6 @@ a {
     text-decoration: none;
   }
   
-  .navbar-mobile li a:hover,
-  .navbar-mobile .menu-btn:hover {
-    // background-color: #f4f4f4;
-  }
-  
   .navbar-mobile .logo {
     display: block;
     float: left;
@@ -150,7 +145,8 @@ a {
     .menu-icon {
         grid-area: btn;
         display: grid;
-        place-content: center end;
+        margin: 0 1em;
+        place-content: center;
     }
   }
   
