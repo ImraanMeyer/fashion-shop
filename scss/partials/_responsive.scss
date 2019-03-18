@@ -4,8 +4,9 @@
   and (-webkit-min-device-pixel-ratio: 2) {
 
     // H O M E  P A G E
-    .main-grid {
-      width: auto;
+    .main-grid,
+    .about-grid {
+      width: 100% !important;
     }
 
     .top-content {
@@ -80,7 +81,7 @@
     }
 
     .footer-grid {
-      padding: 60px 1em;
+      padding: 60px 0 !important;
       display: grid;
       place-content: center;
       grid-gap: 2 0%;
@@ -158,6 +159,9 @@
 
   .contact-box-grid {
     grid-template-areas: "left" "center" "right" !important;
+     .box {
+       width: auto !important;
+     }
   }
   .form-grid {
     grid-template-columns: 1fr !important;

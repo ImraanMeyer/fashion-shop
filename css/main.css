@@ -1105,7 +1105,6 @@ a {
   .front-container .menu-icon {
     grid-area: btn;
     display: grid;
-    margin: 0 1em;
     place-content: center; }
 
 /* 48em = 768px */
@@ -1124,8 +1123,9 @@ a {
   .navbar-mobile .menu-icon {
     display: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
-  .main-grid {
-    width: auto; }
+  .main-grid,
+  .about-grid {
+    width: 100% !important; }
 
   .top-content {
     grid-template-columns: none !important;
@@ -1177,7 +1177,7 @@ a {
       height: auto !important; }
 
   .footer-grid {
-    padding: 60px 1em;
+    padding: 60px 0 !important;
     display: grid;
     place-content: center;
     grid-gap: 2 0%;
@@ -1225,6 +1225,8 @@ a {
 
   .contact-box-grid {
     grid-template-areas: "left" "center" "right" !important; }
+    .contact-box-grid .box {
+      width: auto !important; }
 
   .form-grid {
     grid-template-columns: 1fr !important;
