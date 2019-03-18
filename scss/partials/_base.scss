@@ -108,6 +108,8 @@ html {
     background-repeat: no-repeat !important;
 }
 .navbar {
+    display: grid;
+    place-content: center;
     .fas {
         color: $white2;
     }
@@ -540,6 +542,10 @@ html {
             margin-bottom: 100px;
         }
     }
+}
+
+.map {
+    margin: 0 auto 60px;
 }
 
 
