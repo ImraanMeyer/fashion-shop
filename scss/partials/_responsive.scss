@@ -21,6 +21,7 @@
 
     .navbar {
       display: none !important;
+      -webkit-appearance: none;
     }
     
     .top,
@@ -159,6 +160,10 @@
 
   .contact-box-grid {
     grid-template-areas: "left" "center" "right" !important;
+
+    .box {
+      width: auto !important;
+    }
   }
   .form-grid {
     grid-template-columns: 1fr !important;
@@ -185,6 +190,7 @@
 
     .about {
       display: none !important;
+      -webkit-appearance: none ;
     }
     #light {
       background: #eeeeee !important;
@@ -352,10 +358,11 @@
 
 @media only screen 
   and (min-device-width: 1025px)
-  and (max-device-width: 1440px) {
+  and (max-device-width: 1700px) {
     
     .navbar-mobile,
     .mobile-top {
       display: none !important;
+      -webkit-appearance: none;
     }
 }
