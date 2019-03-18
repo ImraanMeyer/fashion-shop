@@ -954,7 +954,7 @@ a {
 .masonry-gallery {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(5, 0.2fr);
+  grid-template-columns: repeat(3, 33%);
   margin: 60px auto 100px;
   grid-gap: 20px; }
   .masonry-gallery .img-container {
@@ -981,12 +981,14 @@ a {
         opacity: 0;
         color: #666666; }
   .masonry-gallery .span_1 {
-    grid-column: span 2;
+    grid-column: span 0;
     grid-row: span 2; }
   .masonry-gallery .span_2 {
-    grid-column: span 2; }
+    grid-column: span 1fr; }
   .masonry-gallery .span_3 {
     grid-row: span 2; }
+  .masonry-gallery .span_4 {
+    grid-column: 2; }
   .masonry-gallery .img-container:hover .overlay {
     background: #a88d7b34;
     transition: width  all .2s;

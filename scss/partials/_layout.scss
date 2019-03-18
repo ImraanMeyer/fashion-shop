@@ -512,7 +512,7 @@
 .masonry-gallery {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(5, 0.2fr);
+    grid-template-columns: repeat(3, 33.33%);
     margin: 60px auto 100px;
     grid-gap: 20px;
 
@@ -534,8 +534,7 @@
             filter: blur(1px);
         }
         .overlay {
-            position: absolute;   
-            // background: $brownOP;
+            position: absolute;
             top: 0;
             left: 0;
             width: 0;
@@ -549,14 +548,17 @@
         }
     }
     .span_1 {
-        grid-column: span 2;
+        grid-column: span 0;
         grid-row: span 2;
     }
     .span_2 {
-        grid-column: span 2;
+        grid-column: span 1fr;
     }
     .span_3 {
         grid-row: span 2;
+    }
+    .span_4 {
+        grid-column: 2;
     }
 
     .img-container:hover .overlay {
