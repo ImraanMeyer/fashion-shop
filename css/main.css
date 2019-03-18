@@ -954,7 +954,7 @@ a {
 .masonry-gallery {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 1fr);
   margin: 60px auto 100px;
   grid-gap: 20px; }
   .masonry-gallery .img-container {

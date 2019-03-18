@@ -1655,8 +1655,8 @@ a {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: (33.33%)[3];
-      grid-template-columns: repeat(3, 33.33%);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   margin: 60px auto 100px;
   grid-gap: 20px;
 }
