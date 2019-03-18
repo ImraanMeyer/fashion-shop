@@ -501,12 +501,13 @@ html {
   transition: all .2s; }
 
 .header-text-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  width: 160px;
   background: #a88d7b;
   color: #ffffff;
   border: solid #ffffff 2px;
   box-shadow: 0 0 0 10px #a88d7b80;
-  transition: all 0.2s; }
+  transition: width 0.2s; }
 
 .banner-button {
   margin-top: 15.8% !important;
@@ -998,6 +999,9 @@ a {
   .masonry-gallery .img-container:hover img {
     transform: scale(1.08);
     filter: blur(0px); }
+
+.pp_social {
+  display: none !important; }
 
 a {
   color: #fff; }

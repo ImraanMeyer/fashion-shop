@@ -75,12 +75,13 @@
     transition: all .2s;
 }
 .header-text-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    width: 160px;
     background: $buttons;
     color: $white2;
     border: solid $white2 2px;
     box-shadow: 0 0 0 10px $brownOP;
-    transition: all .2s ;
+    transition: width .2s ;
 }
 
 .banner-button {
