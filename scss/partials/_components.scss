@@ -60,7 +60,7 @@
 }
 
 .header-text-button {
-    margin: 88px auto 50px;
+    margin: 72px auto 50px;
     width: 150px;
     background: $white2;
     border: solid $brown 2px;
@@ -110,7 +110,7 @@ a {
 
 .down-arrow{
     position: relative;
-    margin: 4px auto 50px !important;
+    margin: -4px auto 50px !important;
     transform: translate(-10%,-10%);
     span {
         display: block;
@@ -214,7 +214,7 @@ a {
     position: fixed;
     transition: all .2s;
     bottom: 2%;
-    left: 90%;
+    left: 96%;
     opacity: 0;
 
     a {

@@ -564,3 +564,26 @@ html {
         }
     }
 }
+
+// S H O P  P A G E
+
+.page-top {
+    height: 91px;
+    display: grid;
+    max-width: 80%;
+    margin: 0 auto;
+    grid-template-areas: 
+        "left right";
+    .top-left {
+        grid-area: left;
+        display: grid;
+        place-content: center start;
+    }
+    .top-right {
+        grid-area: right;
+        display: grid;
+        place-content: center end;
+        grid-template-columns: repeat(2, auto);
+        
+    }
+}

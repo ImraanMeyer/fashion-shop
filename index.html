@@ -12,8 +12,9 @@
     <link rel="icon" type="image/ico" href="images/icon.ico">
 </head>
 <body>
+    <div id="top"></div>
     <section class="main-grid">
-        <section class="top" id="top">
+        <section class="top" >
             <section class="top-content">
                 <acrticle class="widgets-left">
                     <!-- language & currency float left -->
@@ -267,23 +268,13 @@
                     
                     <section class="footer-right-section">
                         <article class="footer-links">
-                            <h4 class="right-title">
-                                LINKS
-                            </h4>  
+                            <h4 class="right-title">LINKS</h4>  
                             
                             <ul>
-                                <li>
-                                    Products
-                                </li>
-                                <li>
-                                    Featured
-                                </li>
-                                <li>
-                                    Privacy Policy
-                                </li>
-                                <li>
-                                    Blog
-                                </li>
+                                <li>Products</li>
+                                <li>Featured</li>
+                                <li>Privacy Policy</li>
+                                <li>Blog</li>
                             </ul>
                         </article>
 
@@ -293,18 +284,10 @@
                             </h4>  
                             
                             <ul>
-                                <li>
-                                    Men
-                                </li>
-                                <li>
-                                    Woman
-                                </li>
-                                <li>
-                                    Catalog
-                                </li>
-                                <li>
-                                    Support
-                                </li>
+                                <li>Men</li>
+                                <li>Woman</li>
+                                <li>Catalog</li>
+                                <li>Support</li>
                             </ul>
                         </article>
 
@@ -369,17 +352,6 @@
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-
-  <script>
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 100) {
-                $(".scroll-top").css({"opacity" : "1"})
-            } else {
-                $(".scroll-top").css({"opacity" : "0"})
-            }
-        })
-    })
-  </script>
+    <script src="js/scroll-top.js"></script>
 </body>
 </html>

@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis" rel="stylesheet">
 </head>
 <body>
+    <div id="top"></div>
     <section class="top about">
         <section class="top-content" id="inner" id="top">
             <acrticle class="widgets-left">
@@ -323,21 +324,15 @@
         </section>
     
         <div class="scroll-top">
-            <a href="#top"> UP </a>
+            <a href="#top">  ↑ </a>
         </div>
 
-    <script>
-    function myMap() {
-    var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-    
+    <script src="js/main.js"></script>
+    <script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
     </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-
+    <script src="js/scroll-top.js"></script>
 </body>
 </html>

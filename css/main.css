@@ -434,6 +434,22 @@ html {
     color: #a88d7b;
     text-transform: capitalize; }
 
+.page-top {
+  height: 91px;
+  display: grid;
+  max-width: 80%;
+  margin: 0 auto;
+  grid-template-areas: "left right"; }
+  .page-top .top-left {
+    grid-area: left;
+    display: grid;
+    place-content: center start; }
+  .page-top .top-right {
+    grid-area: right;
+    display: grid;
+    place-content: center end;
+    grid-template-columns: repeat(2, auto); }
+
 .top-select {
   position: relative;
   outline: none;
@@ -485,7 +501,7 @@ html {
   width: 80%; }
 
 .header-text-button {
-  margin: 88px auto 50px;
+  margin: 72px auto 50px;
   width: 150px;
   background: #ffffff;
   border: solid #a88d7b 2px;
@@ -532,7 +548,7 @@ a {
 
 .down-arrow {
   position: relative;
-  margin: 4px auto 50px !important;
+  margin: -4px auto 50px !important;
   transform: translate(-10%, -10%); }
   .down-arrow span {
     display: block;
@@ -612,7 +628,7 @@ a {
   position: fixed;
   transition: all .2s;
   bottom: 2%;
-  left: 90%;
+  left: 96%;
   opacity: 0; }
   .scroll-top a {
     height: 40px;
