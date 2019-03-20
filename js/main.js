@@ -9,4 +9,8 @@ window.addEventListener('load', function loadImg(){
 
 setTimeout(function loadImg() {
 
-}, 500)
+}, 50)
+
+
+// Scroll to top arrow 
+
