@@ -596,6 +596,7 @@ html {
             grid-gap: 52px;
             grid-template-columns: 1fr 2fr;
             .product-img-container {
+                position: relative;
                 height: 300px;
                 width: 300px;
                 background: $brownishgrey;
@@ -603,6 +604,8 @@ html {
 
                 img {
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
                 .sale-overlay {
                     height: 55px;
@@ -673,6 +676,6 @@ html {
         }
         .active {
             color: $black3;
-        }
+        }   
     }
 }

@@ -154,17 +154,16 @@
         <article class="shop-content">
 
             <!-- first product to list -->
-            <section class="product one">
-                <section class="product-img-container" id="img-container">
+            <section class="product one item">
+                <section class="product-img-container" id="img-container" id="image">
                     <img src="#" alt="">
                 </section>
 
                 <section class="product-content">
-                    <h3>Something</h3> <span>♡</span>
-                    <p>R300</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, aliquam!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam quidem cumque perferendis quia. Tempora explicabo blanditiis a hic veritatis.
-                    </p>
+                    <h3 id="title"></h3> <span>♡</span>
+                    <p id="price"></p>
+                    <p id="details"></p>
+                    
                     <a href="">
                         <i class="fas fa-shopping-cart"></i>
                         <p>add to cart</p>
@@ -173,17 +172,16 @@
             </section>
 
             <!-- second product showing on page -->
-            <section class="product two">
+            <section class="product two item">
                 <section class="product-img-container" id="img-container">
                     <img src="#" alt="">
                 </section>
 
                 <section class="product-content">
-                    <h3>Something Else</h3> <span>♡</span>
-                    <p>R600</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, aliquam!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam quidem cumque perferendis quia. Tempora explicabo blanditiis a hic veritatis.
-                    </p>
+                    <h3 id="title"></h3> <span>♡</span>
+                    <p id="price"></p>
+                    <p id="details"></p>
+
                     <a href="">
                         <i class="fas fa-shopping-cart"></i>
                         <p>add to cart</p>
@@ -192,7 +190,7 @@
             </section>
 
             <!-- third product on page -->
-            <section class="product third">
+            <section class="product third item">
                 <section class="product-img-container" id="img-container">
                     <img src="#" alt="">
                 </section>
@@ -210,7 +208,7 @@
                 </section>
             </section>
 
-            <section class="product fourth">
+            <section class="product fourth item">
                 <section class="product-img-container" id="img-container">
                     <img src="#" alt="">
                     <section class="sale-overlay"> SALE</section>
@@ -347,6 +345,8 @@
         </div>
     </section>
 
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/main.js"></script>
     <script
     src="http://code.jquery.com/jquery-3.3.1.min.js"

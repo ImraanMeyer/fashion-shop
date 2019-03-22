@@ -1,7 +1,8 @@
 'use strict'
 
-// let items = document.getElementsByClassName('item');
-// console.log(items);
+let items = document.getElementsByClassName('item');
+console.log(items);
+
 
 let cart = [
     // {name: name, price : price,},
