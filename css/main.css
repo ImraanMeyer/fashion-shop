@@ -436,19 +436,59 @@ html {
 
 .page-top {
   height: 91px;
-  display: grid;
   max-width: 80%;
   margin: 0 auto;
-  grid-template-areas: "left right"; }
+  color: #666666;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; }
   .page-top .top-left {
-    grid-area: left;
-    display: grid;
-    place-content: center start; }
+    align-self: center; }
   .page-top .top-right {
-    grid-area: right;
-    display: grid;
-    place-content: center end;
-    grid-template-columns: repeat(2, auto); }
+    align-self: center; }
+
+.shop-container {
+  height: 1610px;
+  background: #f5f5f5; }
+  .shop-container .shop-content {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60px; }
+    .shop-container .shop-content .product {
+      display: grid;
+      grid-gap: 52px;
+      grid-template-columns: 1fr 2fr; }
+      .shop-container .shop-content .product .product-img-container {
+        height: 300px;
+        width: 300px;
+        background: #666666;
+        margin-bottom: 50px; }
+      .shop-container .shop-content .product .product-content h3 {
+        font-size: 25px;
+        margin-bottom: 26px; }
+      .shop-container .shop-content .product .product-content span {
+        position: absolute;
+        right: 200px;
+        transform: translate(50%, -50%);
+        bottom: -130px; }
+      .shop-container .shop-content .product .product-content p:nth-of-type(1) {
+        margin-bottom: 40px; }
+      .shop-container .shop-content .product .product-content p:nth-of-type(2) {
+        margin-bottom: 47px; }
+      .shop-container .shop-content .product .product-content a {
+        background: #ac907f;
+        width: 188px;
+        height: 44px;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: space-evenly; }
+        .shop-container .shop-content .product .product-content a i {
+          align-self: center; }
+        .shop-container .shop-content .product .product-content a p {
+          margin: 0 !important;
+          align-self: center;
+          text-transform: uppercase;
+          letter-spacing: 1.5px; }
 
 .top-select {
   position: relative;

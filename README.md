@@ -114,7 +114,32 @@ Tools:
 - replaced repetitve code
 
 ```
-\
+
+```
+14-03-2019
+- new images compressed
+- pretty photo implemented
+- responsive design (mobile) [started]
+
+```
+
+```
+15-03-2019 
+- responsive design completed mobile and tablet
+- shop.html created
+- scroll top arrow added
+```
+
+```
+20-04-2019
+- navabr, footer and breadcrumb nav added to shop.html
+```
+
+```
+22-03-2019
+- shop page styled 
+```
+
 
 
 ## Contributors
