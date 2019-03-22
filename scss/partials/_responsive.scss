@@ -177,6 +177,14 @@
     margin: 60px auto !important;
     grid-gap: .2em !important;
   }
+
+  // S C R L L  U P  A R R O W
+  .scroll-top {
+    position: fixed;
+    transition: all .2s;
+    bottom: 36%;
+    left: 86%;
+  }
 }
 
 
