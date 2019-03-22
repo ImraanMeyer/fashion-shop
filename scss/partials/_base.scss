@@ -591,6 +591,7 @@ html {
         margin: 0 auto;
         padding-top: 60px;
         .product {
+            position: relative;
             display: grid;
             grid-gap: 52px;
             grid-template-columns: 1fr 2fr;
@@ -599,6 +600,22 @@ html {
                 width: 300px;
                 background: $brownishgrey;
                 margin-bottom: 50px;
+
+                img {
+                    width: 100%;
+                }
+                .sale-overlay {
+                    height: 55px;
+                    width: 55px;
+                    position: absolute;
+                    top: 20px;
+                    left: 10px;
+                    color: $pure-white;
+                    background: $mushroom;
+                    border-radius: 50%;
+                    display: grid;
+                    place-content: center;
+                }
             }
             .product-content {
                 h3 {
@@ -608,13 +625,19 @@ html {
                 span {
                     position: absolute;
                     right: 200px;
+                    top: 20px;
                     transform: translate(50%, -50%);
-                    bottom: -130px;
                 }
                 p:nth-of-type(1) {
                     margin-bottom: 40px;
+                    #crossed {
+                        color: $pinkish-grey;
+                        text-decoration: line-through;
+                        margin-left: 28px;
+                        font-family: inherit;
+                    }
                 }
-                p:nth-of-type(2) {
+                p:last-of-type {
                     margin-bottom: 47px;
                 }
                 a {
@@ -636,8 +659,20 @@ html {
                         letter-spacing: 1.5px;
                     }
                 }
-
             }
+        }
+    }
+
+    .page-number {
+        margin-top: 90px;
+        display: flex;
+        justify-content: flex-end;
+        a {
+            color: $brownishgrey;
+            margin-right: 40px;
+        }
+        .active {
+            color: $black3;
         }
     }
 }

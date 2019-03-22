@@ -455,6 +455,7 @@ html {
     margin: 0 auto;
     padding-top: 60px; }
     .shop-container .shop-content .product {
+      position: relative;
       display: grid;
       grid-gap: 52px;
       grid-template-columns: 1fr 2fr; }
@@ -463,17 +464,35 @@ html {
         width: 300px;
         background: #666666;
         margin-bottom: 50px; }
+        .shop-container .shop-content .product .product-img-container img {
+          width: 100%; }
+        .shop-container .shop-content .product .product-img-container .sale-overlay {
+          height: 55px;
+          width: 55px;
+          position: absolute;
+          top: 20px;
+          left: 10px;
+          color: #fefefe;
+          background: #ac907f;
+          border-radius: 50%;
+          display: grid;
+          place-content: center; }
       .shop-container .shop-content .product .product-content h3 {
         font-size: 25px;
         margin-bottom: 26px; }
       .shop-container .shop-content .product .product-content span {
         position: absolute;
         right: 200px;
-        transform: translate(50%, -50%);
-        bottom: -130px; }
+        top: 20px;
+        transform: translate(50%, -50%); }
       .shop-container .shop-content .product .product-content p:nth-of-type(1) {
         margin-bottom: 40px; }
-      .shop-container .shop-content .product .product-content p:nth-of-type(2) {
+        .shop-container .shop-content .product .product-content p:nth-of-type(1) #crossed {
+          color: #cccccc;
+          text-decoration: line-through;
+          margin-left: 28px;
+          font-family: inherit; }
+      .shop-container .shop-content .product .product-content p:last-of-type {
         margin-bottom: 47px; }
       .shop-container .shop-content .product .product-content a {
         background: #ac907f;
@@ -489,6 +508,15 @@ html {
           align-self: center;
           text-transform: uppercase;
           letter-spacing: 1.5px; }
+  .shop-container .page-number {
+    margin-top: 90px;
+    display: flex;
+    justify-content: flex-end; }
+    .shop-container .page-number a {
+      color: #666666;
+      margin-right: 40px; }
+    .shop-container .page-number .active {
+      color: #333333; }
 
 .top-select {
   position: relative;
