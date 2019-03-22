@@ -29,3 +29,4 @@ img[1].innerHTML = '<img src="images/' + jersey.img + '">';
 price[1].innerHTML = jersey.price;
 details[1].innerHTML = jersey.details;
 
+    
