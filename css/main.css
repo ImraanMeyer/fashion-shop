@@ -511,6 +511,8 @@ html {
           align-self: center;
           text-transform: uppercase;
           letter-spacing: 1.5px; }
+    .shop-container .shop-content .page_1 {
+      display: none; }
   .shop-container .page-number {
     margin-top: 90px;
     display: flex;

@@ -10,3 +10,11 @@ window.addEventListener('load', function loadImg(){
 setTimeout(function loadImg() {
 
 }, 50)
+
+
+$(document).ready(function() {
+    $(".page_1_btn").clicked(function() {
+        $(".page_2").css("display" , "none")
+        $(".page_1").css("display" , "grid")
+    })
+})
