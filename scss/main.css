@@ -341,12 +341,6 @@ html {
   width: 529px;
 }
 
-.blog-content .blog-text .read-more-btn {
-  color: #a88d7b;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-}
-
 .fa-phone {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -730,7 +724,7 @@ html {
       grid-template-columns: 1fr 2fr;
 }
 
-.shop-container .shop-content .product .product-img-container {
+.shop-container .shop-content .product .product-container-img {
   position: relative;
   height: 300px;
   width: 300px;
@@ -738,14 +732,14 @@ html {
   margin-bottom: 50px;
 }
 
-.shop-container .shop-content .product .product-img-container img {
+.shop-container .shop-content .product .product-container-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.shop-container .shop-content .product .product-img-container .sale-overlay {
+.shop-container .shop-content .product .product-container-img .sale-overlay {
   height: 55px;
   width: 55px;
   position: absolute;
@@ -757,6 +751,8 @@ html {
   display: -ms-grid;
   display: grid;
   place-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .shop-container .shop-content .product .product-content h3 {
@@ -953,16 +949,14 @@ html {
 }
 
 .header-text-button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  width: 160px;
+  padding-right: +2%;
   background: #a88d7b;
   color: #ffffff;
   border: solid #ffffff 2px;
   -webkit-box-shadow: 0 0 0 10px #a88d7b80;
           box-shadow: 0 0 0 10px #a88d7b80;
-  -webkit-transition: width .2s;
-  transition: width .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .banner-button {
@@ -982,11 +976,30 @@ html {
 }
 
 .banner-button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  padding-right: +2%;
   background: #ffffff;
   color: #a88d7b;
   border: solid 2px #a88d7b;
+}
+
+.read-more-btn {
+  color: #a88d7b;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.read-more-btn span {
+  padding-left: 1em;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.read-more-btn:hover span {
+  padding-left: 2em;
+}
+
+#zero-space {
+  letter-spacing: normal;
 }
 
 a {
@@ -1047,7 +1060,7 @@ a {
      object-position: none;
 }
 
-.figure-img .new-item {
+.new-item {
   width: 60px;
   height: 25px;
   border-radius: 7.5px;

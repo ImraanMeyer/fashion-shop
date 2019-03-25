@@ -36,7 +36,7 @@ let shop = {
         {
             "name"      : "Leather Shoulder Bag",
             "price"     : "R600",
-            "img"       : "<img src='images/accesory-bag.jpg'>",
+            "img"       : "<img src='images/accesory-bag.jpg'> <p class='new-item'>new</p>",
             "details"   : "If you always in a rush easily sling on this convenient leather bag. The simply designed bag                  carries everything you will need in its one compartment keeping it safe with its zip closing. "
         },
         // product 2 == [1]
@@ -57,7 +57,7 @@ let shop = {
         {
             "name"      : "Bird Eye Suit",
             "price"     : "R1800",
-            "img"       : "<img src='images/formal-collection.jpg'>",
+            "img"       : "<img src='images/formal-collection.jpg'> <section class='sale-overlay'>SALE</section>",
             "details"   : "A full suit + a free shirt",
         },
         // product 5 == [4]
@@ -113,13 +113,13 @@ let shop = {
         {
             "name"      : "Test 2 U",
             "price"     : "R1800",
-            "img"       : "<img src='images/happy-socks.jpg'>",
+            "img"       : "<img src='images/men.jpg'>",
             "details"   : "A full suit + a free shirt",
         }
 ]};
 
 let title   = document.querySelectorAll("#title");
-    img     = document.querySelectorAll("#img-container");
+    img     = document.querySelectorAll("#container-img");
     price   = document.querySelectorAll("#price");
     details = document.querySelectorAll("#details");
     

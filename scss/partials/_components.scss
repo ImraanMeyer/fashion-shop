@@ -75,13 +75,12 @@
     transition: all .2s;
 }
 .header-text-button:hover {
-    transform: scale(1.2);
-    width: 160px;
+    padding-right: +2%;
     background: $buttons;
     color: $white2;
     border: solid $white2 2px;
     box-shadow: 0 0 0 10px $brownOP;
-    transition: width .2s ;
+    transition: all .2s ;
 }
 
 .banner-button {
@@ -98,10 +97,28 @@
     transition: all .2s;
 }
 .banner-button:hover {
-    transform: scale(1.1);
+    padding-right: +2%;
     background: $white2;
     color: $brown;
     border: solid 2px $brown;
+}
+
+.read-more-btn {
+    color: $brown;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    span {
+        padding-left: 1em;
+        transition: all .2s;
+    }
+}
+.read-more-btn:hover span {
+    padding-left: 2em;
+} 
+
+#zero-space {
+    letter-spacing: normal;
 }
 
 a {
@@ -144,21 +161,21 @@ a {
             object-position: none;
         }
     }
-    .new-item {
-        width: 60px;
-        height: 25px;
-        border-radius: 7.5px;
-        background-color: #a88d7b;
-        font-size: 15px;
-        color: $white2;
-        text-transform: uppercase;
-        display: grid;
-        place-content: center;
-        position: absolute;
-        right: 10px;
-        letter-spacing: 2.5px;
-        top: 10px;
-    }
+}
+.new-item {
+    width: 60px;
+    height: 25px;
+    border-radius: 7.5px;
+    background-color: #a88d7b;
+    font-size: 15px;
+    color: $white2;
+    text-transform: uppercase;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    right: 10px;
+    letter-spacing: 2.5px;
+    top: 10px;
 }
 
 .collection-item {

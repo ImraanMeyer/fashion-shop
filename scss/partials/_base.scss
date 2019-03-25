@@ -263,11 +263,6 @@ html {
             height: 239px;
             width: 529px;
         }
-        .read-more-btn {
-            color: $brown;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
     }
 }
 
@@ -602,7 +597,7 @@ html {
             display: grid;
             grid-gap: 52px;
             grid-template-columns: 1fr 2fr;
-            .product-img-container {
+            .product-container-img {
                 position: relative;
                 height: 300px;
                 width: 300px;
@@ -625,6 +620,8 @@ html {
                     border-radius: 50%;
                     display: grid;
                     place-content: center;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
                 }
             }
             .product-content {
