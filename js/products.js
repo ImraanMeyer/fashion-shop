@@ -73,6 +73,48 @@ let shop = {
             "price"     : "R1800",
             "img"       : "<img src='images/watch-box-set.jpg'>",
             "details"   : "A full suit + a free shirt",
+        },
+        // product 7 == [6]
+        {
+            "name"      : "Test",
+            "price"     : "R1800",
+            "img"       : "<img src='images/women-collection.jpg'>",
+            "details"   : "A full suit + a free shirt",
+        },
+        // product 8 == [7]
+        {
+            "name"      : "Test 2 U",
+            "price"     : "R1800",
+            "img"       : "<img src='images/happy-socks.jpg'>",
+            "details"   : "A full suit + a free shirt",
+        },
+        // product 9 == [8]
+        {
+            "name"      : "Pg 3 Blue",
+            "price"     : "R1800",
+            "img"       : "<img src='images/woman-in-blue.jpg'>",
+            "details"   : "A full suit + a free shirt",
+        },
+        // product 10 == [9]
+        {
+            "name"      : "Watch set",
+            "price"     : "R1800",
+            "img"       : "<img src='images/watch-box-set.jpg'>",
+            "details"   : "A full suit + a free shirt",
+        },
+        // product 11 == [10]
+        {
+            "name"      : "Test",
+            "price"     : "R1800",
+            "img"       : "<img src='images/women-collection.jpg'>",
+            "details"   : "A full suit + a free shirt",
+        },
+        // product 12 == [11]
+        {
+            "name"      : "Test 2 U",
+            "price"     : "R1800",
+            "img"       : "<img src='images/happy-socks.jpg'>",
+            "details"   : "A full suit + a free shirt",
         }
 ]};
 
@@ -114,4 +156,39 @@ let title   = document.querySelectorAll("#title");
                 details[5].innerHTML   = shop.products[5].details;
 
 
+    title[6].innerHTML  = shop.products[6].name;
+        img[6].innerHTML       = shop.products[6].img;
+            price[6].innerHTML     = shop.products[6].price;
+                details[6].innerHTML   = shop.products[6].details;
 
+
+    title[7].innerHTML  = shop.products[7].name;
+            img[7].innerHTML       = shop.products[7].img;
+                price[7].innerHTML     = shop.products[7].price;
+
+                
+    title[8].innerHTML  = shop.products[8].name;
+            img[8].innerHTML       = shop.products[8].img;
+                price[8].innerHTML     = shop.products[8].price;
+                    details[8].innerHTML   = shop.products[8].details;
+    
+                    
+    title[9].innerHTML  = shop.products[9].name;
+        img[9].innerHTML       = shop.products[9].img;
+            price[9].innerHTML     = shop.products[9].price;
+                details[9].innerHTML   = shop.products[9].details;
+
+
+    title[10].innerHTML  = shop.products[10].name;
+        img[10].innerHTML       = shop.products[10].img;
+            price[10].innerHTML     = shop.products[10].price;
+                details[10].innerHTML   = shop.products[10].details;
+
+
+    title[11].innerHTML  = shop.products[11].name;
+            img[11].innerHTML       = shop.products[11].img;
+                price[11].innerHTML     = shop.products[11].price;
+
+                
+
+    

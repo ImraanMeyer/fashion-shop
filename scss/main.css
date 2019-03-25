@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow: auto;
 }
 
 .top-content,
@@ -254,17 +255,27 @@ html {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: .5s all;
+  transition: .5s all;
 }
 
 .featured-grid .featured-figure .figure-img {
   width: 370px;
   height: 360px;
-  background-color: #666666;
 }
 
 .featured-grid .featured-figure .figure-text {
   text-align: center;
   margin: 23px auto;
+}
+
+.featured-grid .figures-shown {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .collection-grid .collection-item .collection-text {
@@ -804,6 +815,11 @@ html {
   letter-spacing: 1.5px;
 }
 
+.shop-container .shop-content .page_2,
+.shop-container .shop-content .page_3 {
+  display: none;
+}
+
 .shop-container .page-number {
   margin-top: 90px;
   display: -webkit-box;
@@ -814,13 +830,34 @@ html {
           justify-content: flex-end;
 }
 
-.shop-container .page-number a {
+.shop-container .page-number button {
   color: #666666;
-  margin-right: 40px;
+  margin: 0 1em;
+  height: 2em;
+  width: 2em;
+  outline: transparent;
+  background: none;
+  border: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
-.shop-container .page-number .active {
-  color: #333333;
+.shop-container .page-number button:hover {
+  color: #fefefe;
+  background: #666666;
+  border-radius: 50%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.active {
+  background: #ac907f !important;
+  color: #fefefe !important;
+  border-radius: 50% !important;
+  display: -ms-grid !important;
+  display: grid !important;
+  place-content: center !important;
 }
 
 .top-select {
@@ -1298,7 +1335,7 @@ a {
 }
 
 .featured .featured-grid {
-  margin-top: 9.9%;
+  margin-top: 60px;
   place-content: center;
   grid-gap: 2em;
   display: -ms-grid;
@@ -2049,9 +2086,8 @@ a {
 .front-container {
   display: -ms-grid;
   display: grid;
-  grid-gap: 1em;
-  -ms-grid-columns: 56vw 1em 1em 1fr;
-      grid-template-columns: 56vw 1em 1em 1fr;
+  width: 100%;
+  grid-gap: 0 1em;
       grid-template-areas: "logo icon1 icon2 btn";
 }
 
@@ -2076,7 +2112,7 @@ a {
   grid-area: icon2;
   display: -ms-grid;
   display: grid;
-  place-content: center end;
+  place-content: center start;
 }
 
 .front-container .menu-icon {
@@ -2129,7 +2165,8 @@ a {
   .featured,
   .collection,
   .blog,
-  .footer {
+  .footer,
+  .shop-container {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
     height: fit-content !important;
@@ -2231,6 +2268,12 @@ a {
   .blog-page-grid {
         grid-template-areas: "fig1" "fig2" "fig3" "fig4" "fig5" "fig6" !important;
   }
+  .blog-page-grid .blog-item-img {
+    width: auto;
+  }
+  .blog-page-grid .blog-item-text p {
+    width: auto !important;
+  }
   .contact-box-grid {
         grid-template-areas: "left" "center" "right" !important;
   }
@@ -2252,8 +2295,33 @@ a {
     position: fixed;
     -webkit-transition: all .2s;
     transition: all .2s;
-    bottom: 36%;
-    left: 86%;
+    bottom: 2%;
+    left: 80%;
+  }
+  .shop-content .product {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    grid-gap: 0px !important;
+    place-content: center;
+  }
+  .shop-content .product .product-img-container,
+  .shop-content .product .product-content {
+    margin: 0 auto;
+  }
+  .shop-content .product .product-content a {
+    margin: 0 auto;
+    margin-bottom: 60px !important;
+  }
+  .shop-content .product::after {
+    content: '';
+    height: 2px;
+    background: #666666;
+    width: 70%;
+    margin: -2em auto;
+    display: block;
+  }
+  .page-number {
+    margin-bottom: 30px;
   }
 }
 
@@ -2366,6 +2434,9 @@ a {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "fig1 fig2" "fig3 fig4" "fig5 fig6";
+  }
+  .blog-page-grid .blog-item-img {
+    width: auto;
   }
   .contact-box-grid {
         grid-template-areas: "left" "right" "center";

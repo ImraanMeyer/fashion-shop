@@ -123,11 +123,10 @@ a {
   }
   
   .front-container {
-      display: grid;
-      grid-gap: 1em;
-      grid-template-columns: 56vw 1em 1em 1fr;
-      grid-template-areas:
-        "logo icon1 icon2 btn" ;
+    display: grid;
+    width: 100%;
+    grid-gap: 0 1em;
+    grid-template-areas: "logo icon1 icon2 btn";
     img {
         grid-area: logo;
     }
@@ -139,7 +138,7 @@ a {
     .icon2 {
         grid-area: icon2;
         display: grid;
-        place-content: center end;
+        place-content: center start;
     }
     
     .menu-icon {

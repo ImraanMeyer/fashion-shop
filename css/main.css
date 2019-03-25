@@ -5,7 +5,8 @@
   -webkit-font-smoothing: antialiased; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow: auto; }
 
 .top-content,
 .header-content,
@@ -155,14 +156,19 @@ html {
 
 .featured-grid .featured-figure {
   width: fit-content;
-  height: fit-content; }
+  height: fit-content;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: .5s all; }
   .featured-grid .featured-figure .figure-img {
     width: 370px;
-    height: 360px;
-    background-color: #666666; }
+    height: 360px; }
   .featured-grid .featured-figure .figure-text {
     text-align: center;
     margin: 23px auto; }
+.featured-grid .figures-shown {
+  opacity: 1;
+  transform: translateY(0px); }
 
 .collection-grid .collection-item .collection-text {
   font-weight: normal;
@@ -511,17 +517,35 @@ html {
           align-self: center;
           text-transform: uppercase;
           letter-spacing: 1.5px; }
-    .shop-container .shop-content .page_1 {
+    .shop-container .shop-content .page_2,
+    .shop-container .shop-content .page_3 {
       display: none; }
   .shop-container .page-number {
     margin-top: 90px;
     display: flex;
     justify-content: flex-end; }
-    .shop-container .page-number a {
+    .shop-container .page-number button {
       color: #666666;
-      margin-right: 40px; }
-    .shop-container .page-number .active {
-      color: #333333; }
+      margin: 0 1em;
+      height: 2em;
+      width: 2em;
+      outline: transparent;
+      background: none;
+      border: none;
+      transition: all .2s; }
+      .shop-container .page-number button:hover {
+        color: #fefefe;
+        background: #666666;
+        border-radius: 50%;
+        display: grid;
+        place-content: center; }
+
+.active {
+  background: #ac907f !important;
+  color: #fefefe !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-content: center !important; }
 
 .top-select {
   position: relative;
@@ -793,7 +817,7 @@ a {
   grid-area: feat;
   background: #f5f5f5; }
   .featured .featured-grid {
-    margin-top: 9.9%;
+    margin-top: 60px;
     place-content: center;
     grid-gap: 2em;
     display: grid;
@@ -1209,8 +1233,8 @@ a {
 
 .front-container {
   display: grid;
-  grid-gap: 1em;
-  grid-template-columns: 56vw 1em 1em 1fr;
+  width: 100%;
+  grid-gap: 0 1em;
   grid-template-areas: "logo icon1 icon2 btn"; }
   .front-container img {
     grid-area: logo; }
@@ -1221,7 +1245,7 @@ a {
   .front-container .icon2 {
     grid-area: icon2;
     display: grid;
-    place-content: center end; }
+    place-content: center start; }
   .front-container .menu-icon {
     grid-area: btn;
     display: grid;
@@ -1264,7 +1288,8 @@ a {
   .featured,
   .collection,
   .blog,
-  .footer {
+  .footer,
+  .shop-container {
     height: fit-content !important;
     width: 100%; }
 
@@ -1343,6 +1368,10 @@ a {
 
   .blog-page-grid {
     grid-template-areas: "fig1" "fig2" "fig3" "fig4" "fig5" "fig6" !important; }
+    .blog-page-grid .blog-item-img {
+      width: auto; }
+    .blog-page-grid .blog-item-text p {
+      width: auto !important; }
 
   .contact-box-grid {
     grid-template-areas: "left" "center" "right" !important; }
@@ -1361,8 +1390,29 @@ a {
   .scroll-top {
     position: fixed;
     transition: all .2s;
-    bottom: 36%;
-    left: 86%; } }
+    bottom: 2%;
+    left: 80%; }
+
+  .shop-content .product {
+    grid-template-columns: 1fr !important;
+    grid-gap: 0px !important;
+    place-content: center; }
+    .shop-content .product .product-img-container,
+    .shop-content .product .product-content {
+      margin: 0 auto; }
+    .shop-content .product .product-content a {
+      margin: 0 auto;
+      margin-bottom: 60px !important; }
+  .shop-content .product::after {
+    content: '';
+    height: 2px;
+    background: #666666;
+    width: 70%;
+    margin: -2em auto;
+    display: block; }
+
+  .page-number {
+    margin-bottom: 30px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .about {
     display: none !important;
@@ -1452,6 +1502,8 @@ a {
   .blog-page-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "fig1 fig2" "fig3 fig4" "fig5 fig6"; }
+    .blog-page-grid .blog-item-img {
+      width: auto; }
 
   .contact-box-grid {
     grid-template-areas: "left" "right" "center"; }

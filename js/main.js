@@ -1,20 +1,40 @@
-window.addEventListener('load', function loadImg(){
-    var allimages= document.getElementsByTagName('img');
-    for (var i=0; i<allimages.length; i++) {
-        if (allimages[i].getAttribute('data-src')) {
-            allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+// window.addEventListener('load', function loadImg(){
+//     var allimages= document.getElementsByTagName('img');
+//     for (var i=0; i<allimages.length; i++) {
+//         if (allimages[i].getAttribute('data-src')) {
+//             allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+//         }
+//     }
+// }, false)
+
+// setTimeout(function loadImg() {
+
+// }, 50)
+
+
+
+function scrollAppear() {
+    let figLeft = document.querySelector(".figure-left");
+        figCent = document.querySelector(".figure-center");
+        figRight = document.querySelector(".figure-right");
+
+    let figPositionL = figLeft.getBoundingClientRect().top;
+    let figPositionC = figCent.getBoundingClientRect().top;
+    let figPositionR = figRight.getBoundingClientRect().top;
+
+
+    let screenPosition = window.innerHeight / 1.3;
+
+        if(figPositionL < screenPosition) {
+            figLeft.classList.add('figures-shown');
         }
-    }
-}, false)
+        if(figPositionC < screenPosition) {
+            figCent.classList.add('figures-shown');
+        }
+        if(figPositionR < screenPosition) {
+            figRight.classList.add('figures-shown');
+        }
+}
 
-setTimeout(function loadImg() {
 
-}, 50)
-
-
-$(document).ready(function() {
-    $(".page_1_btn").clicked(function() {
-        $(".page_2").css("display" , "none")
-        $(".page_1").css("display" , "grid")
-    })
-})
+window.addEventListener('scroll', scrollAppear);

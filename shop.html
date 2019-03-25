@@ -303,13 +303,87 @@
                     </section>
                 </section>
             </section>
+
+            <section class="page_3">
+                <!-- ninth product -->
+                <section class="product nine item">
+                    <section class="product-img-container" id="img-container">
+                        <img src="#" alt="">
+                    </section>
+
+                    <section class="product-content">
+                        <h3 id="title"></h3> <span>♡</span>
+                        <p id="price"></p>
+                        <p id="details"></p>
+
+                        <a href="">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>add to cart</p>
+                        </a>
+                    </section>
+                </section>
+
+                <!-- tenth product -->
+                <section class="product ten item">
+                    <section class="product-img-container" id="img-container">
+                        <img src="#" alt="">
+                    </section>
+
+                    <section class="product-content">
+                        <h3 id="title"></h3> <span>♡</span>
+                        <p id="price"></p>
+                        <p id="details"></p>
+
+                        <a href="">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>add to cart</p>
+                        </a>
+                    </section>
+                </section>
+
+                <!-- elleventh product -->
+                <section class="product elleven item">
+                    <section class="product-img-container" id="img-container">
+                        <img src="#" alt="">
+                    </section>
+
+                    <section class="product-content">
+                        <h3 id="title"></h3> <span>♡</span>
+                        <p id="price"></p>
+                        <p id="details"></p>
+
+                        <a href="">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>add to cart</p>
+                        </a>
+                    </section>
+                </section>
+
+                <!-- twelthe product -->
+                <section class="product twelve item">
+                    <section class="product-img-container" id="img-container">
+                        <img src="#" alt="">
+                    </section>
+
+                    <section class="product-content">
+                        <h3 id="title"></h3> <span>♡</span>
+                        <p id="price"></p>
+                        <p id="details"></p>
+
+                        <a href="">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>add to cart</p>
+                        </a>
+                    </section>
+                </section>
+            </section>
             
 
             <!-- pagenation -->
             <section class="page-number">
-                <a class="page_1_btn" href="">1</a>
-                <a class="page_2_btn" href="">2</a>
-                <a href="#">3</a>
+                <button class="page_1_btn">1</button>
+                <button class="page_2_btn">2</button>
+                <button class="page_3_btn">3</button>
             </section>
         </article>
     </section>
@@ -429,18 +503,51 @@
     <script src="https://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
 
     <script>
-    $('.shop-content').pagination({
-    dataSource: [".one", ".two", "three", ".four"],
-    pageSize: 5,
-    showPrevious: false,
-    showNext: false,
+    // $('.shop-content').pagination({
+    // dataSource: [".one", ".two", "three", ".four"],
+    // pageSize: 5,
+    // showPrevious: false,
+    // showNext: false,
         
-        callback: function(data, pagination) {
-            // template method of yourself
-            var html = template(data);
-            dataContainer.html(html);
-        }
-    })
+    //     callback: function(data, pagination) {
+    //         // template method of yourself
+    //         var html = template(data);
+    //         dataContainer.html(html);
+    //     }
+    // });
+
+    
+    $(document).ready(function() {
+        $(".page_1_btn").addClass("active")
+        $(".page_1_btn").click(function() {
+            $(".page_2").css("display" , "none")
+            $(".page_3").css("display" , "none")
+            $(".page_1").fadeIn(300)
+            $(".page_1").css("display" , "block")
+            $(".page_1_btn").addClass("active")
+            $(".page_2_btn").removeClass("active")
+            $(".page_3_btn").removeClass("active")
+        });
+        $(".page_2_btn").click(function() {
+            $(".page_1").css("display" , "none")
+            $(".page_3").css("display" , "none")
+            $(".page_2").fadeIn(300)
+            $(".page_2").css("display" , "block")
+            $(".page_2_btn").addClass("active")
+            $(".page_1_btn").removeClass("active")
+            $(".page_3_btn").removeClass("active")
+        });
+        $(".page_3_btn").click(function() {
+            $(".page_2").css("display" , "none")
+            $(".page_1").css("display" , "none")
+            $(".page_3").fadeIn(300),
+            $(".page_3").css("display" , "block")
+            $(".page_3_btn").addClass("active")
+            $(".page_2_btn").removeClass("active")
+            $(".page_1_btn").removeClass("active")
+        });
+    });
+
 </script>
 </body>
 </html>

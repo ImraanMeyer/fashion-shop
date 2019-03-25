@@ -7,6 +7,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: auto;
 }
 
 .top-content,
@@ -196,15 +197,21 @@ html {
     .featured-figure {
         width: fit-content;
         height: fit-content;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: .5s all;
         .figure-img {
             width: 370px;
             height: 360px;
-            background-color: #666666;
         }
         .figure-text {
             text-align: center;
             margin: 23px auto;
         }
+    }
+    .figures-shown {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
@@ -664,7 +671,8 @@ html {
                 }
             }
         }
-        .page_1{
+        .page_2,
+        .page_3{
             display: none;
         }
     }
@@ -672,13 +680,33 @@ html {
     .page-number {
         margin-top: 90px;
         display: flex;
-        justify-content: flex-end;
-        a {
+        justify-content:flex-end;
+
+        button {
             color: $brownishgrey;
-            margin-right: 40px;
+            margin: 0 1em;
+            height: 2em;
+            width: 2em;
+            outline: transparent;
+            background: none;
+            border: none;
+            transition: all .2s;
+
+            &:hover {
+                color: $pure-white;
+                background: $brownishgrey;
+                border-radius: 50%;
+                display: grid;
+                place-content: center;
+            }
         }
-        .active {
-            color: $black3;
-        }   
     }
+}
+
+.active {
+    background: $mushroom !important;
+    color: $pure-white !important;
+    border-radius: 50% !important;
+    display: grid !important;
+    place-content: center !important;
 }

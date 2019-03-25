@@ -29,7 +29,8 @@
     .featured,
     .collection,
     .blog,
-    .footer {
+    .footer,
+    .shop-container {
       height: fit-content !important;
       width: 100%;
     }
@@ -153,6 +154,15 @@
     grid-template-areas:
         "fig1" "fig2" "fig3"
         "fig4" "fig5" "fig6" !important;
+      
+    .blog-item-img {
+      width: auto;
+    }
+    .blog-item-text {
+      p {
+        width: auto !important;
+      }
+    }
   }
 
 
@@ -182,8 +192,41 @@
   .scroll-top {
     position: fixed;
     transition: all .2s;
-    bottom: 36%;
-    left: 86%;
+    bottom: 2%;
+    left: 80%;
+  }
+
+  // S H O P  P A G E 
+
+  .shop-content {
+    .product {
+      grid-template-columns: 1fr !important;
+      grid-gap: 0px !important;
+      place-content: center;
+
+      .product-img-container,
+      .product-content {
+        margin: 0 auto;
+      }
+
+      .product-content {
+        a {
+          margin: 0 auto;
+          margin-bottom: 60px !important;
+        }
+      }
+    }
+    .product::after {
+      content: '';
+      height: 2px;
+      background: $black2;
+      width: 70%;
+      margin: -2em auto;
+      display: block;
+    }
+  }
+  .page-number {
+    margin-bottom: 30px;
   }
 }
 
@@ -329,6 +372,10 @@
   .blog-page-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "fig1 fig2" "fig3 fig4" "fig5 fig6";
+    
+    .blog-item-img {
+      width: auto;
+    }
   }
 
   // C O N T A C T  P A G E
