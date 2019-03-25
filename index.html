@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Dosis" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <title>NATEB | High End Formal Wear</title>
     <link rel="icon" type="image/ico" href="images/icon.ico">
@@ -134,7 +135,11 @@
             <section class="featured-content">
                 <h1 id="container-title">Featured Product</h1>
 
-                <article class="featured-grid">
+                <article class="featured-grid" 
+                data-aos="zoom-in"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="600"
+                data-aos-delay="100">
                     <section class="featured-figure figure-left">
                         <section class="figure-img" id="container-img">
                             <img src="images/collection-men.jpg" alt="">
@@ -179,7 +184,8 @@
                 <h1 id="container-title">New Collection</h1>
 
                 <article class="collection-grid">
-                    <article class="collection-item male">
+
+                    <article class="collection-item male" data-aos-delay="500" data-aos="fade-up">
                         <section class="collection-img-wrapper" id="container-img">
                             <img src="images/compressed/suit.jpg" data-src="images/suit.jpg " alt="">
                         </section>
@@ -189,7 +195,7 @@
                         </h3>
                     </article>
 
-                    <article class="collection-item female">
+                    <article class="collection-item female" data-aos="fade-down" data-aos-delay="500" data-aos-duration="600">
                         <section class="collection-img-wrapper" id="container-img">
                             <img src="images/smart-woman.jpg" alt="">
                         </section>
@@ -225,7 +231,10 @@
                         <img src="images/watch-box-set.jpg" alt="watch-box-set">
                     </section>
 
-                    <section class="blog-text">
+                    <section class="blog-text" 
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="600">
                         <h3 class="blog-text-title">Accessories For Everyday Living</h3>
                         <p id="greyed">Feberuary 05, 2017</p>
 
@@ -349,6 +358,7 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
     <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"

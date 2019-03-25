@@ -542,8 +542,14 @@
             transition: all .2s;
             
             a {
-            opacity: 0;
-            color: $black2;
+                position: absolute;
+                bottom: 2%;
+                left: 86%;
+                font-size: 1em;
+                color: white;
+                background: $mushroom;
+                padding: 1em;
+                opacity: 0;
             }
         }
     }

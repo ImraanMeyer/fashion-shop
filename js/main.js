@@ -18,30 +18,19 @@ window.scroll({
     behavior: 'smooth',
 });
 
+// init AOS plugin
+AOS.init();
 
 
-function scrollAppear() {
-    let figLeft = document.querySelector(".figure-left");
-        figCent = document.querySelector(".figure-center");
-        figRight = document.querySelector(".figure-right");
+// function scrollAppear() {
+//     let blogTxt = document.querySelector(".blog-text");
+//     let txtPosition = blogTxt.getBoundingClientRect().top;
+//     let screenPosition = window.innerHeight / 1.6;
 
-    let figPositionL = figLeft.getBoundingClientRect().top;
-    let figPositionC = figCent.getBoundingClientRect().top;
-    let figPositionR = figRight.getBoundingClientRect().top;
-
-
-    let screenPosition = window.innerHeight / 1.3;
-
-        if(figPositionL < screenPosition) {
-            figLeft.classList.add('figures-shown');
-        }
-        if(figPositionC < screenPosition) {
-            figCent.classList.add('figures-shown');
-        }
-        if(figPositionR < screenPosition) {
-            figRight.classList.add('figures-shown');
-        }
-}
+//         if(txtPosition < screenPosition) {
+//             blogTxt.classList.add('blog-text-shown');
+//         }
+// }
 
 
-window.addEventListener('scroll', scrollAppear);
+// window.addEventListener('scroll', scrollAppear);

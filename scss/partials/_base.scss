@@ -197,9 +197,8 @@ html {
     .featured-figure {
         width: fit-content;
         height: fit-content;
-        opacity: 0;
-        transform: translateY(40px);
-        transform: scale(.4);
+        // transform: translateY(40px);
+        // transform: scale(.4);
         transition: .8s all;
         .figure-img {
             width: 370px;
@@ -209,11 +208,6 @@ html {
             text-align: center;
             margin: 23px auto;
         }
-    }
-    .figures-shown {
-        opacity: 1;
-        transform: translateY(0px);
-        transform: scale(1)
     }
 }
 
@@ -251,7 +245,10 @@ html {
 .blog-content {
 
     .blog-text {
-        
+        transform: translateY(40px);
+        opacity: 0;
+        transition: all .5s;
+
         .blog-text-title {
             margin-bottom: 19px;
         }
@@ -265,6 +262,10 @@ html {
             height: 239px;
             width: 529px;
         }
+    }
+    .blog-text-shown {
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
 
@@ -392,16 +393,17 @@ html {
 }
 
 .team-figure {
-    
+    transition: all .2s;
     width: 270px;
     .team-img {
-        
+        transition: all .2s;
         height: 305px;
         background-color: #666666;
         margin-bottom: 20px;
     }
+    
     .team-text {
-
+        transition: all .2s;
         text-align: center;
         display: grid;
         grid-template-areas: 
@@ -423,6 +425,15 @@ html {
         }
     }
 }
+.team-figure:hover {
+    .team-text {
+        display: none !important;
+    }
+    .team-img {
+        height: 405px;
+    }
+}   
+
 
 .mission-left {
     height: 490px !important;

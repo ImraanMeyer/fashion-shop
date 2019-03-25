@@ -157,9 +157,6 @@ html {
 .featured-grid .featured-figure {
   width: fit-content;
   height: fit-content;
-  opacity: 0;
-  transform: translateY(40px);
-  transform: scale(0.4);
   transition: .8s all; }
   .featured-grid .featured-figure .figure-img {
     width: 370px;
@@ -167,10 +164,6 @@ html {
   .featured-grid .featured-figure .figure-text {
     text-align: center;
     margin: 23px auto; }
-.featured-grid .figures-shown {
-  opacity: 1;
-  transform: translateY(0px);
-  transform: scale(1); }
 
 .collection-grid .collection-item .collection-text {
   font-weight: normal;
@@ -215,16 +208,23 @@ html {
   color: #ffffff;
   line-height: 1.6; }
 
-.blog-content .blog-text .blog-text-title {
-  margin-bottom: 19px; }
-.blog-content .blog-text #greyed {
-  margin-bottom: 36px;
-  color: #999999 !important;
-  font-size: 15px; }
-.blog-content .blog-text .blog-text-content {
-  margin-bottom: 42px;
-  height: 239px;
-  width: 529px; }
+.blog-content .blog-text {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all .5s; }
+  .blog-content .blog-text .blog-text-title {
+    margin-bottom: 19px; }
+  .blog-content .blog-text #greyed {
+    margin-bottom: 36px;
+    color: #999999 !important;
+    font-size: 15px; }
+  .blog-content .blog-text .blog-text-content {
+    margin-bottom: 42px;
+    height: 239px;
+    width: 529px; }
+.blog-content .blog-text-shown {
+  opacity: 1;
+  transform: translateY(0px); }
 
 .fa-phone {
   transform: rotate(90deg); }
@@ -316,12 +316,15 @@ html {
       width: 100%; }
 
 .team-figure {
+  transition: all .2s;
   width: 270px; }
   .team-figure .team-img {
+    transition: all .2s;
     height: 305px;
     background-color: #666666;
     margin-bottom: 20px; }
   .team-figure .team-text {
+    transition: all .2s;
     text-align: center;
     display: grid;
     grid-template-areas: "name" "des" "links"; }
@@ -335,6 +338,11 @@ html {
     .team-figure .team-text i {
       padding: 0 15px;
       color: #555555; }
+
+.team-figure:hover .team-text {
+  display: none !important; }
+.team-figure:hover .team-img {
+  height: 405px; }
 
 .mission-left {
   height: 490px !important;
@@ -1125,8 +1133,14 @@ a {
       height: 100%;
       transition: all .2s; }
       .masonry-gallery .img-container .overlay a {
-        opacity: 0;
-        color: #666666; }
+        position: absolute;
+        bottom: 2%;
+        left: 86%;
+        font-size: 1em;
+        color: white;
+        background: #ac907f;
+        padding: 1em;
+        opacity: 0; }
   .masonry-gallery .span_1 {
     grid-column: span 0;
     grid-row: span 2; }

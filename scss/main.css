@@ -255,11 +255,6 @@ html {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  opacity: 0;
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  -webkit-transform: scale(0.4);
-          transform: scale(0.4);
   -webkit-transition: .8s all;
   transition: .8s all;
 }
@@ -272,14 +267,6 @@ html {
 .featured-grid .featured-figure .figure-text {
   text-align: center;
   margin: 23px auto;
-}
-
-.featured-grid .figures-shown {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
 
 .collection-grid .collection-item .collection-text {
@@ -329,6 +316,14 @@ html {
   line-height: 1.6;
 }
 
+.blog-content .blog-text {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 .blog-content .blog-text .blog-text-title {
   margin-bottom: 19px;
 }
@@ -343,6 +338,12 @@ html {
   margin-bottom: 42px;
   height: 239px;
   width: 529px;
+}
+
+.blog-content .blog-text-shown {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .fa-phone {
@@ -480,16 +481,22 @@ html {
 }
 
 .team-figure {
+  -webkit-transition: all .2s;
+  transition: all .2s;
   width: 270px;
 }
 
 .team-figure .team-img {
+  -webkit-transition: all .2s;
+  transition: all .2s;
   height: 305px;
   background-color: #666666;
   margin-bottom: 20px;
 }
 
 .team-figure .team-text {
+  -webkit-transition: all .2s;
+  transition: all .2s;
   text-align: center;
   display: -ms-grid;
   display: grid;
@@ -510,6 +517,14 @@ html {
 .team-figure .team-text i {
   padding: 0 15px;
   color: #555555;
+}
+
+.team-figure:hover .team-text {
+  display: none !important;
+}
+
+.team-figure:hover .team-img {
+  height: 405px;
 }
 
 .mission-left {
@@ -1932,8 +1947,14 @@ a {
 }
 
 .masonry-gallery .img-container .overlay a {
+  position: absolute;
+  bottom: 2%;
+  left: 86%;
+  font-size: 1em;
+  color: white;
+  background: #ac907f;
+  padding: 1em;
   opacity: 0;
-  color: #666666;
 }
 
 .masonry-gallery .span_1 {
