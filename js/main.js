@@ -11,6 +11,13 @@
 
 // }, 50)
 
+// smooth scrolling 
+window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+});
+
 
 
 function scrollAppear() {

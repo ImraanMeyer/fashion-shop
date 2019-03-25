@@ -198,8 +198,9 @@ html {
         width: fit-content;
         height: fit-content;
         opacity: 0;
-        transform: translateY(20px);
-        transition: .5s all;
+        transform: translateY(40px);
+        transform: scale(.4);
+        transition: .8s all;
         .figure-img {
             width: 370px;
             height: 360px;
@@ -212,6 +213,7 @@ html {
     .figures-shown {
         opacity: 1;
         transform: translateY(0px);
+        transform: scale(1)
     }
 }
 

@@ -256,10 +256,12 @@ html {
   height: -moz-fit-content;
   height: fit-content;
   opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: .5s all;
-  transition: .5s all;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  -webkit-transition: .8s all;
+  transition: .8s all;
 }
 
 .featured-grid .featured-figure .figure-img {
@@ -276,6 +278,8 @@ html {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .collection-grid .collection-item .collection-text {

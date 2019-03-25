@@ -158,8 +158,9 @@ html {
   width: fit-content;
   height: fit-content;
   opacity: 0;
-  transform: translateY(20px);
-  transition: .5s all; }
+  transform: translateY(40px);
+  transform: scale(0.4);
+  transition: .8s all; }
   .featured-grid .featured-figure .figure-img {
     width: 370px;
     height: 360px; }
@@ -168,7 +169,8 @@ html {
     margin: 23px auto; }
 .featured-grid .figures-shown {
   opacity: 1;
-  transform: translateY(0px); }
+  transform: translateY(0px);
+  transform: scale(1); }
 
 .collection-grid .collection-item .collection-text {
   font-weight: normal;
