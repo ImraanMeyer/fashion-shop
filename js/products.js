@@ -35,7 +35,7 @@ let shop = {
         // product 1 == [0]
         {
             "name"      : "Leather Shoulder Bag",
-            "price"     : "R600",
+            "price"     : "R10000000",
             "img"       : "<img src='images/accesory-bag.jpg'> <p class='new-item'>new</p>",
             "details"   : "If you always in a rush easily sling on this convenient leather bag. The simply designed bag                  carries everything you will need in its one compartment keeping it safe with its zip closing. "
         },
@@ -188,7 +188,3 @@ let title   = document.querySelectorAll("#title");
     title[11].innerHTML  = shop.products[11].name;
             img[11].innerHTML       = shop.products[11].img;
                 price[11].innerHTML     = shop.products[11].price;
-
-                
-
-    

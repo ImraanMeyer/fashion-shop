@@ -102,10 +102,10 @@ html {
 }
 .header {
     height: 92vh;
-    background: linear-gradient($blackOP , $blackOP ) ,  url(../images/casual.jpg)  !important;
+    background: linear-gradient($blackOP , $blackOP ) , url(../images/shirts-hero-img.jpg)  !important;
     // background-attachment: fixed !important;
     background-size: cover !important;
-    background-position: top !important;
+    background-position: bottom !important;
     background-repeat: no-repeat !important;
 }
 .navbar {
@@ -236,7 +236,7 @@ html {
         text-align: center;
         font-size: 15px;
         @include normal;
-        text-transform: capitalize;
+        text-transform: unset;
         color: $white2;
         line-height: 1.6;
     }
@@ -259,7 +259,7 @@ html {
         }
         .blog-text-content {
             margin-bottom: 42px;
-            height: 239px;
+            height: auto;
             width: 529px;
         }
     }

@@ -129,10 +129,10 @@ html {
 
 .header {
   height: 92vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#666666be), to(#666666be)), url(../images/casual.jpg) !important;
-  background: linear-gradient(#666666be, #666666be), url(../images/casual.jpg) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#666666be), to(#666666be)), url(../images/shirts-hero-img.jpg) !important;
+  background: linear-gradient(#666666be, #666666be), url(../images/shirts-hero-img.jpg) !important;
   background-size: cover !important;
-  background-position: top !important;
+  background-position: bottom !important;
   background-repeat: no-repeat !important;
 }
 
@@ -311,7 +311,7 @@ html {
   text-align: center;
   color: #333333;
   text-transform: uppercase;
-  text-transform: capitalize;
+  text-transform: unset;
   color: #ffffff;
   line-height: 1.6;
 }
@@ -336,7 +336,7 @@ html {
 
 .blog-content .blog-text .blog-text-content {
   margin-bottom: 42px;
-  height: 239px;
+  height: auto;
   width: 529px;
 }
 
@@ -1072,11 +1072,11 @@ a {
   display: block;
 }
 
-.figure-img img #third {
-  -o-object-fit: none;
-     object-fit: none;
-  -o-object-position: none;
-     object-position: none;
+.figure-img #third {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  -o-object-position: bottom !important;
+     object-position: bottom !important;
 }
 
 .new-item {
@@ -1107,8 +1107,8 @@ a {
 .collection-item .collection-img-wrapper img {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .blog-img {

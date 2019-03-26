@@ -88,9 +88,9 @@ html {
 
 .header {
   height: 92vh;
-  background: linear-gradient(#666666be, #666666be), url(../images/casual.jpg) !important;
+  background: linear-gradient(#666666be, #666666be), url(../images/shirts-hero-img.jpg) !important;
   background-size: cover !important;
-  background-position: top !important;
+  background-position: bottom !important;
   background-repeat: no-repeat !important; }
 
 .navbar {
@@ -204,7 +204,7 @@ html {
   text-align: center;
   color: #333333;
   text-transform: uppercase;
-  text-transform: capitalize;
+  text-transform: unset;
   color: #ffffff;
   line-height: 1.6; }
 
@@ -220,7 +220,7 @@ html {
     font-size: 15px; }
   .blog-content .blog-text .blog-text-content {
     margin-bottom: 42px;
-    height: 239px;
+    height: auto;
     width: 529px; }
 .blog-content .blog-text-shown {
   opacity: 1;
@@ -691,9 +691,9 @@ a {
     transition: all .2s;
     transform: scale(1);
     display: block; }
-    .figure-img img #third {
-      object-fit: none;
-      object-position: none; }
+  .figure-img #third {
+    object-fit: cover !important;
+    object-position: bottom !important; }
 
 .new-item {
   width: 60px;
@@ -718,7 +718,7 @@ a {
   background-color: #666666; }
   .collection-item .collection-img-wrapper img {
     object-fit: cover;
-    object-position: top; }
+    object-position: center; }
 
 .blog-img {
   overflow: hidden;

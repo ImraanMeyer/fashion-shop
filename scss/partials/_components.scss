@@ -156,10 +156,10 @@ a {
         transition: all .2s;
         transform: scale(1);
         display: block;
-        #third {
-            object-fit: none;
-            object-position: none;
-        }
+    }
+    #third {
+        object-fit: cover !important;
+        object-position: bottom !important;
     }
 }
 .new-item {
@@ -188,7 +188,7 @@ a {
 
         img {
             object-fit: cover; 
-            object-position: top;
+            object-position: center;
         }
     }
 }
