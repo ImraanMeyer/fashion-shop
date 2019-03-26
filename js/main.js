@@ -1,3 +1,6 @@
+
+
+
 // window.addEventListener('load', function loadImg(){
 //     var allimages= document.getElementsByTagName('img');
 //     for (var i=0; i<allimages.length; i++) {
