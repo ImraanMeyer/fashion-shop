@@ -53,38 +53,38 @@ let shop = {
         },
         // product 8 == [7]
         {
-            "name"      : "Test 2 U",
-            "price"     : "R1800",
-            "img"       : "<img src='images/>",
-            "details"   : "A full suit + a free shirt",
+            "name"      : "Grey Check Jacket",
+            "price"     : "R700",
+            "img"       : "<img src='images/checkered-jacket.jpg'>",
+            "details"   : "The rich wool material and half lining make it lightweight and breathable, helping you to layer it without feeling too warm.                   Contrast the grey with blue, brown or khaki chinos, and complete the pared-back look with a denim shirt.",
         },
         // product 9 == [8]
         {
-            "name"      : "Pg 3 Blue",
-            "price"     : "R1800",
-            "img"       : "<img src='images/woman-in-blue.jpg'>",
-            "details"   : "A full suit + a free shirt",
+            "name"      : "Black and White Texture Waistcoat",
+            "price"     : "R460",
+            "img"       : "<img src='images/texture-waist-coat.jpg'>",
+            "details"   : "When an occasion calls for something a little bit special, turn to this waistcoat. It will dress up your outfit and keep you                   looking on-trend with its stylish texture and sharp tailored fit.",
         },
         // product 10 == [9]
         {
-            "name"      : "Watch set",
-            "price"     : "R1800",
-            "img"       : "<img src='images/watch-box-set.jpg'>",
-            "details"   : "A full suit + a free shirt",
+            "name"      : "Slim Fit Navy Technical Raincoat",
+            "price"     : "R570",
+            "img"       : "<img src='images/navy-raincoat.jpg'>",
+            "details"   : "Protect yourself against the worst of the weather this winter with this raincoat. Made from a lightweight fabric that’s                        designed to repel water and with taped seams, it gives you the best chance of staying dry.",
         },
         // product 11 == [10]
         {
-            "name"      : "Test",
-            "price"     : "R1800",
-            "img"       : "<img src='images/women-collection.jpg'>",
-            "details"   : "A full suit + a free shirt",
+            "name"      : "Slim Fit Stone Cotton Raincoat",
+            "price"     : "R700",
+            "img"       : "<img src='images/stone-raincoat.jpg'>",
+            "details"   : "The stone colour will go with suits, trousers and jumpers in any shade – it’s a very versatile coat.",
         },
         // product 12 == [11]
         {
-            "name"      : "Test 2 U",
-            "price"     : "R1800",
-            "img"       : "<img src='images/men.jpg'>",
-            "details"   : "A full suit + a free shirt",
+            "name"      : "Denim Blue Wool Crew-Neck Jumper",
+            "price"     : "R300",
+            "img"       : "<img src='images/denim-crew-neck.jpg'>",
+            "details"   : "With this blue denim crew-neck jumper to hand you’ll always have a fail-safe option when the temperature drops. ",
         }
 ]};
 
