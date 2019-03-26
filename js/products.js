@@ -1,91 +1,61 @@
-// function Product(img, title, price, details) {
-//     this.img = img;
-//     this.title = title;
-//     this.price = price;
-//     this.details = details;
-// }
-
-// // first product
-// let bag = new Product("accesory-bag.jpg" , "Leather Shoulder Bag", "R600", "If you always in a rush easily sling on this convenient leather bag. The simply designed bag carries everything you will need in its one compartment keeping it safe with its zip closing. ");
-
-// // second product
-// let jersey = new Product("grey-white-knitted-jerseys.jpg", "Assorted Knitted Jerseys", "R400", "Looking to give this New Wave knitted pullover a new home? You can without breaking the bank. Own the look and keep warm every time the temperature drops.")
-
-
-// let title   = document.getElementById("title");
-//     img     = document.getElementById("img-container");
-//     price   = document.getElementById("price");
-//     details = document.getElementById("details"); 
-
-// // first product
-// title.innerHTML = bag.title;
-// img.innerHTML = '<img src="images/' + bag.img + '">'; 
-// price.innerHTML = bag.price;
-// details.innerHTML = bag.details;
-
-// // second product
-// title[1].innerHTML = jersey.title;
-// img[1].innerHTML = '<img src="images/' + jersey.img + '">'; 
-// price[1].innerHTML = jersey.price;
-// details[1].innerHTML = jersey.details;
-
+// List of all products listed for sale : 
 
 let shop = {
     products: [
         // product 1 == [0]
         {
-            "name"      : "Leather Shoulder Bag",
-            "price"     : "R10000000",
-            "img"       : "<img src='images/accesory-bag.jpg'> <p class='new-item'>new</p>",
-            "details"   : "If you always in a rush easily sling on this convenient leather bag. The simply designed bag                  carries everything you will need in its one compartment keeping it safe with its zip closing. "
+            "name"      : "Slim Fit Shirt Cut Away Collar",
+            "price"     : "R350",
+            "img"       : "<img src='images/compressed/slim-fit-shirt-cut-away-collar-compressed.jpg'> <p class='new-item'>new</p>",
+            "details"   : "The base for trendy suiting is confirmed with a smart shirt and with this key piece, you’ll always be on track to getting your                 outfit on-point. Go get ‘em!"
         },
         // product 2 == [1]
         {
             "name"      : "Assorted Knitted Jerseys",
             "price"     : "R400",
             "img"       : "<img src='images/grey-white-knitted-jerseys.jpg'>",
-            "details"   : "Looking to give this new knitted pullover a new home? You can without breaking the bank. Own                  the look and keep warm every time the temperature drops."
+            "details"   : "Looking to give this new knitted pullover a new home? You can without breaking the bank. Own the look and keep warm every time                 the temperature drops."
         },
         // product 3 == [2]
         {
-            "name"      : "Assorted Knitted Jerseys",
-            "price"     : "R400",
-            "img"       : "<img src='images/suit.jpg'>",
-            "details"   : "Looking for lorem10"
+            "name"      : "Slim Fit Suit 100% Wool",
+            "price"     : "R900",
+            "img"       : "<img src='images/compressed/solid-colour-slim-fit-suit-in-wool-compressed.jpg'>",
+            "details"   : "Stay stylish and stay looking clean with this 100% wool slim fit suit! Now available in black as well."
         },  
         // product 4 == [3]
         {
             "name"      : "Bird Eye Suit",
-            "price"     : "R1800",
+            "price"     : "R950 <stroke>R1900</stroke",
             "img"       : "<img src='images/formal-collection.jpg'> <section class='sale-overlay'>SALE</section>",
-            "details"   : "A full suit + a free shirt",
+            "details"   : "Slim fit, textured chino-style suit. ",
         },
         // product 5 == [4]
         {
-            "name"      : "Blue",
-            "price"     : "R1800",
-            "img"       : "<img src='images/woman-in-blue.jpg'>",
-            "details"   : "A full suit + a free shirt",
+            "name"      : "Slim Fit Chino Trousers",
+            "price"     : "R400",
+            "img"       : "<img src='images/compressed/solid-colour-slim-fit-stretch-chino-trousers-compressed.jpg'>",
+            "details"   : "Range of simple yet stylish slim fit chinos for an Urban-Inspired look.",
         },
         // product 6 == [5]
         {
-            "name"      : "Watch set",
-            "price"     : "R1800",
-            "img"       : "<img src='images/watch-box-set.jpg'>",
-            "details"   : "A full suit + a free shirt",
+            "name"      : "Leather Shoulder Bag",
+            "price"     : "R600",
+            "img"       : "<img src='images/compressed/accesory-bag-compressed.jpg'>",
+            "details"   : "If you always in a rush easily sling on this convenient leather bag. The simply designed bag carries everything you will need                  in its one compartment keeping it safe with its zip closing. ",
         },
         // product 7 == [6]
         {
-            "name"      : "Test",
-            "price"     : "R1800",
-            "img"       : "<img src='images/women-collection.jpg'>",
-            "details"   : "A full suit + a free shirt",
+            "name"      : "Assorted Happy Socks",
+            "price"     : "R200",
+            "img"       : "<img src='images/happy-socks.jpg'>",
+            "details"   : "Spice up your outfit! Happy socks adds tons of a flavour to your style that a lot of people would appreciate.",
         },
         // product 8 == [7]
         {
             "name"      : "Test 2 U",
             "price"     : "R1800",
-            "img"       : "<img src='images/happy-socks.jpg'>",
+            "img"       : "<img src='images/>",
             "details"   : "A full suit + a free shirt",
         },
         // product 9 == [8]
@@ -122,7 +92,8 @@ let title   = document.querySelectorAll("#title");
     img     = document.querySelectorAll("#container-img");
     price   = document.querySelectorAll("#price");
     details = document.querySelectorAll("#details");
-    
+
+
     
     title[0].innerHTML     = shop.products[0].name;
         img[0].innerHTML      = shop.products[0].img;
@@ -165,6 +136,7 @@ let title   = document.querySelectorAll("#title");
     title[7].innerHTML  = shop.products[7].name;
             img[7].innerHTML       = shop.products[7].img;
                 price[7].innerHTML     = shop.products[7].price;
+                    details[7].innerHTML   = shop.products[7].details;
 
                 
     title[8].innerHTML  = shop.products[8].name;
@@ -188,3 +160,4 @@ let title   = document.querySelectorAll("#title");
     title[11].innerHTML  = shop.products[11].name;
             img[11].innerHTML       = shop.products[11].img;
                 price[11].innerHTML     = shop.products[11].price;
+                    details[11].innerHTML   = shop.products[11].details;

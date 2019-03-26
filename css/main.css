@@ -555,6 +555,11 @@ html {
   display: grid !important;
   place-content: center !important; }
 
+stroke {
+  padding-left: 1em;
+  text-decoration: line-through;
+  color: #a8a8a8; }
+
 .top-select {
   position: relative;
   outline: none;
