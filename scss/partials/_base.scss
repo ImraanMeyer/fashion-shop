@@ -102,6 +102,7 @@ html {
 }
 .header {
     height: 92vh;
+    background-blend-mode: hard-light;
     background: linear-gradient($blackOP , $blackOP ) , url(../images/shirts-hero-img.jpg)  !important;
     // background-attachment: fixed !important;
     background-size: cover !important;
