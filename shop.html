@@ -16,7 +16,7 @@
     <!-- gloabl jumplink mobile and desktop -->
     <div id="top"></div>
 
-    <!-- top section for desktio (light) -->
+    <!-- top section for desktip (light) -->
     <section class="top about">
         <section class="top-content" id="inner">
             <acrticle class="widgets-left">
@@ -112,7 +112,10 @@
             </ul>
 
             <sec class="widgets-right">
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#">
+                    <div class="cirlce-counter light"></div>
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
                 <a href="#"><i class="fas fa-search"></i></a>
             </sec>
         </section>
@@ -145,6 +148,17 @@
         <p><a href="index.html">Home</a>     <span>/</span> <span id="text">Shop</span> </p>
     </header>
 
+    
+    <section class="cart"> 
+        <h2>Your Cart</h2>
+        <button class="close">&times; </button>
+        <li id="cart-item"></li>
+
+        <section class="total">
+
+        </section>
+    </section>
+
     <!-- top of page -->
     <section class="page-top">
         <p class="top-left">Showing 4 of 12 results</p>
@@ -159,7 +173,7 @@
                 <!-- first product to list -->
                 <section class="product one item">
                     <section class="product-container-img" id="container-img">
-                        <img src="#" alt="">
+                        <img>
                     </section>
 
                     <section class="product-content">
@@ -167,10 +181,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
                         
-                        <a href="">
+                        <button class="addto" onclick="addCart">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
         
@@ -185,10 +199,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
 
@@ -203,10 +217,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
 
@@ -220,10 +234,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
             </section>
@@ -241,10 +255,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
 
@@ -259,10 +273,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
 
@@ -277,10 +291,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
 
@@ -295,10 +309,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
             </section>
@@ -315,10 +329,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button>
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
 
@@ -333,10 +347,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
 
@@ -351,10 +365,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
 
@@ -369,10 +383,10 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <a href="">
+                        <button class="addto">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
-                        </a>
+                        </button>
                     </section>
                 </section>
             </section>
@@ -502,6 +516,7 @@
     <script src="https://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
 
     <script>   
+
     $(document).ready(function() {
         $(".page_1_btn").addClass("active")
         $(".page_1_btn").click(function() {
@@ -531,6 +546,13 @@
             $(".page_2_btn").removeClass("active")
             $(".page_1_btn").removeClass("active")
         });
+        $(".addto").click(function() {
+            $(".cart").css('opacity' , '1')
+        })
+        $(".close").click(function() {
+            $(".cart").css('opacity' , '0')
+        });
+
     });
 </script>
 </body>

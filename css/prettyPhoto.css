@@ -144,7 +144,7 @@ a.pp_previous{background:url(../images/prettyPhoto/light_rounded/btnNext.png) 10
 a.pp_expand,a.pp_contract{cursor:pointer;display:none;height:20px;position:absolute;right:30px;text-indent:-10000px;top:10px;width:20px;z-index:20000}
 a.pp_close{position:absolute;right:0;top:0;display:block;line-height:22px;text-indent:-10000px}
 .pp_loaderIcon{display:block;height:24px;left:50%;position:absolute;top:50%;width:24px;margin:-12px 0 0 -12px}
-#pp_full_res{line-height:1!important}
+#pp_full_res{line-height:0!important}
 #pp_full_res .pp_inline{text-align:left}
 #pp_full_res .pp_inline p{margin:0 0 15px}
 div.ppt{color:#fff;display:none;font-size:17px;z-index:9999;margin:0 0 5px 15px;font-family: 'Source Sans Pro'}

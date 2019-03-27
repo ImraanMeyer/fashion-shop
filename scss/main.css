@@ -129,6 +129,7 @@ html {
 
 .header {
   height: 92vh;
+  background-blend-mode: hard-light;
   background: -webkit-gradient(linear, left top, left bottom, from(#666666be), to(#666666be)), url(../images/shirts-hero-img.jpg) !important;
   background: linear-gradient(#666666be, #666666be), url(../images/shirts-hero-img.jpg) !important;
   background-size: cover !important;
@@ -213,6 +214,27 @@ html {
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+.cirlce-counter {
+  width: 18px;
+  height: 18px;
+  color: #333333;
+  background: #f5f5f5;
+  display: -ms-grid;
+  display: grid;
+  position: absolute;
+  top: 96px;
+  place-content: center;
+  z-index: 3;
+  border-radius: 50%;
+  font-size: small;
+}
+
+.light {
+  background: #ac907f;
+  color: white;
+  top: 66px;
 }
 
 .header-text {
@@ -802,7 +824,7 @@ html {
   margin-bottom: 47px;
 }
 
-.shop-container .shop-content .product .product-content a {
+.shop-container .shop-content .product .product-content button {
   background: #ac907f;
   width: 188px;
   height: 44px;
@@ -813,15 +835,17 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  color: #fefefe;
+  border: none;
 }
 
-.shop-container .shop-content .product .product-content a i {
+.shop-container .shop-content .product .product-content button i {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.shop-container .shop-content .product .product-content a p {
+.shop-container .shop-content .product .product-content button p {
   margin: 0 !important;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -866,6 +890,38 @@ html {
   place-content: center;
 }
 
+.cart {
+  padding: 2em;
+  outline: solid #ac907f 2px;
+  outline-offset: -10px;
+  display: block;
+  top: 0;
+  position: fixed;
+  opacity: 0;
+  height: 400px;
+  width: 400px;
+  background: #f5f5f5be;
+  left: 2px;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+  z-index: 1;
+}
+
+.cart h2 {
+  text-align: center;
+}
+
+.cart .close {
+  top: 10px;
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: #ac907f;
+  font-size: 2em;
+  outline: none;
+}
+
 .active {
   background: #ac907f !important;
   color: #fefefe !important;
@@ -873,6 +929,12 @@ html {
   display: -ms-grid !important;
   display: grid !important;
   place-content: center !important;
+}
+
+stroke {
+  padding-left: 1em;
+  text-decoration: line-through;
+  color: #a8a8a8;
 }
 
 .top-select {
@@ -1963,7 +2025,7 @@ a {
 }
 
 .masonry-gallery .span_2 {
-  grid-column: span 1fr;
+  grid-column: span 1;
 }
 
 .masonry-gallery .span_3 {
@@ -1971,8 +2033,7 @@ a {
 }
 
 .masonry-gallery .span_4 {
-  -ms-grid-column: 2;
-  grid-column: 2;
+  grid-column: span  2;
 }
 
 .masonry-gallery .img-container:hover .overlay {

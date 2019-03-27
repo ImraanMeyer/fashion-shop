@@ -85,79 +85,29 @@ let shop = {
             "price"     : "R300",
             "img"       : "<img src='images/denim-crew-neck.jpg'>",
             "details"   : "With this blue denim crew-neck jumper to hand you’ll always have a fail-safe option when the temperature drops. ",
-        }
+        },
 ]};
 
 let title   = document.querySelectorAll("#title");
     img     = document.querySelectorAll("#container-img");
     price   = document.querySelectorAll("#price");
     details = document.querySelectorAll("#details");
+    count   = 0;
+    addtoBtn = document.querySelectorAll("#addto");
+
+    for (i = 0; i < shop.products.length; i++) {
+
+        title[i].innerHTML     = shop.products[i].name;
+        img[i].innerHTML      = shop.products[i].img;
+        price[i].innerHTML     = shop.products[i].price;
+        details[i].innerHTML   = shop.products[i].details;
+    };
 
 
-    
-    title[0].innerHTML     = shop.products[0].name;
-        img[0].innerHTML      = shop.products[0].img;
-            price[0].innerHTML     = shop.products[0].price;
-                details[0].innerHTML   = shop.products[0].details;
-    
-    title[1].innerHTML  = shop.products[1].name;
-        img[1].innerHTML       = shop.products[1].img;
-            price[1].innerHTML     = shop.products[1].price;
-                details[1].innerHTML   = shop.products[1].details;
 
-    title[2].innerHTML  = shop.products[2].name;
-        img[2].innerHTML       = shop.products[2].img;
-            price[2].innerHTML     = shop.products[2].price;
-                details[2].innerHTML   = shop.products[2].details;
+    $("#addto").click(function(){
+        let counter = 0;
+        counter++;
 
-    title[3].innerHTML  = shop.products[3].name;
-        img[3].innerHTML       = shop.products[3].img;
-            price[3].innerHTML     = shop.products[3].price;
-                details[3].innerHTML   = shop.products[3].details;
-
-    title[4].innerHTML  = shop.products[4].name;
-        img[4].innerHTML       = shop.products[4].img;
-            price[4].innerHTML     = shop.products[4].price;
-                details[4].innerHTML   = shop.products[4].details;
-    
-
-    title[5].innerHTML  = shop.products[5].name;
-        img[5].innerHTML       = shop.products[5].img;
-            price[5].innerHTML     = shop.products[5].price;
-                details[5].innerHTML   = shop.products[5].details;
-
-
-    title[6].innerHTML  = shop.products[6].name;
-        img[6].innerHTML       = shop.products[6].img;
-            price[6].innerHTML     = shop.products[6].price;
-                details[6].innerHTML   = shop.products[6].details;
-
-
-    title[7].innerHTML  = shop.products[7].name;
-            img[7].innerHTML       = shop.products[7].img;
-                price[7].innerHTML     = shop.products[7].price;
-                    details[7].innerHTML   = shop.products[7].details;
-
-                
-    title[8].innerHTML  = shop.products[8].name;
-            img[8].innerHTML       = shop.products[8].img;
-                price[8].innerHTML     = shop.products[8].price;
-                    details[8].innerHTML   = shop.products[8].details;
-    
-                    
-    title[9].innerHTML  = shop.products[9].name;
-        img[9].innerHTML       = shop.products[9].img;
-            price[9].innerHTML     = shop.products[9].price;
-                details[9].innerHTML   = shop.products[9].details;
-
-
-    title[10].innerHTML  = shop.products[10].name;
-        img[10].innerHTML       = shop.products[10].img;
-            price[10].innerHTML     = shop.products[10].price;
-                details[10].innerHTML   = shop.products[10].details;
-
-
-    title[11].innerHTML  = shop.products[11].name;
-            img[11].innerHTML       = shop.products[11].img;
-                price[11].innerHTML     = shop.products[11].price;
-                    details[11].innerHTML   = shop.products[11].details;
+        $(".cirlce-counter").text(counter);
+    });
