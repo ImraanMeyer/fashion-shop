@@ -103,15 +103,16 @@ html {
 .header {
     height: 92vh;
     background-blend-mode: hard-light;
-    background: linear-gradient($blackOP , $blackOP ) , url(../images/shirts-hero-img.jpg)  !important;
-    // background-attachment: fixed !important;
-    background-size: cover !important;
-    background-position: bottom !important;
-    background-repeat: no-repeat !important;
+    background: linear-gradient($blackOP , $blackOP ) , url(../images/shirts-hero-img.jpg);
+    background-attachment: fixed !important;
+    background-size: cover ;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 .navbar {
     display: grid;
     place-content: center;
+    z-index: 99;
     .fas {
         color: $white2;
     }
@@ -122,6 +123,7 @@ html {
         color: $buttons;
     }
     .main-navbar-center {
+        z-index: 3;
         display: grid;
         place-content: center;
         grid-template-areas:
@@ -679,7 +681,7 @@ html {
                 p:last-of-type {
                     margin-bottom: 47px;
                 }
-                button {
+                .addto {
                     background: $mushroom;
                     width: 188px;
                     height: 44px;
@@ -736,21 +738,31 @@ html {
 
 .cart {
     padding: 2em;
-    outline: solid $mushroom 2px;
-    outline-offset: -10px;
+    overflow: auto;
     display: block;
+    opacity: 0;
     top: 0;
     position: fixed;
-    opacity: 0;
-    height: 400px;
+    height: auto;
+    max-height: 400px;
     width: 400px;
-    background: $whiteOP;
-    left: 2px;
+    background: $pure-white;
+    left: 50%;
+    transform: translate(-50%, 10%);
     transition: 250ms all;
     z-index: 1;
 
     h2 {
         text-align: center;
+        margin-bottom: 2em; 
+    }
+    h2::after {
+        content: '';
+        height: 1px;
+        background: $mushroom;
+        display: block;
+        width: 30%;
+        margin: 0 auto;
     }
     .close {
         top: 10px;
@@ -761,6 +773,72 @@ html {
         color: #ac907f;
         font-size: 2em;
         outline: none;
+    }
+    .header-for-titles {
+        display: grid;
+        grid-template-columns: 80% 15% 5%;
+        grid-template-rows: none;
+        margin: 1em auto;
+    }
+    h5 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    #right {
+        text-align: right !important;
+    }
+    .header-for-titles::after {
+        content: '';
+        display: block;
+        height: 1px;
+        background: $mushroom;
+        width: 100%;
+        margin: .6em auto;
+    }
+
+    .items-listed {
+        li {
+            list-style: none;
+        }
+        p {
+            text-align: center;
+        }
+        .titles {
+            display: grid;
+            grid-template-columns: 80% 15% 5%;
+            margin: 1em auto;
+        }
+        .qtyBtns {
+            text-align: center;
+            button {
+            background: $mushroom;
+            border: none;
+            width: 40px;
+            color: white;
+            }
+        }
+        .deleteBtn {
+            display: grid;
+            place-content: center;
+            margin: 1em auto;
+            background: $brownishgrey;
+            color: $pure-white;
+            letter-spacing: 1.5px;
+            border: none;
+            padding: .4em;
+        }   
+        .price {
+            text-align: center;
+        }
+    }
+
+    #clear {
+        background: #a8a8a8;
+        color: white;
+        letter-spacing: 1px;
+        border: none;
+        padding: .3em;
+        text-transform: uppercase;
     }
 }
 
@@ -777,3 +855,4 @@ stroke {
     text-decoration: line-through;
     color: #a8a8a8;
 }
+

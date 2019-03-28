@@ -114,7 +114,7 @@
             <sec class="widgets-right">
                 <a href="#">
                     <div class="cirlce-counter light"></div>
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-shopping-cart open-cart"></i>
                 </a>
                 <a href="#"><i class="fas fa-search"></i></a>
             </sec>
@@ -125,7 +125,7 @@
     <nav class="navbar-mobile dark">
         <section class="front-container">
             <a href="index.html" class="logo"><img src="images/nateb-logo-dark-cropped.png" alt="logo"></a>
-            <a href="#" class="icons icon1"><i class="fas fa-shopping-cart"></i></a>
+            <a href="#" class="icons icon1 "><i class="fas fa-shopping-cart"></i></a>
             <a href="#" class="icons icon2"><i class="fas fa-search"></i></a>
 
             <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -152,11 +152,19 @@
     <section class="cart"> 
         <h2>Your Cart</h2>
         <button class="close">&times; </button>
-        <li id="cart-item"></li>
-
-        <section class="total">
-
+        
+        <section class="header-for-titles">
+            <h5>Name</h5>
+            <h5>Qty</h5>
+            <h5>Price</h5>
         </section>
+        <section class="items-listed">
+            <p>Your cart is empty</p>
+        </section>
+
+        <h5 id="right">Total: R<span class="total"></span></h5>
+
+        <button id="clear">Clear Cart</button>
     </section>
 
     <!-- top of page -->
@@ -169,7 +177,6 @@
         <article class="shop-content">
 
             <section class="page_1">
-            
                 <!-- first product to list -->
                 <section class="product one item">
                     <section class="product-container-img" id="container-img">
@@ -181,7 +188,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
                         
-                        <button class="addto" onclick="addCart">
+                        <button class="addto" data-name="Slim Fit Shirt Cut Away Collar" data-price="350" >
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -199,7 +206,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Assorted Knitted Jerseys" data-price="400">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -217,7 +224,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Slim Fit Suit 100% Wool" data-price="900">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -234,7 +241,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Bird Eye Suit" data-price="950">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -255,7 +262,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Slim Fit Chino Trousers" data-price="400"> 
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -273,7 +280,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Leather Shoulder Bag" data-price="600" >
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -291,7 +298,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Assorted Happy Socksg" data-price="200">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -309,7 +316,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Grey Check Jacket" data-price="700">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -329,7 +336,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button>
+                        <button class="addto" data-name="Black and White Texture Waistcoat" data-price="460">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -347,7 +354,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Slim Fit Navy Technical Raincoat" data-price="570" >
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -365,7 +372,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Slim Fit Stone Cotton Raincoat" data-price="700">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -383,7 +390,7 @@
                         <p id="price"></p>
                         <p id="details"></p>
 
-                        <button class="addto">
+                        <button class="addto" data-name="Denim Blue Wool Crew-Neck Jumper" data-price="300">
                             <i class="fas fa-shopping-cart"></i>
                             <p>add to cart</p>
                         </button>
@@ -505,18 +512,15 @@
         </div>
     </section>
 
-    <script src="js/products.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/main.js"></script>
     <script
     src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-    <script src="js/scroll-top.js"></script>
-    <script src="https://pagination.js.org/dist/2.1.4/pagination.min.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/main.js"></script>
+    
 
     <script>   
-
     $(document).ready(function() {
         $(".page_1_btn").addClass("active")
         $(".page_1_btn").click(function() {
@@ -552,7 +556,9 @@
         $(".close").click(function() {
             $(".cart").css('opacity' , '0')
         });
-
+        $(".open-cart").click(function(){
+            $(".cart").css('opacity' , '1')
+        });
     });
 </script>
 </body>

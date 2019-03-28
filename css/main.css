@@ -89,14 +89,16 @@ html {
 .header {
   height: 92vh;
   background-blend-mode: hard-light;
-  background: linear-gradient(#666666be, #666666be), url(../images/shirts-hero-img.jpg) !important;
-  background-size: cover !important;
-  background-position: bottom !important;
-  background-repeat: no-repeat !important; }
+  background: linear-gradient(#666666be, #666666be), url(../images/shirts-hero-img.jpg);
+  background-attachment: fixed !important;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
 
 .navbar {
   display: grid;
-  place-content: center; }
+  place-content: center;
+  z-index: 99; }
   .navbar .fas {
     color: #ffffff; }
   .navbar .fas:hover {
@@ -104,6 +106,7 @@ html {
   .navbar .fas:active {
     color: #a88d7b; }
   .navbar .main-navbar-center {
+    z-index: 3;
     display: grid;
     place-content: center;
     grid-template-areas: "link1 link2 link3 img link4 link5 link6"; }
@@ -530,7 +533,7 @@ html {
           font-family: inherit; }
       .shop-container .shop-content .product .product-content p:last-of-type {
         margin-bottom: 47px; }
-      .shop-container .shop-content .product .product-content button {
+      .shop-container .shop-content .product .product-content .addto {
         background: #ac907f;
         width: 188px;
         height: 44px;
@@ -539,9 +542,9 @@ html {
         justify-content: space-evenly;
         color: #fefefe;
         border: none; }
-        .shop-container .shop-content .product .product-content button i {
+        .shop-container .shop-content .product .product-content .addto i {
           align-self: center; }
-        .shop-container .shop-content .product .product-content button p {
+        .shop-container .shop-content .product .product-content .addto p {
           margin: 0 !important;
           align-self: center;
           text-transform: uppercase;
@@ -571,20 +574,29 @@ html {
 
 .cart {
   padding: 2em;
-  outline: solid #ac907f 2px;
-  outline-offset: -10px;
+  overflow: auto;
   display: block;
+  opacity: 0;
   top: 0;
   position: fixed;
-  opacity: 0;
-  height: 400px;
+  height: auto;
+  max-height: 400px;
   width: 400px;
-  background: #f5f5f5be;
-  left: 2px;
+  background: #fefefe;
+  left: 50%;
+  transform: translate(-50%, 10%);
   transition: 250ms all;
   z-index: 1; }
   .cart h2 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 2em; }
+  .cart h2::after {
+    content: '';
+    height: 1px;
+    background: #ac907f;
+    display: block;
+    width: 30%;
+    margin: 0 auto; }
   .cart .close {
     top: 10px;
     position: absolute;
@@ -594,6 +606,56 @@ html {
     color: #ac907f;
     font-size: 2em;
     outline: none; }
+  .cart .header-for-titles {
+    display: grid;
+    grid-template-columns: 80% 15% 5%;
+    grid-template-rows: none;
+    margin: 1em auto; }
+  .cart h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  .cart #right {
+    text-align: right !important; }
+  .cart .header-for-titles::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #ac907f;
+    width: 100%;
+    margin: .6em auto; }
+  .cart .items-listed li {
+    list-style: none; }
+  .cart .items-listed p {
+    text-align: center; }
+  .cart .items-listed .titles {
+    display: grid;
+    grid-template-columns: 80% 15% 5%;
+    margin: 1em auto; }
+  .cart .items-listed .qtyBtns {
+    text-align: center; }
+    .cart .items-listed .qtyBtns button {
+      background: #ac907f;
+      border: none;
+      width: 40px;
+      color: white; }
+  .cart .items-listed .deleteBtn {
+    display: grid;
+    place-content: center;
+    margin: 1em auto;
+    background: #666666;
+    color: #fefefe;
+    letter-spacing: 1.5px;
+    border: none;
+    padding: .4em; }
+  .cart .items-listed .price {
+    text-align: center; }
+  .cart #clear {
+    background: #a8a8a8;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+    padding: .3em;
+    text-transform: uppercase; }
 
 .active {
   background: #ac907f !important;
