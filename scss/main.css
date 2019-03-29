@@ -916,8 +916,8 @@ html {
   width: 400px;
   background: #fefefe;
   left: 50%;
-  -webkit-transform: translate(-50%, 10%);
-          transform: translate(-50%, 10%);
+  -webkit-transform: translate(-50%, 40%);
+          transform: translate(-50%, 40%);
   -webkit-transition: 250ms all;
   transition: 250ms all;
   z-index: 1;
