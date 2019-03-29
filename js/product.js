@@ -85,8 +85,9 @@ let products = [
     },
 ]
 
-let cart = [];
 
+
+let cart = [];
 
 
 for(var i=0; i< products.length; i++) {
@@ -105,10 +106,11 @@ for(var i=0; i< products.length; i++) {
 
 
 
-// ______ jquery
+// ______ jquery 
 
 // adds item to cart on click (addto btn)
 $(".addto").click(function(event){
+    event.preventDefault();
     let name = $(this).attr("data-name");
     let price = Number($(this).attr("data-price"));
     addItem(name, price, 1);
@@ -164,7 +166,7 @@ $(".items-listed").on("click", ".addQty", function(event){
     let name = $(this).attr("data-name");
     addItem(name, 0, 1)
     displayCart();
-});
+}); 
 
 
 
@@ -189,8 +191,8 @@ function addItem(name, price, count ) {
     }
     var item = new Item(name, price , count)
     cart.push(item);
-    alert(attr("data-name") + "added to the cart!")
 }
+ 
 
 // ___ removes qty of item by 1 ___ //
 function removeItemQty(name) {
@@ -254,4 +256,4 @@ function listCart() {
     return cartCopy;
 }
 
-console.log(listCart);
+console.log(listCart());
