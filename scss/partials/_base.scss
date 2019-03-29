@@ -448,13 +448,8 @@ html {
         }
     }
 }
-.team-figure:hover {
-    .team-text {
-        display: none !important;
-    }
-    .team-img {
-        height: 405px;
-    }
+.team-img:hover {
+    height: 405px;
 }   
 
 

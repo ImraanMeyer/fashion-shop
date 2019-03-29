@@ -136,12 +136,12 @@
             place-content: center;
             grid-gap: 30px;
             grid-template-areas: 
-                "left right";
+                "winter casual";
             .winter {
-                grid-area: left;
+                grid-area: winter;
             }
             .casual {
-                grid-area: right;
+                grid-area: casual;
             }
         }
     }

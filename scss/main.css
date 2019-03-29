@@ -548,11 +548,7 @@ html {
   color: #555555;
 }
 
-.team-figure:hover .team-text {
-  display: none !important;
-}
-
-.team-figure:hover .team-img {
+.team-img:hover {
   height: 405px;
 }
 
@@ -1593,19 +1589,19 @@ a {
   display: grid;
   place-content: center;
   grid-gap: 30px;
-      grid-template-areas: "left right";
+      grid-template-areas: "winter casual";
 }
 
 .collection .collection-grid .winter {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: left;
+  grid-area: winter;
 }
 
 .collection .collection-grid .casual {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: right;
+  grid-area: casual;
 }
 
 .banner {
@@ -2391,7 +2387,9 @@ a {
   }
   .collection-grid {
     margin: 70px auto 60px;
-        grid-template-areas: "male" "female" !important;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "winter" "casual" !important;
   }
   .collection-grid .collection-img-wrapper {
     width: auto;
@@ -2509,7 +2507,7 @@ a {
     grid-gap: 0px !important;
     place-content: center;
   }
-  .shop-content .product .product-img-container,
+  .shop-content .product .product-container-img,
   .shop-content .product .product-content {
     margin: 0 auto;
   }
@@ -2517,16 +2515,31 @@ a {
     margin: 0 auto;
     margin-bottom: 60px !important;
   }
+  .shop-content .product .product-content span {
+    position: absolute;
+    right: 2px !important;
+    top: 415px !important;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+  }
+  .shop-content .product .product-content button {
+    margin: 0 auto 36px;
+  }
   .shop-content .product::after {
     content: '';
     height: 2px;
     background: #666666;
     width: 70%;
-    margin: -2em auto;
+    margin: 2em auto;
     display: block;
   }
   .page-number {
     margin-bottom: 30px;
+  }
+  .cart {
+    width: 300px;
+    -webkit-transform: translate(-50%, 10%);
+            transform: translate(-50%, 10%);
   }
 }
 
@@ -2566,10 +2579,15 @@ a {
   .featured .featured-grid .figure-img {
     width: auto !important;
   }
-  .collection-grid {
-        grid-template-areas: "male female" !important;
+  .collection {
+    margin-bottom: 60px;
   }
-  .collection-grid .collection-img-wrapper {
+  .collection .collection-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "winter casual" !important;
+  }
+  .collection .collection-grid .collection-img-wrapper {
     width: auto;
   }
   .banner-content {

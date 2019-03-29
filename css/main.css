@@ -363,9 +363,7 @@ html {
       padding: 0 15px;
       color: #555555; }
 
-.team-figure:hover .team-text {
-  display: none !important; }
-.team-figure:hover .team-img {
+.team-img:hover {
   height: 405px; }
 
 .mission-left {
@@ -987,11 +985,11 @@ a {
     display: grid;
     place-content: center;
     grid-gap: 30px;
-    grid-template-areas: "left right"; }
+    grid-template-areas: "winter casual"; }
     .collection .collection-grid .winter {
-      grid-area: left; }
+      grid-area: winter; }
     .collection .collection-grid .casual {
-      grid-area: right; }
+      grid-area: casual; }
 
 .banner {
   height: 34.5rem;
@@ -1451,7 +1449,8 @@ a {
 
   .collection-grid {
     margin: 70px auto 60px;
-    grid-template-areas: "male" "female" !important; }
+    grid-template-columns: 1fr;
+    grid-template-areas: "winter" "casual" !important; }
     .collection-grid .collection-img-wrapper {
       width: auto; }
 
@@ -1545,22 +1544,33 @@ a {
     grid-template-columns: 1fr !important;
     grid-gap: 0px !important;
     place-content: center; }
-    .shop-content .product .product-img-container,
+    .shop-content .product .product-container-img,
     .shop-content .product .product-content {
       margin: 0 auto; }
     .shop-content .product .product-content a {
       margin: 0 auto;
       margin-bottom: 60px !important; }
+    .shop-content .product .product-content span {
+      position: absolute;
+      right: 2px !important;
+      top: 415px !important;
+      transform: translate(50%, -50%); }
+    .shop-content .product .product-content button {
+      margin: 0 auto 36px; }
   .shop-content .product::after {
     content: '';
     height: 2px;
     background: #666666;
     width: 70%;
-    margin: -2em auto;
+    margin: 2em auto;
     display: block; }
 
   .page-number {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .cart {
+    width: 300px;
+    transform: translate(-50%, 10%); } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .about {
     display: none !important;
@@ -1591,10 +1601,13 @@ a {
       .featured .featured-grid .figure-img {
         width: auto !important; }
 
-  .collection-grid {
-    grid-template-areas: "male female" !important; }
-    .collection-grid .collection-img-wrapper {
-      width: auto; }
+  .collection {
+    margin-bottom: 60px; }
+    .collection .collection-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "winter casual" !important; }
+      .collection .collection-grid .collection-img-wrapper {
+        width: auto; }
 
   .banner-content {
     margin: 0 auto !important;
