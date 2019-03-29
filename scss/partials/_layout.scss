@@ -136,12 +136,12 @@
             place-content: center;
             grid-gap: 30px;
             grid-template-areas: 
-                "male female";
-            .male {
-                grid-area: male;
+                "left right";
+            .winter {
+                grid-area: left;
             }
-            .female {
-                grid-area: female;
+            .casual {
+                grid-area: right;
             }
         }
     }

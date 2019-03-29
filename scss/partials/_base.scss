@@ -123,7 +123,7 @@ html {
         color: $buttons;
     }
     .main-navbar-center {
-        z-index: 3;
+        z-index: 3 !important;
         display: grid;
         place-content: center;
         grid-template-areas:
@@ -393,6 +393,8 @@ html {
 
 .primary-left {
     grid-area: left;
+    height: fit-content;
+    margin: auto;
     p {
         margin-bottom: 36px;
         width: 524px;
@@ -466,6 +468,10 @@ html {
         height: 100%;
         object-fit: cover;
     }
+}
+.mission-right {
+    height: fit-content;
+    margin: auto;
 }
 
 

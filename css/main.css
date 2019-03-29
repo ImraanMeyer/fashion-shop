@@ -106,7 +106,7 @@ html {
   .navbar .fas:active {
     color: #a88d7b; }
   .navbar .main-navbar-center {
-    z-index: 3;
+    z-index: 3 !important;
     display: grid;
     place-content: center;
     grid-template-areas: "link1 link2 link3 img link4 link5 link6"; }
@@ -322,7 +322,9 @@ html {
       color: #cccccc; }
 
 .primary-left {
-  grid-area: left; }
+  grid-area: left;
+  height: fit-content;
+  margin: auto; }
   .primary-left p {
     margin-bottom: 36px;
     width: 524px;
@@ -375,6 +377,10 @@ html {
     width: 100%;
     height: 100%;
     object-fit: cover; }
+
+.mission-right {
+  height: fit-content;
+  margin: auto; }
 
 .contact-box-grid {
   margin: 100px auto 74px;
@@ -981,11 +987,11 @@ a {
     display: grid;
     place-content: center;
     grid-gap: 30px;
-    grid-template-areas: "male female"; }
-    .collection .collection-grid .male {
-      grid-area: male; }
-    .collection .collection-grid .female {
-      grid-area: female; }
+    grid-template-areas: "left right"; }
+    .collection .collection-grid .winter {
+      grid-area: left; }
+    .collection .collection-grid .casual {
+      grid-area: right; }
 
 .banner {
   height: 34.5rem;

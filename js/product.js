@@ -3,42 +3,42 @@ let products = [
     {
         "name"      : "Slim Fit Shirt Cut Away Collar",
         "price"     : "R350",
-        "img"       : "<img src='images/compressed/slim-fit-shirt-cut-away-collar-compressed.jpg'> <p class='new-item'>new</p>",
+        "img"       : "<img src='images/slim-fit-shirt-cut-away-collar-compressed.jpg'> <p class='new-item'>new</p>",
         "details"   : "The base for trendy suiting is confirmed with a smart shirt and with this key piece, you’ll always be on track to getting your                 outfit on-point. Go get ‘em!"
     },
     // product 2 == [1]
     {
         "name"      : "Assorted Knitted Jerseys",
         "price"     : "R400",
-        "img"       : "<img src='images/grey-white-knitted-jerseys.jpg'>",
+        "img"       : "<img src='images/grey-white-knitted-jerseys-compressed.jpg'>",
         "details"   : "Looking to give this new knitted pullover a new home? You can without breaking the bank. Own the look and keep warm every time                 the temperature drops."
     },
     // product 3 == [2]
     {
         "name"      : "Slim Fit Suit 100% Wool",
         "price"     : "R900",
-        "img"       : "<img src='images/compressed/solid-colour-slim-fit-suit-in-wool-compressed.jpg'>",
+        "img"       : "<img src='images/solid-colour-slim-fit-suit-in-wool-compressed.jpg'>",
         "details"   : "Stay stylish and stay looking clean with this 100% wool slim fit suit! Now available in black as well."
     },  
     // product 4 == [3]
     {
         "name"      : "Bird Eye Suit",
         "price"     : "R950 <stroke>R1900</stroke",
-        "img"       : "<img src='images/formal-collection.jpg'> <section class='sale-overlay'>SALE</section>",
+        "img"       : "<img src='images/formal-collection-compressed.jpg'> <section class='sale-overlay'>SALE</section>",
         "details"   : "Slim fit, textured chino-style suit. ",
     },
     // product 5 == [4]
     {
         "name"      : "Slim Fit Chino Trousers",
         "price"     : "R400",
-        "img"       : "<img src='images/compressed/solid-colour-slim-fit-stretch-chino-trousers-compressed.jpg'>",
+        "img"       : "<img src='images/solid-colour-slim-fit-stretch-chino-trousers-compressed.jpg'>",
         "details"   : "Range of simple yet stylish slim fit chinos for an Urban-Inspired look.",
     },
     // product 6 == [5]
     {
         "name"      : "Leather Shoulder Bag",
         "price"     : "R600",
-        "img"       : "<img src='images/compressed/accesory-bag-compressed.jpg'>",
+        "img"       : "<img src='images/accesory-bag.jpg'>",
         "details"   : "If you always in a rush easily sling on this convenient leather bag. The simply designed bag carries everything you will need                  in its one compartment keeping it safe with its zip closing. ",
     },
     // product 7 == [6]
@@ -131,7 +131,7 @@ function displayCart() {
     let output = "";
     for (let i in cartArray) {
         output += 
-        // dispays and creates divs/sections
+        // dispays and creates divs/sections for the cart
         "<section class='titles'>"+
              "<div class='name'>" + cartArray[i].name + "</div>" 
              +"<div class='count'>" + cartArray[i].count + "</div>"
@@ -141,10 +141,12 @@ function displayCart() {
               +" <button class='addQty' data-name='"+cartArray[i].name+"'> + </button>"
               +" <button class='subtractQty' data-name='"+cartArray[i].name+"'> - </button>"
         +"</section>"
-        +" <button class='deleteBtn' data-name='"+cartArray[i].name+"'> REMOVE ITEM </button>"
+        +" <button class='deleteBtn' data-name='"+cartArray[i].name+"'> REMOVE ITEM </button>";
     }
+    
     $(".items-listed").html(output);
-    $(".total").html(totalCart())
+    $(".total").html(totalCart());
+    
 }
 
 // Calling delete item function
@@ -167,6 +169,9 @@ $(".items-listed").on("click", ".addQty", function(event){
     addItem(name, 0, 1)
     displayCart();
 }); 
+
+
+
 
 
 
@@ -252,8 +257,17 @@ function listCart() {
             itemCopy[p] = item[p];
         }
         cartCopy.push(itemCopy);
-    }
+    }   
     return cartCopy;
-}
+};
 
-console.log(listCart());
+let circleCount = document.querySelector('.circle-counter');
+let counter     = 0;
+
+$(document).ready(function() {
+    $(".addto").click(function(){
+        counter++;
+    
+        $('.circle-counter').html(counter);
+    });
+})
