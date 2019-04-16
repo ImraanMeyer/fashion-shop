@@ -275,6 +275,8 @@ html {
     .footer-grid .footer-left-section .footer-contact-details li p {
       padding-left: 2em;
       display: inline; }
+    .footer-grid .footer-left-section .footer-contact-details li a {
+      color: inherit; }
 .footer-grid .footer-right-section .right-title {
   margin-bottom: 51px;
   color: #e5e5e5;
@@ -285,6 +287,8 @@ html {
     list-style: none;
     color: #999999;
     padding-bottom: 30px; }
+  .footer-grid .footer-right-section ul a {
+    color: inherit; }
 .footer-grid .footer-right-section .footer-instagram div {
   width: 80px;
   height: 80px;

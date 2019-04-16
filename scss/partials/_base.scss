@@ -323,6 +323,9 @@ html {
                     padding-left: 2em;
                     display: inline;
                 }
+                a {
+                    color: inherit;
+                }
                 
             }
         }   
@@ -341,6 +344,9 @@ html {
                 list-style: none;
                 color: #999999;
                 padding-bottom: 30px; 
+            }
+            a {
+                color: inherit;
             }
         }
 
