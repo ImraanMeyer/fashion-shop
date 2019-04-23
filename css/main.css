@@ -351,6 +351,8 @@ html {
     height: 305px;
     background-color: #666666;
     margin-bottom: 20px; }
+    .team-figure .team-img img {
+      object-fit: cover; }
   .team-figure .team-text {
     transition: all .2s;
     text-align: center;
@@ -789,7 +791,10 @@ a {
 .down-arrow {
   position: relative;
   margin: -4px auto 50px !important;
-  transform: translate(-10%, -10%); }
+  transform: translate(-10%, -10%);
+  border: none;
+  outline: none;
+  background: none; }
   .down-arrow span {
     display: block;
     width: 20px;

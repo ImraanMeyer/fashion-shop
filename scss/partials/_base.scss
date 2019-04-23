@@ -429,6 +429,9 @@ html {
         height: 305px;
         background-color: #666666;
         margin-bottom: 20px;
+        img {
+                object-fit: cover;
+        }
     }
     
     .team-text {

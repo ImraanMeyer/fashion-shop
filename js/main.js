@@ -9,6 +9,19 @@ $(document).ready(function() {
     })
 });
 
+$(document).ready(function() {
+    $(".scroll-top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, 50);
+        return false;
+    }); 
+});
+
+function downSmooth() {
+    var elmnt = document.getElementById("feat");
+    elmnt.scrollIntoView();
+}
+
 // smooth scrolling 
 window.scroll({
     top: 0,

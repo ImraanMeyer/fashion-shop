@@ -128,7 +128,10 @@ a {
 .down-arrow{
     position: relative;
     margin: -4px auto 50px !important;
-    transform: translate(-10%,-10%);
+    transform: translate(-10%, -10%);
+    border: none;
+    outline: none;
+    background: none;
     span {
         display: block;
         width: 20px;
